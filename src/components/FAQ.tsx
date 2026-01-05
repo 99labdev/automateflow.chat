@@ -2,35 +2,51 @@
 
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { Bot, MessageSquare, BookOpen, Coins, UserCheck, Clock, Shield, RefreshCw } from 'lucide-react';
 
 export default function FAQ() {
   const t = useTranslations('faq');
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8'];
+  const questions = [
+    { key: 'q1', icon: Bot },
+    { key: 'q2', icon: MessageSquare },
+    { key: 'q3', icon: BookOpen },
+    { key: 'q4', icon: Coins },
+    { key: 'q5', icon: UserCheck },
+    { key: 'q6', icon: Clock },
+    { key: 'q7', icon: Shield },
+    { key: 'q8', icon: RefreshCw },
+  ];
 
   return (
-    <section id="faq" className="section faq">
+    <section id="faq" className="section faq-section">
       <div className="container">
         <h2 className="section-title">{t('title')}</h2>
         <p className="section-subtitle">{t('subtitle')}</p>
 
         <div className="faq-container">
-          {questions.map((q, index) => (
+          {questions.map(({ key, icon: Icon }, index) => (
             <div
-              key={q}
-              className={`faq-item ${openIndex === index ? 'open' : ''}`}
+              key={key}
+              className={`accordion-item ${openIndex === index ? 'open' : ''}`}
             >
               <button
-                className="faq-question"
+                className="accordion-header"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span>{t(`questions.${q}.question`)}</span>
-                <ChevronDown size={20} />
+                <div className="accordion-icon">
+                  <Icon size={20} />
+                </div>
+                <span className="accordion-title">{t(`questions.${key}.question`)}</span>
+                <span className="accordion-arrow">
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
               </button>
-              <div className="faq-answer">
-                <p>{t(`questions.${q}.answer`)}</p>
+              <div className="accordion-body">
+                <p>{t(`questions.${key}.answer`)}</p>
               </div>
             </div>
           ))}
@@ -38,8 +54,8 @@ export default function FAQ() {
       </div>
 
       <style jsx>{`
-        .faq {
-          background: var(--bg-secondary);
+        .faq-section {
+          background: var(--secondary-color);
         }
 
         .faq-container {
@@ -50,23 +66,27 @@ export default function FAQ() {
           gap: 12px;
         }
 
-        .faq-item {
-          background: var(--card-bg);
+        .accordion-item {
+          background: var(--surface-color);
           border: 1px solid var(--border-color);
           border-radius: var(--radius-lg);
           overflow: hidden;
           transition: all var(--transition-normal);
         }
 
-        .faq-item.open {
+        .accordion-item:hover {
           border-color: var(--border-light);
         }
 
-        .faq-question {
+        .accordion-item.open {
+          border-color: var(--primary-color);
+          box-shadow: var(--shadow-md);
+        }
+
+        .accordion-header {
           width: 100%;
           display: flex;
           align-items: center;
-          justify-content: space-between;
           gap: 16px;
           padding: 20px 24px;
           text-align: left;
@@ -76,35 +96,44 @@ export default function FAQ() {
           transition: color var(--transition-fast);
         }
 
-        .faq-question:hover {
+        .accordion-header:hover {
           color: var(--primary-color);
         }
 
-        .faq-question :global(svg) {
+        .accordion-icon {
+          flex-shrink: 0;
+          color: var(--primary-color);
+        }
+
+        .accordion-title {
+          flex: 1;
+        }
+
+        .accordion-arrow {
           flex-shrink: 0;
           color: var(--text-muted);
           transition: transform var(--transition-normal);
         }
 
-        .faq-item.open .faq-question :global(svg) {
+        .accordion-item.open .accordion-arrow {
           transform: rotate(180deg);
           color: var(--primary-color);
         }
 
-        .faq-answer {
+        .accordion-body {
           max-height: 0;
           overflow: hidden;
           transition: max-height var(--transition-normal);
         }
 
-        .faq-item.open .faq-answer {
-          max-height: 200px;
+        .accordion-item.open .accordion-body {
+          max-height: 300px;
         }
 
-        .faq-answer p {
-          padding: 0 24px 20px;
+        .accordion-body p {
+          padding: 0 24px 20px 60px;
           color: var(--text-secondary);
-          line-height: 1.6;
+          line-height: 1.7;
         }
       `}</style>
     </section>

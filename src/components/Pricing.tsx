@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-import { Check } from 'lucide-react';
+import { Check, Coins } from 'lucide-react';
 
 export default function Pricing() {
   const t = useTranslations('pricing');
@@ -16,7 +16,7 @@ export default function Pricing() {
   };
 
   return (
-    <section id="pricing" className="section pricing">
+    <section id="pricing" className="section pricing-section">
       <div className="container">
         <h2 className="section-title">{t('title')}</h2>
         <p className="section-subtitle">{t('subtitle')}</p>
@@ -35,25 +35,31 @@ export default function Pricing() {
           </span>
         </div>
 
-        <div className="grid-3 plans-grid">
-          {plans.map((plan) => (
+        <div className="plans-grid">
+          {plans.map((plan, index) => (
             <div
               key={plan}
-              className={`card plan-card ${plan === 'standard' ? 'popular' : ''}`}
+              className={`pricing-card ${index === 1 ? 'featured' : ''}`}
             >
-              {plan === 'standard' && (
+              {index === 1 && (
                 <span className="popular-badge">{t('popular')}</span>
               )}
-              <h3 className="plan-name">{t(`plans.${plan}.name`)}</h3>
-              <p className="plan-description">{t(`plans.${plan}.description`)}</p>
-              <div className="plan-price">
-                <span className="currency">R$</span>
-                <span className="amount">{getPrice(t(`plans.${plan}.price`))}</span>
-                <span className="period">{t('perMonth')}</span>
+              <div className="pricing-header">
+                <h3>{t(`plans.${plan}.name`)}</h3>
+                <div className="pricing-price">
+                  <span className="currency">R$</span>
+                  <span className="amount">{getPrice(t(`plans.${plan}.price`))}</span>
+                  <span className="period">{t('perMonth')}</span>
+                </div>
+                <p className="pricing-description">{t(`plans.${plan}.description`)}</p>
               </div>
-              <ul className="plan-features">
-                {(t.raw(`plans.${plan}.features`) as string[]).map((feature: string, index: number) => (
-                  <li key={index}>
+              <div className="pricing-credits">
+                <Coins size={18} />
+                <strong>{t(`plans.${plan}.credits`)}</strong> créditos por mês
+              </div>
+              <ul className="pricing-features">
+                {(t.raw(`plans.${plan}.features`) as string[]).map((feature: string, i: number) => (
+                  <li key={i}>
                     <Check size={18} />
                     <span>{feature}</span>
                   </li>
@@ -61,7 +67,7 @@ export default function Pricing() {
               </ul>
               <a
                 href="https://app.automateflow.chat/accounts/signup/"
-                className={`btn ${plan === 'standard' ? 'btn-primary' : 'btn-secondary'} btn-full`}
+                className="btn btn-primary btn-full"
               >
                 {t('cta')}
               </a>
@@ -71,7 +77,7 @@ export default function Pricing() {
       </div>
 
       <style jsx>{`
-        .pricing {
+        .pricing-section {
           background: var(--bg-primary);
         }
 
@@ -96,10 +102,15 @@ export default function Pricing() {
         .toggle {
           width: 56px;
           height: 28px;
-          background: var(--surface-color);
+          background: var(--border-color);
           border-radius: var(--radius-full);
           position: relative;
           cursor: pointer;
+          transition: background var(--transition-normal);
+        }
+
+        .toggle.yearly {
+          background: var(--primary-color);
         }
 
         .toggle-handle {
@@ -108,9 +119,10 @@ export default function Pricing() {
           left: 2px;
           width: 24px;
           height: 24px;
-          background: var(--gradient-primary);
+          background: white;
           border-radius: 50%;
           transition: transform var(--transition-normal);
+          box-shadow: var(--shadow-sm);
         }
 
         .toggle.yearly .toggle-handle {
@@ -120,8 +132,8 @@ export default function Pricing() {
         .discount-badge {
           display: inline-block;
           margin-left: 8px;
-          padding: 4px 8px;
-          background: var(--primary-light);
+          padding: 4px 10px;
+          background: rgba(139, 92, 246, 0.1);
           color: var(--primary-color);
           font-size: 0.75rem;
           font-weight: 600;
@@ -129,80 +141,117 @@ export default function Pricing() {
         }
 
         .plans-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
           align-items: stretch;
         }
 
-        .plan-card {
+        .pricing-card {
+          background: var(--surface-color);
+          border: 2px solid var(--border-color);
+          border-radius: var(--radius-xl);
           padding: 32px;
+          text-align: center;
+          transition: all var(--transition-normal);
+          position: relative;
           display: flex;
           flex-direction: column;
-          position: relative;
+          height: 100%;
         }
 
-        .plan-card.popular {
+        .pricing-card:hover {
+          transform: translateY(-5px);
+          box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-card.featured {
           border-color: var(--primary-color);
           transform: scale(1.05);
         }
 
+        .pricing-card.featured:hover {
+          transform: scale(1.05) translateY(-5px);
+        }
+
         .popular-badge {
           position: absolute;
-          top: -12px;
+          top: -15px;
           left: 50%;
           transform: translateX(-50%);
-          padding: 6px 16px;
           background: var(--gradient-primary);
           color: white;
-          font-size: 0.75rem;
-          font-weight: 600;
+          padding: 8px 20px;
           border-radius: var(--radius-full);
+          font-size: 0.8rem;
+          font-weight: 600;
         }
 
-        .plan-name {
+        .pricing-header h3 {
           font-size: 1.5rem;
-          font-weight: 700;
-          margin-bottom: 8px;
+          font-weight: 600;
+          color: var(--text-primary);
+          margin-bottom: 16px;
         }
 
-        .plan-description {
-          color: var(--text-secondary);
-          margin-bottom: 24px;
-        }
-
-        .plan-price {
+        .pricing-price {
+          margin-bottom: 12px;
           display: flex;
           align-items: baseline;
-          margin-bottom: 32px;
+          justify-content: center;
+          gap: 4px;
         }
 
         .currency {
-          font-size: 1.25rem;
-          font-weight: 600;
+          font-size: 1.5rem;
           color: var(--text-secondary);
         }
 
         .amount {
           font-size: 3rem;
-          font-weight: 800;
-          line-height: 1;
-          background: var(--gradient-primary);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          font-weight: 700;
+          color: var(--primary-color);
         }
 
         .period {
-          color: var(--text-muted);
-          margin-left: 4px;
+          font-size: 1rem;
+          color: var(--text-secondary);
         }
 
-        .plan-features {
+        .pricing-description {
+          font-size: 0.9rem;
+          color: var(--text-secondary);
+          margin-bottom: 24px;
+          min-height: 40px;
+        }
+
+        .pricing-credits {
+          background: var(--secondary-color);
+          border-radius: var(--radius-md);
+          padding: 12px;
+          margin-bottom: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          color: var(--primary-color);
+          font-size: 0.95rem;
+        }
+
+        .pricing-credits :global(svg) {
+          color: var(--primary-color);
+        }
+
+        .pricing-features {
           flex: 1;
           display: flex;
           flex-direction: column;
           gap: 12px;
           margin-bottom: 32px;
+          text-align: left;
         }
 
-        .plan-features li {
+        .pricing-features li {
           display: flex;
           align-items: center;
           gap: 10px;
@@ -210,8 +259,8 @@ export default function Pricing() {
           font-size: 0.9rem;
         }
 
-        .plan-features li :global(svg) {
-          color: var(--primary-color);
+        .pricing-features li :global(svg) {
+          color: var(--accent-color);
           flex-shrink: 0;
         }
 
@@ -220,8 +269,18 @@ export default function Pricing() {
         }
 
         @media (max-width: 1024px) {
-          .plan-card.popular {
+          .plans-grid {
+            grid-template-columns: 1fr;
+            max-width: 400px;
+            margin: 0 auto;
+          }
+
+          .pricing-card.featured {
             transform: scale(1);
+          }
+
+          .pricing-card.featured:hover {
+            transform: translateY(-5px);
           }
         }
       `}</style>

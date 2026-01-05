@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { Linkedin, Instagram } from 'lucide-react';
+import { Linkedin, Instagram, Bot } from 'lucide-react';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -13,83 +13,84 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="footer-logo">
-              <span className="logo-icon">⚡</span>
+              <Bot size={24} className="logo-icon" />
               <span className="logo-text">AutomateFlow</span>
             </Link>
             <p className="footer-description">{t('description')}</p>
+          </div>
+
+          <div className="footer-social">
+            <h4>{t('social')}</h4>
             <div className="social-links">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/company/automateflow" target="_blank" rel="noopener noreferrer" className="social-link">
                 <Linkedin size={20} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.instagram.com/automateflow" target="_blank" rel="noopener noreferrer" className="social-link">
                 <Instagram size={20} />
               </a>
             </div>
           </div>
+        </div>
 
-          <div className="footer-links">
-            <h4>{t('product.title')}</h4>
-            <a href="#agents">{t('product.agents')}</a>
-            <a href="#pricing">{t('product.pricing')}</a>
-            <a href="#how-it-works">{t('product.integrations')}</a>
-          </div>
+        <hr className="footer-divider" />
 
-          <div className="footer-links">
-            <h4>{t('company.title')}</h4>
-            <a href="#">{t('company.about')}</a>
-            <a href="#">{t('company.blog')}</a>
-            <a href="#">{t('company.careers')}</a>
-          </div>
-
-          <div className="footer-links">
-            <h4>{t('legal.title')}</h4>
+        <div className="footer-bottom">
+          <p className="copyright">{t('copyright')}</p>
+          <div className="footer-legal">
             <a href="#">{t('legal.terms')}</a>
             <a href="#">{t('legal.privacy')}</a>
           </div>
-        </div>
-
-        <div className="footer-bottom">
-          <p>{t('copyright')}</p>
         </div>
       </div>
 
       <style jsx>{`
         .footer {
-          background: var(--bg-secondary);
+          background: white;
           border-top: 1px solid var(--border-color);
-          padding: 60px 0 24px;
+          padding: 48px 0 24px;
+        }
+
+        [data-theme="dark"] .footer {
+          background: var(--surface-color);
         }
 
         .footer-grid {
-          display: grid;
-          grid-template-columns: 2fr 1fr 1fr 1fr;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
           gap: 48px;
-          margin-bottom: 48px;
+          margin-bottom: 32px;
         }
 
         .footer-logo {
           display: flex;
           align-items: center;
-          gap: 8px;
-          font-size: 1.5rem;
+          gap: 10px;
+          font-size: 1.25rem;
           font-weight: 700;
           margin-bottom: 16px;
+          color: var(--primary-color);
         }
 
-        .logo-icon {
-          font-size: 1.75rem;
+        .footer-logo :global(.logo-icon) {
+          color: var(--primary-color);
         }
 
         .logo-text {
-          background: var(--gradient-primary);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: var(--primary-color);
         }
 
         .footer-description {
           color: var(--text-secondary);
-          margin-bottom: 20px;
-          max-width: 300px;
+          max-width: 400px;
+          line-height: 1.6;
+        }
+
+        .footer-social h4 {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: var(--text-primary);
+          margin-bottom: 16px;
         }
 
         .social-links {
@@ -103,7 +104,7 @@ export default function Footer() {
           display: flex;
           align-items: center;
           justify-content: center;
-          background: var(--surface-color);
+          background: var(--secondary-color);
           border-radius: var(--radius-md);
           color: var(--text-secondary);
           transition: all var(--transition-fast);
@@ -112,54 +113,55 @@ export default function Footer() {
         .social-link:hover {
           background: var(--primary-color);
           color: white;
+          transform: translateY(-2px);
         }
 
-        .footer-links h4 {
-          font-size: 0.875rem;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 0.05em;
-          color: var(--text-muted);
-          margin-bottom: 16px;
-        }
-
-        .footer-links a {
-          display: block;
-          color: var(--text-secondary);
-          padding: 8px 0;
-          transition: color var(--transition-fast);
-        }
-
-        .footer-links a:hover {
-          color: var(--primary-color);
+        .footer-divider {
+          border: none;
+          border-top: 1px solid var(--border-color);
+          margin: 0 0 24px 0;
         }
 
         .footer-bottom {
-          padding-top: 24px;
-          border-top: 1px solid var(--border-color);
-          text-align: center;
-          color: var(--text-muted);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .copyright {
+          color: var(--text-secondary);
           font-size: 0.875rem;
+        }
+
+        .footer-legal {
+          display: flex;
+          gap: 24px;
+        }
+
+        .footer-legal a {
+          color: var(--text-secondary);
+          font-size: 0.875rem;
+          transition: color var(--transition-fast);
+        }
+
+        .footer-legal a:hover {
+          color: var(--primary-color);
         }
 
         @media (max-width: 768px) {
           .footer-grid {
-            grid-template-columns: 1fr 1fr;
+            flex-direction: column;
             gap: 32px;
           }
 
-          .footer-brand {
-            grid-column: span 2;
-          }
-        }
-
-        @media (max-width: 480px) {
-          .footer-grid {
-            grid-template-columns: 1fr;
+          .footer-bottom {
+            flex-direction: column;
+            gap: 16px;
+            text-align: center;
           }
 
-          .footer-brand {
-            grid-column: span 1;
+          .footer-legal {
+            justify-content: center;
           }
         }
       `}</style>

@@ -1,120 +1,102 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { MousePointer, Settings, Rocket } from 'lucide-react';
+import { Settings, MessageSquare, BarChart3 } from 'lucide-react';
 
 export default function HowItWorks() {
   const t = useTranslations('howItWorks');
 
   const steps = [
-    { key: 'step1', icon: MousePointer, number: '01' },
-    { key: 'step2', icon: Settings, number: '02' },
-    { key: 'step3', icon: Rocket, number: '03' },
+    { key: 'step1', icon: Settings },
+    { key: 'step2', icon: MessageSquare },
+    { key: 'step3', icon: BarChart3 },
   ];
 
   return (
-    <section id="how-it-works" className="section how-it-works">
+    <section id="how-it-works" className="section how-it-works-section">
       <div className="container">
         <h2 className="section-title">{t('title')}</h2>
         <p className="section-subtitle">{t('subtitle')}</p>
 
-        <div className="steps-container">
-          {steps.map(({ key, icon: Icon, number }, index) => (
-            <div key={key} className="step">
-              <div className="step-number">{number}</div>
-              <div className="step-icon">
-                <Icon size={32} />
-              </div>
+        <div className="steps-grid">
+          {steps.map(({ key, icon: Icon }, index) => (
+            <div key={key} className="step-card">
+              <div className="step-number">{index + 1}</div>
               <h3 className="step-title">{t(`steps.${key}.title`)}</h3>
               <p className="step-description">{t(`steps.${key}.description`)}</p>
-              {index < steps.length - 1 && <div className="step-connector"></div>}
+              <div className="step-icon">
+                <Icon size={48} />
+              </div>
             </div>
           ))}
         </div>
       </div>
 
       <style jsx>{`
-        .how-it-works {
-          background: var(--bg-secondary);
+        .how-it-works-section {
+          background: var(--secondary-color);
         }
 
-        .steps-container {
+        .steps-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 40px;
-          position: relative;
+          gap: 24px;
         }
 
-        .step {
-          position: relative;
-          text-align: center;
+        .step-card {
+          background: var(--surface-color);
           padding: 40px 24px;
+          border-radius: var(--radius-xl);
+          text-align: center;
+          box-shadow: var(--shadow-md);
+          transition: all var(--transition-normal);
+          border: 1px solid var(--border-color);
+          position: relative;
+          height: 100%;
+        }
+
+        .step-card:hover {
+          transform: translateY(-5px);
+          box-shadow: var(--shadow-lg);
         }
 
         .step-number {
-          font-size: 4rem;
-          font-weight: 800;
-          color: var(--primary-light);
-          line-height: 1;
-          margin-bottom: 16px;
-          opacity: 0.3;
-        }
-
-        .step-icon {
-          width: 80px;
-          height: 80px;
-          margin: 0 auto 24px;
+          position: absolute;
+          top: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 40px;
+          height: 40px;
           background: var(--gradient-primary);
+          color: white;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: white;
-          box-shadow: var(--shadow-glow);
+          font-weight: 700;
+          font-size: 1.25rem;
         }
 
         .step-title {
           font-size: 1.25rem;
           font-weight: 600;
-          margin-bottom: 12px;
+          margin: 24px 0 12px;
+          color: var(--text-primary);
         }
 
         .step-description {
           color: var(--text-secondary);
-          font-size: 0.95rem;
+          margin-bottom: 24px;
           line-height: 1.6;
         }
 
-        .step-connector {
-          position: absolute;
-          top: 50%;
-          right: -20px;
-          width: 40px;
-          height: 2px;
-          background: var(--border-color);
-        }
-
-        .step-connector::after {
-          content: '';
-          position: absolute;
-          right: 0;
-          top: -4px;
-          border: 5px solid transparent;
-          border-left-color: var(--border-color);
+        .step-icon {
+          color: var(--primary-light);
         }
 
         @media (max-width: 768px) {
-          .steps-container {
+          .steps-grid {
             grid-template-columns: 1fr;
-            gap: 20px;
-          }
-
-          .step-connector {
-            display: none;
-          }
-
-          .step-number {
-            font-size: 3rem;
           }
         }
       `}</style>

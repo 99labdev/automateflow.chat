@@ -93,18 +93,21 @@
       "basic": {
         "name": "Basic",
         "price": "87",
+        "credits": "1,000",
         "description": "Perfect to get started",
         "features": ["1 AI Agent", "1,000 messages/month", "WhatsApp integration", "Email support", "Basic reports"]
       },
       "standard": {
         "name": "Standard",
         "price": "397",
+        "credits": "10,000",
         "description": "For growing businesses",
         "features": ["3 AI Agents", "10,000 messages/month", "WhatsApp + Web integration", "Priority support", "Advanced reports", "Integration API"]
       },
       "corporate": {
         "name": "Corporate",
         "price": "997",
+        "credits": "Unlimited",
         "description": "For large operations",
         "features": ["Unlimited agents", "Unlimited messages", "All integrations", "24/7 dedicated support", "Custom dashboard", "Team training", "Guaranteed SLA"]
       }
@@ -155,7 +158,8 @@
     "features": ["No credit card", "Cancel anytime", "Full support"]
   },
   "footer": {
-    "description": "Transforming businesses with artificial intelligence",
+    "description": "Leading platform for creating AI agents for sales and customer service automation.",
+    "social": "Social Media",
     "product": {
       "title": "Product",
       "agents": "Agents",
