@@ -52,8 +52,8 @@ export default function CTA() {
         }
 
         .btn-white {
-          background: white;
-          color: var(--primary-color);
+          background: var(--surface-color);
+          color: var(--primary-dark);
           display: inline-flex;
           align-items: center;
           gap: 10px;

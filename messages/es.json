@@ -178,5 +178,99 @@
       "privacy": "Política de Privacidad"
     },
     "copyright": "© 2025 AutomateFlow. Todos los derechos reservados."
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última actualización: Enero de 2025",
+    "intro": "Bienvenido a AutomateFlow. Al acceder y utilizar nuestra plataforma de agentes de inteligencia artificial, usted acepta los siguientes términos y condiciones. Por favor, léalos atentamente antes de utilizar nuestros servicios.",
+    "sections": {
+      "acceptance": {
+        "title": "Aceptación de los Términos",
+        "content": "Al acceder o usar la plataforma AutomateFlow, usted confirma que ha leído, entendido y acepta estar vinculado a estos Términos de Servicio. Si no está de acuerdo con alguna parte de estos términos, no podrá acceder ni usar nuestros servicios. Estos términos constituyen un acuerdo legal vinculante entre usted y AutomateFlow."
+      },
+      "services": {
+        "title": "Descripción de los Servicios",
+        "content": "AutomateFlow ofrece una plataforma de creación y gestión de agentes de inteligencia artificial para automatización de ventas, atención al cliente y calificación de leads. Nuestros servicios incluyen, pero no se limitan a: creación de agentes de IA personalizados, integración con WhatsApp y otros canales de comunicación, análisis de conversaciones e informes de rendimiento, y soporte técnico según el plan contratado."
+      },
+      "accounts": {
+        "title": "Cuentas de Usuario",
+        "content": "Para acceder a nuestros servicios, debe crear una cuenta proporcionando información precisa y actualizada. Usted es responsable de mantener la confidencialidad de sus credenciales de acceso y de todas las actividades realizadas en su cuenta. Acepta notificar inmediatamente a AutomateFlow sobre cualquier uso no autorizado de su cuenta o cualquier otra violación de seguridad."
+      },
+      "usage": {
+        "title": "Uso Aceptable",
+        "content": "Usted acepta usar nuestros servicios solo para fines legales y de acuerdo con estos términos. Está prohibido usar la plataforma para enviar spam, contenido ilegal, difamatorio u ofensivo, intentar acceder a sistemas no autorizados, interferir con el funcionamiento de la plataforma, violar derechos de propiedad intelectual de terceros, o recopilar datos de usuarios sin consentimiento. Nos reservamos el derecho de suspender o cancelar cuentas que violen estas directrices."
+      },
+      "payment": {
+        "title": "Pagos y Facturación",
+        "content": "Los planes de pago se cobran mensual o anualmente, según su elección. Los pagos se procesan de forma segura a través de proveedores terceros. No ofrecemos reembolsos por períodos parciales de uso. En caso de fallo en el pago, su cuenta podrá ser suspendida hasta la regularización. Puede cancelar su suscripción en cualquier momento, manteniendo el acceso hasta el final del período pagado."
+      },
+      "intellectual": {
+        "title": "Propiedad Intelectual",
+        "content": "Todo el contenido, software, marcas registradas y materiales disponibles en la plataforma AutomateFlow son propiedad exclusiva de la empresa o de sus licenciantes. Usted recibe una licencia limitada, no exclusiva y no transferible para usar nuestros servicios conforme a estos términos. No puede copiar, modificar, distribuir ni crear trabajos derivados de nuestro contenido sin autorización previa por escrito."
+      },
+      "liability": {
+        "title": "Limitación de Responsabilidad",
+        "content": "AutomateFlow proporciona sus servicios 'tal cual' y no garantiza que sean ininterrumpidos o libres de errores. En ninguna circunstancia seremos responsables por daños indirectos, incidentales, especiales o consecuentes resultantes del uso o imposibilidad de uso de nuestros servicios. Nuestra responsabilidad total no excederá el monto pagado por usted en los últimos 12 meses."
+      },
+      "termination": {
+        "title": "Terminación",
+        "content": "Puede cerrar su cuenta en cualquier momento a través de la configuración de la plataforma. AutomateFlow puede suspender o terminar su acceso inmediatamente, sin previo aviso, si viola estos términos o por cualquier motivo a nuestra discreción. Tras la terminación, su derecho a usar los servicios cesará inmediatamente, y podemos eliminar sus datos conforme a nuestra política de privacidad."
+      },
+      "changes": {
+        "title": "Cambios en los Términos",
+        "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios significativos serán comunicados por correo electrónico o mediante aviso en la plataforma con al menos 30 días de anticipación. El uso continuado de los servicios después de los cambios constituye aceptación de los nuevos términos. Recomendamos revisar periódicamente esta página para estar al tanto de cualquier actualización."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Si tiene preguntas sobre estos Términos de Servicio, contáctenos a través del correo electrónico contacto@automateflow.chat o mediante el chat de soporte disponible en nuestra plataforma. Nuestro equipo estará encantado de aclarar cualquier pregunta relacionada con nuestros servicios y políticas."
+      }
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: Enero de 2025",
+    "intro": "AutomateFlow está comprometida con proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, almacenamos y protegemos su información personal cuando utiliza nuestra plataforma de agentes de inteligencia artificial.",
+    "sections": {
+      "collection": {
+        "title": "Información que Recopilamos",
+        "content": "Recopilamos información que usted nos proporciona directamente, como nombre, correo electrónico, teléfono y datos de pago al crear su cuenta. También recopilamos automáticamente información técnica como dirección IP, tipo de navegador, páginas visitadas y horarios de acceso. Además, procesamos las conversaciones realizadas a través de los agentes de IA para mejorar nuestros servicios y proporcionar análisis al usuario."
+      },
+      "use": {
+        "title": "Cómo Usamos su Información",
+        "content": "Utilizamos su información para proporcionar y mantener nuestros servicios, procesar pagos y transacciones, enviar comunicaciones sobre su cuenta y actualizaciones de la plataforma, personalizar su experiencia y mejorar nuestros servicios, responder a solicitudes de soporte, cumplir con obligaciones legales y detectar y prevenir fraudes o actividades maliciosas."
+      },
+      "sharing": {
+        "title": "Compartición de Datos",
+        "content": "No vendemos su información personal a terceros. Podemos compartir datos con proveedores de servicios que nos ayudan en las operaciones (como procesadores de pago), cuando lo exija la ley u orden judicial, para proteger nuestros derechos legales o en caso de fusión o adquisición de la empresa. Todos los terceros con quienes compartimos datos están obligados a proteger su información."
+      },
+      "storage": {
+        "title": "Almacenamiento y Retención",
+        "content": "Sus datos se almacenan en servidores seguros ubicados en centros de datos certificados. Mantenemos su información durante el tiempo necesario para proporcionar nuestros servicios y cumplir con obligaciones legales. Después del cierre de la cuenta, sus datos serán retenidos por hasta 30 días para fines de respaldo y luego serán eliminados permanentemente, excepto cuando la retención sea requerida por ley."
+      },
+      "security": {
+        "title": "Seguridad de los Datos",
+        "content": "Implementamos medidas técnicas y organizativas robustas para proteger su información, incluyendo encriptación de datos en tránsito y en reposo, firewalls y sistemas de detección de intrusos, controles de acceso estrictos, monitoreo continuo de seguridad y auditorías regulares. Sin embargo, ningún sistema es 100% seguro, y no podemos garantizar seguridad absoluta."
+      },
+      "rights": {
+        "title": "Sus Derechos",
+        "content": "De acuerdo con las leyes de protección de datos aplicables, usted tiene derecho a acceder a sus datos personales, corregir información incorrecta o desactualizada, solicitar la eliminación de sus datos, revocar consentimientos previamente otorgados, solicitar portabilidad de datos y obtener información sobre el compartimiento de datos. Para ejercer estos derechos, contáctenos en privacidad@automateflow.chat."
+      },
+      "cookies": {
+        "title": "Cookies y Tecnologías Similares",
+        "content": "Utilizamos cookies y tecnologías similares para mejorar su experiencia, recordar sus preferencias, analizar el uso de la plataforma y personalizar contenido. Puede gestionar sus preferencias de cookies a través de la configuración de su navegador. Tenga en cuenta que deshabilitar ciertas cookies puede afectar la funcionalidad de la plataforma."
+      },
+      "children": {
+        "title": "Privacidad de Menores",
+        "content": "Nuestros servicios no están destinados a menores de 18 años. No recopilamos intencionalmente información personal de niños o adolescentes. Si nos enteramos de que hemos recopilado datos de un menor sin el consentimiento de los padres o tutores, tomaremos medidas para eliminar esa información lo más rápido posible."
+      },
+      "changes": {
+        "title": "Cambios en esta Política",
+        "content": "Podemos actualizar esta Política de Privacidad periódicamente para reflejar cambios en nuestras prácticas o por otros motivos operativos, legales o regulatorios. Le notificaremos sobre cambios significativos por correo electrónico o mediante aviso en la plataforma. Recomendamos revisar esta política regularmente para estar informado sobre cómo protegemos sus datos."
+      },
+      "contact": {
+        "title": "Contacto",
+        "content": "Si tiene preguntas o inquietudes sobre esta Política de Privacidad o sobre cómo tratamos sus datos, contacte a nuestro Oficial de Protección de Datos (DPO) a través del correo electrónico privacidad@automateflow.chat. Responderemos su solicitud dentro del plazo legal establecido."
+      }
+    }
   }
 }

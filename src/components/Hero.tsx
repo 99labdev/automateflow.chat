@@ -135,8 +135,8 @@ export default function Hero() {
         }
 
         .btn-white {
-          background: white;
-          color: var(--primary-color);
+          background: var(--surface-color);
+          color: var(--primary-dark);
           padding: 14px 32px;
           border-radius: var(--radius-lg);
           font-weight: 600;
@@ -196,7 +196,7 @@ export default function Hero() {
         }
 
         .chat-demo {
-          background: white;
+          background: var(--card-bg);
           border-radius: var(--radius-2xl);
           padding: 24px;
           box-shadow: var(--shadow-xl);
@@ -262,7 +262,7 @@ export default function Hero() {
         }
 
         .message.received {
-          background: #f3f4f6;
+          background: var(--secondary-color);
           color: var(--text-primary);
           margin-right: auto;
           border-bottom-left-radius: 4px;

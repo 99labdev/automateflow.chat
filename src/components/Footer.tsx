@@ -37,21 +37,17 @@ export default function Footer() {
         <div className="footer-bottom">
           <p className="copyright">{t('copyright')}</p>
           <div className="footer-legal">
-            <a href="#">{t('legal.terms')}</a>
-            <a href="#">{t('legal.privacy')}</a>
+            <Link href="/terms">{t('legal.terms')}</Link>
+            <Link href="/privacy">{t('legal.privacy')}</Link>
           </div>
         </div>
       </div>
 
       <style jsx>{`
         .footer {
-          background: white;
+          background: var(--bg-primary);
           border-top: 1px solid var(--border-color);
           padding: 48px 0 24px;
-        }
-
-        [data-theme="dark"] .footer {
-          background: var(--surface-color);
         }
 
         .footer-grid {

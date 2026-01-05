@@ -119,7 +119,7 @@ export default function Pricing() {
           left: 2px;
           width: 24px;
           height: 24px;
-          background: white;
+          background: var(--surface-color);
           border-radius: 50%;
           transition: transform var(--transition-normal);
           box-shadow: var(--shadow-sm);

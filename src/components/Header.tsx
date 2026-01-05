@@ -104,15 +104,11 @@ export default function Header() {
           left: 0;
           right: 0;
           z-index: 100;
-          background: rgba(255, 255, 255, 0.95);
+          background: var(--bg-primary);
           backdrop-filter: blur(10px);
           border-bottom: 1px solid var(--border-color);
           box-shadow: var(--shadow-sm);
           transition: all 0.3s ease;
-        }
-
-        [data-theme="dark"] .header {
-          background: rgba(31, 41, 55, 0.95);
         }
 
         .header-container {
