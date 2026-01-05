@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "agents": "Agents",
+    "howItWorks": "How It Works",
+    "plans": "Pricing",
+    "faq": "FAQ",
+    "login": "Login",
+    "startFree": "Start Free"
+  },
+  "hero": {
+    "title": "Transform your business with",
+    "titleHighlight": "customized AI Agents",
+    "subtitle": "Automate customer service, qualify leads and boost your sales 24/7 with artificial intelligence that never rests.",
+    "stats": {
+      "available": "Available 24/7",
+      "setup": "Setup in 5 min",
+      "unlimited": "Unlimited chats"
+    },
+    "cta": {
+      "trial": "7-Day Free Trial",
+      "howItWorks": "How It Works"
+    }
+  },
+  "whyChoose": {
+    "title": "Why choose AutomateFlow?",
+    "subtitle": "Discover how our AI agents can transform your business",
+    "cards": {
+      "revenue": {
+        "title": "Increase Revenue",
+        "description": "Our agents qualify leads and close sales automatically, increasing your conversion by up to 40%."
+      },
+      "experience": {
+        "title": "Premium Experience",
+        "description": "Offer instant and personalized service to every customer, 24 hours a day."
+      },
+      "roi": {
+        "title": "Guaranteed ROI",
+        "description": "Reduce operational costs by up to 60% while multiplying your service capacity."
+      },
+      "team": {
+        "title": "Empower Your Team",
+        "description": "Free your team for strategic tasks while AI handles operations."
+      }
+    }
+  },
+  "agents": {
+    "title": "Specialized Agents",
+    "subtitle": "Each agent is trained for a specific function, ensuring maximum efficiency",
+    "sales": {
+      "title": "Sales Agent",
+      "description": "Expert in conversion and closing",
+      "features": ["Lead qualification", "Product presentation", "Automated negotiation", "Smart follow-up"]
+    },
+    "support": {
+      "title": "Support Agent",
+      "description": "24/7 customer service",
+      "features": ["Query resolution", "Technical support", "Ticket management", "Knowledge base"]
+    },
+    "sdr": {
+      "title": "SDR Agent",
+      "description": "Lead prospecting and qualification",
+      "features": ["Automated outreach", "Meeting scheduling", "Prospect research", "Data enrichment"]
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Set up your AI agent in just 3 simple steps",
+    "steps": {
+      "step1": {
+        "title": "Choose Your Agent",
+        "description": "Select the agent type that best meets your business needs."
+      },
+      "step2": {
+        "title": "Customize",
+        "description": "Configure responses, tone of voice and integrations according to your brand."
+      },
+      "step3": {
+        "title": "Activate and Scale",
+        "description": "Connect to your WhatsApp or website and start serving instantly."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Plans & Pricing",
+    "subtitle": "Choose the ideal plan for your business",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "yearlyDiscount": "Save 20%",
+    "perMonth": "/month",
+    "cta": "Get Started",
+    "popular": "Most Popular",
+    "plans": {
+      "basic": {
+        "name": "Basic",
+        "price": "87",
+        "description": "Perfect to get started",
+        "features": ["1 AI Agent", "1,000 messages/month", "WhatsApp integration", "Email support", "Basic reports"]
+      },
+      "standard": {
+        "name": "Standard",
+        "price": "397",
+        "description": "For growing businesses",
+        "features": ["3 AI Agents", "10,000 messages/month", "WhatsApp + Web integration", "Priority support", "Advanced reports", "Integration API"]
+      },
+      "corporate": {
+        "name": "Corporate",
+        "price": "997",
+        "description": "For large operations",
+        "features": ["Unlimited agents", "Unlimited messages", "All integrations", "24/7 dedicated support", "Custom dashboard", "Team training", "Guaranteed SLA"]
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Get your questions about AutomateFlow answered",
+    "questions": {
+      "q1": {
+        "question": "How does the free trial work?",
+        "answer": "You have 7 days to test all platform features without commitment. No credit card required to start."
+      },
+      "q2": {
+        "question": "Can I cancel anytime?",
+        "answer": "Yes! You can cancel your subscription at any time without fines or additional fees."
+      },
+      "q3": {
+        "question": "Do the agents work in English?",
+        "answer": "Yes! Our agents are native in English, Portuguese and Spanish, with support for over 50 languages."
+      },
+      "q4": {
+        "question": "How do I integrate with WhatsApp?",
+        "answer": "Integration is simple and takes less than 5 minutes. Just scan a QR code and your agent will be ready."
+      },
+      "q5": {
+        "question": "Do I need technical knowledge?",
+        "answer": "No! Our platform was designed to be intuitive. Anyone can set up an agent in minutes."
+      },
+      "q6": {
+        "question": "What happens if I exceed the message limit?",
+        "answer": "You will be notified when you are close to the limit and can upgrade your plan at any time."
+      },
+      "q7": {
+        "question": "Is customer data secure?",
+        "answer": "Yes! We use end-to-end encryption and follow all data protection regulations."
+      },
+      "q8": {
+        "question": "Can I customize agent responses?",
+        "answer": "Absolutely! You have full control over tone of voice, default responses and agent behavior."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to transform your customer service?",
+    "subtitle": "Join thousands of companies that have already automated their business",
+    "button": "7-Day Free Trial",
+    "features": ["No credit card", "Cancel anytime", "Full support"]
+  },
+  "footer": {
+    "description": "Transforming businesses with artificial intelligence",
+    "product": {
+      "title": "Product",
+      "agents": "Agents",
+      "pricing": "Pricing",
+      "integrations": "Integrations"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "blog": "Blog",
+      "careers": "Careers"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "© 2025 AutomateFlow. All rights reserved."
+  }
+}

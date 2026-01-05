@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "agents": "Agentes",
+    "howItWorks": "Cómo Funciona",
+    "plans": "Planes",
+    "faq": "FAQ",
+    "login": "Iniciar Sesión",
+    "startFree": "Empezar Gratis"
+  },
+  "hero": {
+    "title": "Transforma tu negocio con",
+    "titleHighlight": "Agentes de IA personalizados",
+    "subtitle": "Automatiza la atención al cliente, califica leads y aumenta tus ventas 24/7 con inteligencia artificial que nunca descansa.",
+    "stats": {
+      "available": "Disponible 24/7",
+      "setup": "Configura en 5 min",
+      "unlimited": "Chats ilimitados"
+    },
+    "cta": {
+      "trial": "Prueba Gratis 7 Días",
+      "howItWorks": "Cómo Funciona"
+    }
+  },
+  "whyChoose": {
+    "title": "¿Por qué elegir AutomateFlow?",
+    "subtitle": "Descubre cómo nuestros agentes de IA pueden transformar tu negocio",
+    "cards": {
+      "revenue": {
+        "title": "Aumenta tus Ingresos",
+        "description": "Nuestros agentes califican leads y cierran ventas automáticamente, aumentando tu conversión hasta un 40%."
+      },
+      "experience": {
+        "title": "Experiencia Premium",
+        "description": "Ofrece atención instantánea y personalizada a cada cliente, las 24 horas del día."
+      },
+      "roi": {
+        "title": "ROI Garantizado",
+        "description": "Reduce costos operativos hasta un 60% mientras multiplicas tu capacidad de atención."
+      },
+      "team": {
+        "title": "Potencia tu Equipo",
+        "description": "Libera a tu equipo para tareas estratégicas mientras la IA maneja lo operativo."
+      }
+    }
+  },
+  "agents": {
+    "title": "Agentes Especializados",
+    "subtitle": "Cada agente está entrenado para una función específica, garantizando máxima eficiencia",
+    "sales": {
+      "title": "Agente de Ventas",
+      "description": "Experto en conversión y cierre",
+      "features": ["Calificación de leads", "Presentación de productos", "Negociación automatizada", "Seguimiento inteligente"]
+    },
+    "support": {
+      "title": "Agente de Soporte",
+      "description": "Atención al cliente 24/7",
+      "features": ["Resolución de dudas", "Soporte técnico", "Gestión de tickets", "Base de conocimiento"]
+    },
+    "sdr": {
+      "title": "Agente SDR",
+      "description": "Prospección y calificación de leads",
+      "features": ["Outreach automatizado", "Agendamiento de reuniones", "Investigación de prospectos", "Enriquecimiento de datos"]
+    }
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "subtitle": "Configura tu agente de IA en solo 3 simples pasos",
+    "steps": {
+      "step1": {
+        "title": "Elige tu Agente",
+        "description": "Selecciona el tipo de agente que mejor se adapte a las necesidades de tu negocio."
+      },
+      "step2": {
+        "title": "Personaliza",
+        "description": "Configura las respuestas, tono de voz e integraciones según tu marca."
+      },
+      "step3": {
+        "title": "Activa y Escala",
+        "description": "Conecta a tu WhatsApp o sitio web y comienza a atender instantáneamente."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Planes y Precios",
+    "subtitle": "Elige el plan ideal para tu negocio",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "yearlyDiscount": "Ahorra 20%",
+    "perMonth": "/mes",
+    "cta": "Empezar Ahora",
+    "popular": "Más Popular",
+    "plans": {
+      "basic": {
+        "name": "Basic",
+        "price": "87",
+        "description": "Perfecto para empezar",
+        "features": ["1 Agente de IA", "1.000 mensajes/mes", "Integración WhatsApp", "Soporte por email", "Informes básicos"]
+      },
+      "standard": {
+        "name": "Standard",
+        "price": "397",
+        "description": "Para negocios en crecimiento",
+        "features": ["3 Agentes de IA", "10.000 mensajes/mes", "Integración WhatsApp + Web", "Soporte prioritario", "Informes avanzados", "API de integración"]
+      },
+      "corporate": {
+        "name": "Corporate",
+        "price": "997",
+        "description": "Para grandes operaciones",
+        "features": ["Agentes ilimitados", "Mensajes ilimitados", "Todas las integraciones", "Soporte 24/7 dedicado", "Dashboard personalizado", "Capacitación del equipo", "SLA garantizado"]
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Resuelve tus dudas sobre AutomateFlow",
+    "questions": {
+      "q1": {
+        "question": "¿Cómo funciona el período de prueba gratuito?",
+        "answer": "Tienes 7 días para probar todas las funcionalidades de la plataforma sin compromiso. No se requiere tarjeta de crédito para empezar."
+      },
+      "q2": {
+        "question": "¿Puedo cancelar en cualquier momento?",
+        "answer": "¡Sí! Puedes cancelar tu suscripción en cualquier momento sin multas ni cargos adicionales."
+      },
+      "q3": {
+        "question": "¿Los agentes funcionan en español?",
+        "answer": "¡Sí! Nuestros agentes son nativos en español, inglés y portugués, con soporte para más de 50 idiomas."
+      },
+      "q4": {
+        "question": "¿Cómo integro con mi WhatsApp?",
+        "answer": "La integración es simple y toma menos de 5 minutos. Solo escanea un código QR y tu agente estará listo."
+      },
+      "q5": {
+        "question": "¿Necesito conocimiento técnico?",
+        "answer": "¡No! Nuestra plataforma fue diseñada para ser intuitiva. Cualquiera puede configurar un agente en minutos."
+      },
+      "q6": {
+        "question": "¿Qué pasa si excedo el límite de mensajes?",
+        "answer": "Serás notificado cuando estés cerca del límite y podrás actualizar tu plan en cualquier momento."
+      },
+      "q7": {
+        "question": "¿Los datos de los clientes están seguros?",
+        "answer": "¡Sí! Utilizamos encriptación de extremo a extremo y seguimos todas las regulaciones de protección de datos."
+      },
+      "q8": {
+        "question": "¿Puedo personalizar las respuestas del agente?",
+        "answer": "¡Absolutamente! Tienes control total sobre el tono de voz, respuestas predeterminadas y comportamiento del agente."
+      }
+    }
+  },
+  "cta": {
+    "title": "¿Listo para transformar tu atención al cliente?",
+    "subtitle": "Únete a miles de empresas que ya automatizaron su negocio",
+    "button": "Prueba Gratis 7 Días",
+    "features": ["Sin tarjeta de crédito", "Cancela cuando quieras", "Soporte completo"]
+  },
+  "footer": {
+    "description": "Transformando negocios con inteligencia artificial",
+    "product": {
+      "title": "Producto",
+      "agents": "Agentes",
+      "pricing": "Precios",
+      "integrations": "Integraciones"
+    },
+    "company": {
+      "title": "Empresa",
+      "about": "Sobre Nosotros",
+      "blog": "Blog",
+      "careers": "Carreras"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Términos de Servicio",
+      "privacy": "Política de Privacidad"
+    },
+    "copyright": "© 2025 AutomateFlow. Todos los derechos reservados."
+  }
+}
