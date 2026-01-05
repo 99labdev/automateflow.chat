@@ -19,6 +19,13 @@
     "cta": {
       "trial": "Prueba Gratis 7 Días",
       "howItWorks": "Cómo Funciona"
+    },
+    "chatDemo": {
+      "agentName": "Agente AutomateFlow",
+      "status": "En línea",
+      "greeting": "¡Hola! ¿Cómo puedo ayudarte hoy?",
+      "userMessage": "Quiero saber más sobre los planes",
+      "response": "¡Perfecto! Tenemos planes ideales para cada tipo de negocio. ¿Cuál es tu sector?"
     }
   },
   "whyChoose": {

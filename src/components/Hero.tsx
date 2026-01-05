@@ -47,21 +47,21 @@ export default function Hero() {
               <div className="chat-header">
                 <div className="chat-avatar"></div>
                 <div className="chat-info">
-                  <span className="chat-name">Agente AutomateFlow</span>
-                  <span className="chat-status">Online</span>
+                  <span className="chat-name">{t('chatDemo.agentName')}</span>
+                  <span className="chat-status">{t('chatDemo.status')}</span>
                 </div>
               </div>
               <div className="chat-messages">
                 <div className="message received">
-                  <p>Olá! Como posso ajudar você hoje?</p>
+                  <p>{t('chatDemo.greeting')}</p>
                   <span className="time">10:30</span>
                 </div>
                 <div className="message sent">
-                  <p>Quero saber mais sobre os planos</p>
+                  <p>{t('chatDemo.userMessage')}</p>
                   <span className="time">10:32</span>
                 </div>
                 <div className="message received">
-                  <p>Perfeito! Temos planos ideais para cada tipo de negócio. Qual é o seu segmento?</p>
+                  <p>{t('chatDemo.response')}</p>
                   <span className="time">10:32</span>
                 </div>
               </div>
