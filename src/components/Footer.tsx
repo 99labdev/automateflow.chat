@@ -14,6 +14,7 @@ export default function Footer() {
           <div className="footer-brand">
             <Link href="/" className="footer-logo">
               <img src="/logo.png" alt="AutomateFlow" className="logo-icon" width={56} height={56} />
+              <span className="logo-text">AutomateFlow</span>
             </Link>
             <p className="footer-description">{t('description')}</p>
           </div>
@@ -70,6 +71,15 @@ export default function Footer() {
         .footer-logo :global(.logo-icon) {
           width: 56px;
           height: 56px;
+        }
+
+        .logo-text {
+          color: var(--primary-color);
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 1;
+          display: flex;
+          align-items: center;
         }
 
         .footer-description {
