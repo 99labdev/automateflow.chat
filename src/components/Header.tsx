@@ -36,6 +36,18 @@ export default function Header() {
     { code: 'es', label: 'Español', flag: '🇪🇸' },
   ];
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  };
+
   return (
     <header className="header">
       <div className="container header-container">
@@ -45,10 +57,10 @@ export default function Header() {
         </Link>
 
         <nav className={`nav ${mobileMenuOpen ? 'nav-open' : ''}`}>
-          <a href="#agents" className="nav-link">{t('agents')}</a>
-          <a href="#how-it-works" className="nav-link">{t('howItWorks')}</a>
-          <a href="#pricing" className="nav-link">{t('plans')}</a>
-          <a href="#faq" className="nav-link">{t('faq')}</a>
+          <a href="#agents" className="nav-link" onClick={(e) => handleNavClick(e, 'agents')}>{t('agents')}</a>
+          <a href="#how-it-works" className="nav-link" onClick={(e) => handleNavClick(e, 'how-it-works')}>{t('howItWorks')}</a>
+          <a href="#pricing" className="nav-link" onClick={(e) => handleNavClick(e, 'pricing')}>{t('plans')}</a>
+          <a href="#faq" className="nav-link" onClick={(e) => handleNavClick(e, 'faq')}>{t('faq')}</a>
         </nav>
 
         <div className="header-actions">
@@ -246,15 +258,17 @@ export default function Header() {
             top: 76px;
             left: 0;
             right: 0;
-            bottom: 0;
+            height: calc(100vh - 76px);
             flex-direction: column;
             justify-content: flex-start;
+            align-items: flex-start;
             padding: 32px;
             gap: 24px;
             background: var(--bg-primary);
             border-top: 1px solid var(--border-color);
             transform: translateX(-100%);
             transition: transform var(--transition-normal);
+            overflow-y: auto;
           }
 
           .nav-open {
