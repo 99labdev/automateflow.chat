@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { useState, useEffect } from 'react';
-import { Menu, X, Moon, Sun, Globe, Bot } from 'lucide-react';
+import { Menu, X, Moon, Sun, Globe } from 'lucide-react';
 
 export default function Header() {
   const t = useTranslations('nav');
@@ -52,8 +52,7 @@ export default function Header() {
     <header className="header">
       <div className="container header-container">
         <Link href="/" className="logo">
-          <Bot className="logo-icon" size={28} />
-          <span className="logo-text">AutomateFlow</span>
+          <img src="/logo.png" alt="AutomateFlow" className="logo-icon" width={64} height={64} />
         </Link>
 
         <nav className={`nav ${mobileMenuOpen ? 'nav-open' : ''}`}>
@@ -140,11 +139,8 @@ export default function Header() {
         }
 
         .logo :global(.logo-icon) {
-          color: var(--primary-color);
-        }
-
-        .logo-text {
-          color: var(--primary-color);
+          width: 64px;
+          height: 64px;
         }
 
         .nav {

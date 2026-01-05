@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { Linkedin, Instagram, Bot } from 'lucide-react';
+import { Linkedin, Instagram } from 'lucide-react';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -13,8 +13,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="footer-logo">
-              <Bot size={24} className="logo-icon" />
-              <span className="logo-text">AutomateFlow</span>
+              <img src="/logo.png" alt="AutomateFlow" className="logo-icon" width={56} height={56} />
             </Link>
             <p className="footer-description">{t('description')}</p>
           </div>
@@ -69,11 +68,8 @@ export default function Footer() {
         }
 
         .footer-logo :global(.logo-icon) {
-          color: var(--primary-color);
-        }
-
-        .logo-text {
-          color: var(--primary-color);
+          width: 56px;
+          height: 56px;
         }
 
         .footer-description {
