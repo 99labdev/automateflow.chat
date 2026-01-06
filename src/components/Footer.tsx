@@ -25,7 +25,7 @@ export default function Footer() {
               <a href="https://www.linkedin.com/company/automateflow" target="_blank" rel="noopener noreferrer" className="social-link">
                 <Linkedin size={20} />
               </a>
-              <a href="https://www.instagram.com/automateflow" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.instagram.com/automateflow.chat" target="_blank" rel="noopener noreferrer" className="social-link">
                 <Instagram size={20} />
               </a>
             </div>
