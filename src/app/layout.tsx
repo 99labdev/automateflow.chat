@@ -1,4 +1,5 @@
 import './globals.css';
+import WebChat from '@/components/WebChat';
 
 export const metadata = {
   title: 'AutomateFlow - Agentes de IA para seu Negócio',
@@ -20,7 +21,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <WebChat />
+      </body>
     </html>
   );
 }
