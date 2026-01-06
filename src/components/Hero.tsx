@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Bot } from 'lucide-react';
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -45,7 +45,9 @@ export default function Hero() {
           <div className="hero-visual">
             <div className="chat-demo">
               <div className="chat-header">
-                <div className="chat-avatar"></div>
+                <div className="chat-avatar">
+                  <Bot size={24} color="white" />
+                </div>
                 <div className="chat-info">
                   <span className="chat-name">{t('chatDemo.agentName')}</span>
                   <span className="chat-status">{t('chatDemo.status')}</span>
@@ -230,6 +232,9 @@ export default function Hero() {
           background: var(--gradient-primary);
           border-radius: 50%;
           margin-right: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .chat-info {
