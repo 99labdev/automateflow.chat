@@ -36,7 +36,6 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="copyright">{t('copyright')}</p>
-          <p className="legal-name">Hudson Brendon Silva</p>
           <div className="footer-legal">
             <Link href="/terms">{t('legal.terms')}</Link>
             <Link href="/privacy">{t('legal.privacy')}</Link>
