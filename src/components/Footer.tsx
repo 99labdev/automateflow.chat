@@ -35,7 +35,11 @@ export default function Footer() {
         <hr className="footer-divider" />
 
         <div className="footer-bottom">
-          <p className="copyright">{t('copyright')}</p>
+          <div className="footer-bottom-left">
+            <p className="copyright">{t('copyright')}</p>
+            <p className="legal-name">{t('companyName')}</p>
+            <p className="legal-name">{t('cnpj')}</p>
+          </div>
           <div className="footer-legal">
             <Link href="/terms">{t('legal.terms')}</Link>
             <Link href="/privacy">{t('legal.privacy')}</Link>
@@ -130,6 +134,12 @@ export default function Footer() {
           align-items: center;
         }
 
+        .footer-bottom-left {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+
         .copyright {
           color: var(--text-secondary);
           font-size: 0.875rem;
@@ -137,7 +147,7 @@ export default function Footer() {
 
         .legal-name {
           color: var(--text-secondary);
-          font-size: 0.875rem;
+          font-size: 0.75rem;
         }
 
         .footer-legal {
@@ -165,6 +175,10 @@ export default function Footer() {
             flex-direction: column;
             gap: 16px;
             text-align: center;
+          }
+
+          .footer-bottom-left {
+            align-items: center;
           }
 
           .footer-legal {
