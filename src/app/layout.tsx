@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="pt" data-theme="light">
       <head>
         <meta name="facebook-domain-verification" content="h1zg28p5tr050xxpepso1aa964nsww" />
-        <meta name="google-site-verification" content="tDZBwT2zxzguJNxFeKOeiiXV1xtWxHVG1FYTq-AREzg" />
+        <meta name="google-site-verification" content="Zryea_OBU9ZWlviBTX5b95BgpeVfxTg1byM2fJhhPoA" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
