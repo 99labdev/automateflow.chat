@@ -250,7 +250,7 @@ export default function Hero() {
 
         .chat-status {
           font-size: 0.8rem;
-          color: #22c55e;
+          color: #8b5cf6;
         }
 
         .chat-messages {
