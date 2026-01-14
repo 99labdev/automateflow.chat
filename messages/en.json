@@ -22,10 +22,59 @@
     },
     "chatDemo": {
       "agentName": "AutomateFlow Agent",
-      "status": "Online",
-      "greeting": "Hello! How can I help you today?",
-      "userMessage": "I want to know more about the plans",
-      "response": "Perfect! We have ideal plans for every type of business. What is your industry?"
+      "status": "Online"
+    },
+    "conversations": {
+      "c1": {
+        "greeting": "Hello! How can I help you today?",
+        "userMessage": "I want to know more about the plans",
+        "response": "Perfect! We have ideal plans for every type of business. What is your industry?"
+      },
+      "c2": {
+        "greeting": "Welcome! I'm AutomateFlow's virtual assistant.",
+        "userMessage": "How does WhatsApp integration work?",
+        "response": "Super easy! Just scan a QR code and your agent will be ready in less than 5 minutes."
+      },
+      "c3": {
+        "greeting": "Hi! I'm here to help your business grow.",
+        "userMessage": "Do you offer a free trial?",
+        "response": "Yes! We offer a 7-day free trial with all features. No credit card required!"
+      },
+      "c4": {
+        "greeting": "Hello! Ready to automate your customer service?",
+        "userMessage": "Does the agent work 24 hours?",
+        "response": "Absolutely! Our agents work 24/7, never take vacations, and respond instantly."
+      },
+      "c5": {
+        "greeting": "Hi! How can I transform your business today?",
+        "userMessage": "Can I customize the agent's responses?",
+        "response": "Of course! You have full control over tone of voice, responses, and agent behavior."
+      },
+      "c6": {
+        "greeting": "Welcome! Let's revolutionize your customer service?",
+        "userMessage": "How long does it take to set up?",
+        "response": "In just 5 minutes your agent will be up and running! Our platform is super intuitive."
+      },
+      "c7": {
+        "greeting": "Hello! Your success is our priority.",
+        "userMessage": "Do you have technical support?",
+        "response": "Yes! We offer email, chat support, and even dedicated 24/7 support on the Corporate plan."
+      },
+      "c8": {
+        "greeting": "Hi! Ready to boost your sales?",
+        "userMessage": "Can the agent qualify leads?",
+        "response": "Yes! Our specialized SDR agent automatically qualifies leads and schedules meetings."
+      },
+      "c9": {
+        "greeting": "Welcome! How can I help your business?",
+        "userMessage": "Is customer data secure?",
+        "response": "Absolutely! We use end-to-end encryption and comply with all data protection regulations."
+      },
+      "c10": {
+        "greeting": "Hello! Let's scale your customer service together?",
+        "userMessage": "Can I cancel anytime?",
+        "response": "Sure! You can cancel whenever you want, with no fines or additional fees."
+      }
     }
   },
   "whyChoose": {

@@ -22,10 +22,59 @@
     },
     "chatDemo": {
       "agentName": "Agente AutomateFlow",
-      "status": "Online",
-      "greeting": "Olá! Como posso ajudar você hoje?",
-      "userMessage": "Quero saber mais sobre os planos",
-      "response": "Perfeito! Temos planos ideais para cada tipo de negócio. Qual é o seu segmento?"
+      "status": "Online"
+    },
+    "conversations": {
+      "c1": {
+        "greeting": "Olá! Como posso ajudar você hoje?",
+        "userMessage": "Quero saber mais sobre os planos",
+        "response": "Perfeito! Temos planos ideais para cada tipo de negócio. Qual é o seu segmento?"
+      },
+      "c2": {
+        "greeting": "Bem-vindo! Sou o assistente virtual da AutomateFlow.",
+        "userMessage": "Como funciona a integração com WhatsApp?",
+        "response": "Super simples! Basta escanear um QR Code e seu agente estará pronto em menos de 5 minutos."
+      },
+      "c3": {
+        "greeting": "Oi! Estou aqui para ajudar sua empresa a crescer.",
+        "userMessage": "Vocês oferecem teste grátis?",
+        "response": "Sim! Oferecemos 7 dias de teste gratuito com todas as funcionalidades. Sem cartão de crédito!"
+      },
+      "c4": {
+        "greeting": "Olá! Pronto para automatizar seu atendimento?",
+        "userMessage": "O agente funciona 24 horas?",
+        "response": "Absolutamente! Nossos agentes trabalham 24/7, nunca tiram férias e respondem instantaneamente."
+      },
+      "c5": {
+        "greeting": "Oi! Como posso transformar seu negócio hoje?",
+        "userMessage": "Posso personalizar as respostas do agente?",
+        "response": "Com certeza! Você tem controle total sobre o tom de voz, respostas e comportamento do agente."
+      },
+      "c6": {
+        "greeting": "Bem-vindo! Vamos revolucionar seu atendimento?",
+        "userMessage": "Quanto tempo leva para configurar?",
+        "response": "Em apenas 5 minutos seu agente estará funcionando! Nossa plataforma é super intuitiva."
+      },
+      "c7": {
+        "greeting": "Olá! Seu sucesso é nossa prioridade.",
+        "userMessage": "Vocês têm suporte técnico?",
+        "response": "Sim! Oferecemos suporte por email, chat e até dedicado 24/7 no plano Corporate."
+      },
+      "c8": {
+        "greeting": "Oi! Pronto para aumentar suas vendas?",
+        "userMessage": "O agente pode qualificar leads?",
+        "response": "Sim! Nosso agente SDR especializado qualifica leads automaticamente e agenda reuniões."
+      },
+      "c9": {
+        "greeting": "Bem-vindo! Como posso ajudar seu negócio?",
+        "userMessage": "Os dados dos clientes ficam seguros?",
+        "response": "Totalmente! Usamos criptografia de ponta e seguimos todas as normas da LGPD."
+      },
+      "c10": {
+        "greeting": "Olá! Vamos escalar seu atendimento juntos?",
+        "userMessage": "Posso cancelar a qualquer momento?",
+        "response": "Claro! Você pode cancelar quando quiser, sem multas ou taxas adicionais."
+      }
     }
   },
   "whyChoose": {

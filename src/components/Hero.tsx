@@ -2,9 +2,28 @@
 
 import { useTranslations } from 'next-intl';
 import { ArrowRight, Bot } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
   const t = useTranslations('hero');
+  const [currentConversation, setCurrentConversation] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const totalConversations = 10;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentConversation((prev) => (prev + 1) % totalConversations);
+        setIsAnimating(false);
+      }, 500);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const getConversationKey = (index: number) => `conversations.c${index + 1}`;
 
   return (
     <section className="hero-section">
@@ -50,22 +69,30 @@ export default function Hero() {
                 </div>
                 <div className="chat-info">
                   <span className="chat-name">{t('chatDemo.agentName')}</span>
-                  <span className="chat-status">{t('chatDemo.status')}</span>
+                  <span className="chat-status">
+                    <span className="status-dot"></span>
+                    {t('chatDemo.status')}
+                  </span>
                 </div>
               </div>
-              <div className="chat-messages">
-                <div className="message received">
-                  <p>{t('chatDemo.greeting')}</p>
+              <div className={`chat-messages ${isAnimating ? 'fade-out' : 'fade-in'}`}>
+                <div className="message received animate-message">
+                  <p>{t(`${getConversationKey(currentConversation)}.greeting`)}</p>
                   <span className="time">10:30</span>
                 </div>
-                <div className="message sent">
-                  <p>{t('chatDemo.userMessage')}</p>
+                <div className="message sent animate-message delay-1">
+                  <p>{t(`${getConversationKey(currentConversation)}.userMessage`)}</p>
                   <span className="time">10:32</span>
                 </div>
-                <div className="message received">
-                  <p>{t('chatDemo.response')}</p>
+                <div className="message received animate-message delay-2">
+                  <p>{t(`${getConversationKey(currentConversation)}.response`)}</p>
                   <span className="time">10:32</span>
                 </div>
+              </div>
+              <div className="typing-indicator">
+                <span className="typing-dot"></span>
+                <span className="typing-dot"></span>
+                <span className="typing-dot"></span>
               </div>
             </div>
           </div>
@@ -251,12 +278,46 @@ export default function Hero() {
         .chat-status {
           font-size: 0.8rem;
           color: #8b5cf6;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .status-dot {
+          width: 8px;
+          height: 8px;
+          background: #8b5cf6;
+          border-radius: 50%;
+          animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+          0%, 100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+          50% {
+            opacity: 0.5;
+            transform: scale(0.8);
+          }
         }
 
         .chat-messages {
           display: flex;
           flex-direction: column;
           gap: 12px;
+          min-height: 180px;
+          transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .chat-messages.fade-out {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+
+        .chat-messages.fade-in {
+          opacity: 1;
+          transform: translateY(0);
         }
 
         .message {
@@ -264,6 +325,73 @@ export default function Hero() {
           border-radius: 18px;
           max-width: 85%;
           position: relative;
+        }
+
+        .animate-message {
+          animation: slideUp 0.6s ease-out forwards;
+          opacity: 0;
+        }
+
+        .animate-message.delay-1 {
+          animation-delay: 0.3s;
+        }
+
+        .animate-message.delay-2 {
+          animation-delay: 0.6s;
+        }
+
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .typing-indicator {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          padding: 12px 16px;
+          background: var(--secondary-color);
+          border-radius: 18px;
+          border-bottom-left-radius: 4px;
+          width: fit-content;
+          margin-top: 8px;
+        }
+
+        .typing-dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #8b5cf6;
+          animation: typingBounce 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(1) {
+          animation-delay: 0s;
+        }
+
+        .typing-dot:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+          animation-delay: 0.4s;
+        }
+
+        @keyframes typingBounce {
+          0%, 60%, 100% {
+            transform: translateY(0);
+            opacity: 0.4;
+          }
+          30% {
+            transform: translateY(-8px);
+            opacity: 1;
+          }
         }
 
         .message.received {
