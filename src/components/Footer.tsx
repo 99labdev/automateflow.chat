@@ -46,6 +46,13 @@ export default function Footer() {
             <Link href="/privacy">{t('legal.privacy')}</Link>
           </div>
         </div>
+
+        <div className="developed-by">
+          <span>Desenvolvido por</span>
+          <a href="https://99lab.dev/" target="_blank" rel="noopener noreferrer" className="developer-link">
+            <img src="/99lab-logo.webp" alt="99lab.dev" className="developer-logo" />
+          </a>
+        </div>
       </div>
 
       <style jsx>{`
@@ -155,6 +162,36 @@ export default function Footer() {
           color: var(--primary-color);
         }
 
+        .developed-by {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          margin-top: 24px;
+          padding-top: 24px;
+          border-top: 1px solid var(--border-color);
+        }
+
+        .developed-by span {
+          color: var(--text-secondary);
+          font-size: 0.875rem;
+        }
+
+        .developer-link {
+          display: flex;
+          align-items: center;
+          transition: opacity var(--transition-fast);
+        }
+
+        .developer-link:hover {
+          opacity: 0.8;
+        }
+
+        .developer-logo {
+          height: 32px;
+          width: auto;
+        }
+
         @media (max-width: 768px) {
           .footer-grid {
             flex-direction: column;
@@ -169,6 +206,11 @@ export default function Footer() {
 
           .footer-legal {
             justify-content: center;
+          }
+
+          .developed-by {
+            flex-direction: column;
+            gap: 8px;
           }
         }
       `}</style>
