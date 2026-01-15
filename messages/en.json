@@ -26,54 +26,54 @@
     },
     "conversations": {
       "c1": {
-        "greeting": "Hello! How can I help you today?",
-        "userMessage": "I want to know more about the plans",
-        "response": "Perfect! We have ideal plans for every type of business. What is your industry?"
+        "greeting": "Hello! Integrate all your channels in one place!",
+        "userMessage": "What support channels do you offer?",
+        "response": "We have Official WhatsApp API, unofficial WhatsApp, Instagram DM, Webchat and more! All centralized."
       },
       "c2": {
-        "greeting": "Welcome! I'm AutomateFlow's virtual assistant.",
-        "userMessage": "How does WhatsApp integration work?",
-        "response": "Super easy! Just scan a QR code and your agent will be ready in less than 5 minutes."
+        "greeting": "Welcome! Connect with the best AIs on the market.",
+        "userMessage": "Which artificial intelligences can I use?",
+        "response": "We support OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek and other cutting-edge AIs!"
       },
       "c3": {
-        "greeting": "Hi! I'm here to help your business grow.",
-        "userMessage": "Do you offer a free trial?",
-        "response": "Yes! We offer a 7-day free trial with all features. No credit card required!"
+        "greeting": "Hi! Automate your Instagram intelligently!",
+        "userMessage": "Do you have Instagram automation?",
+        "response": "Yes! Create automations like 'reply I WANT and we send the link automatically'. Perfect for launches!"
       },
       "c4": {
-        "greeting": "Hello! Ready to automate your customer service?",
-        "userMessage": "Does the agent work 24 hours?",
-        "response": "Absolutely! Our agents work 24/7, never take vacations, and respond instantly."
+        "greeting": "Hello! Complete CRM for your sales team.",
+        "userMessage": "Does the platform have lead management?",
+        "response": "We have complete CRM! Lead management, tasks, deals, sales funnel and much more integrated."
       },
       "c5": {
-        "greeting": "Hi! How can I transform your business today?",
-        "userMessage": "Can I customize the agent's responses?",
-        "response": "Of course! You have full control over tone of voice, responses, and agent behavior."
+        "greeting": "Hi! Official or unofficial WhatsApp? You choose!",
+        "userMessage": "What's the difference with official WhatsApp API?",
+        "response": "Official API has green badge and more stability. We also offer unofficial API for those who prefer flexibility!"
       },
       "c6": {
-        "greeting": "Welcome! Let's revolutionize your customer service?",
-        "userMessage": "How long does it take to set up?",
-        "response": "In just 5 minutes your agent will be up and running! Our platform is super intuitive."
+        "greeting": "Welcome! Centralize all your support.",
+        "userMessage": "Can I handle WhatsApp and Instagram together?",
+        "response": "Yes! WhatsApp, Instagram DM and Webchat in a single screen. Never miss a message again!"
       },
       "c7": {
-        "greeting": "Hello! Your success is our priority.",
-        "userMessage": "Do you have technical support?",
-        "response": "Yes! We offer email, chat support, and even dedicated 24/7 support on the Corporate plan."
+        "greeting": "Hello! Manage your deals intelligently.",
+        "userMessage": "How does your CRM work?",
+        "response": "Complete CRM with kanban deals board, task management, conversation history and smart automations!"
       },
       "c8": {
-        "greeting": "Hi! Ready to boost your sales?",
-        "userMessage": "Can the agent qualify leads?",
-        "response": "Yes! Our specialized SDR agent automatically qualifies leads and schedules meetings."
+        "greeting": "Hi! Boost your Instagram with automations.",
+        "userMessage": "How do I automate Instagram comments?",
+        "response": "Set up triggers like 'I WANT' or 'TELL ME MORE' and send links automatically via DM!"
       },
       "c9": {
-        "greeting": "Welcome! How can I help your business?",
-        "userMessage": "Is customer data secure?",
-        "response": "Absolutely! We use end-to-end encryption and comply with all data protection regulations."
+        "greeting": "Welcome! Cutting-edge AI for your business.",
+        "userMessage": "Can I switch AI whenever I want?",
+        "response": "Of course! Switch between ChatGPT, Claude, Llama, Mistral or DeepSeek anytime. You choose the best!"
       },
       "c10": {
-        "greeting": "Hello! Let's scale your customer service together?",
-        "userMessage": "Can I cancel anytime?",
-        "response": "Sure! You can cancel whenever you want, with no fines or additional fees."
+        "greeting": "Hello! Sales on autopilot!",
+        "userMessage": "Does the CRM integrate with conversations?",
+        "response": "Totally! Every conversation becomes a lead in CRM, with complete history and follow-up automations."
       }
     }
   },
