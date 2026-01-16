@@ -81,23 +81,19 @@
   },
   "whyChoose": {
     "title": "¿Por qué elegir AutomateFlow?",
-    "subtitle": "Plataforma completa con multicanales, IAs de punta y CRM integrado",
+    "subtitle": "Agentes inteligentes, automatizaciones poderosas y CRM completo para tu negocio",
     "cards": {
-      "revenue": {
-        "title": "Multicanales Integrados",
-        "description": "WhatsApp API Oficial, WhatsApp no oficial, Instagram DM y Webchat. Todos los canales en una sola plataforma."
-      },
-      "experience": {
-        "title": "IAs de Última Generación",
-        "description": "Elige entre OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek y otras IAs del mercado."
-      },
-      "roi": {
-        "title": "CRM Completo",
-        "description": "Gestión de leads, tareas y negociaciones en un solo lugar. Kanban de ventas e historial completo de conversaciones."
+      "agents": {
+        "title": "Agentes de Atención",
+        "description": "Agentes de IA que atienden a tus clientes 24/7 en WhatsApp, Instagram y Webchat. Respuestas instantáneas y personalizadas."
       },
       "team": {
         "title": "Automatizaciones Inteligentes",
         "description": "Crea disparadores en Instagram como 'responde YO QUIERO' y envía links automáticamente. ¡Perfecto para lanzamientos!"
+      },
+      "roi": {
+        "title": "CRM Completo",
+        "description": "Gestión de leads, tareas y negociaciones en un solo lugar. Kanban de ventas e historial completo de conversaciones."
       }
     }
   },
