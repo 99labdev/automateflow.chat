@@ -6,13 +6,18 @@ import { Check, Coins } from 'lucide-react';
 
 export default function Pricing() {
   const t = useTranslations('pricing');
-  const [isYearly, setIsYearly] = useState(false);
+  const [isYearly, setIsYearly] = useState(true);
 
   const plans = ['basic', 'standard', 'corporate'];
 
   const getPrice = (basePrice: string) => {
     const price = parseInt(basePrice);
-    return isYearly ? Math.round(price * 0.8) : price;
+    return isYearly ? Math.round(price * 0.9) : price;
+  };
+
+  const getYearlyTotal = (basePrice: string) => {
+    const price = parseInt(basePrice);
+    return Math.round(price * 0.9 * 12);
   };
 
   return (
@@ -49,13 +54,16 @@ export default function Pricing() {
                 <div className="pricing-price">
                   <span className="currency">R$</span>
                   <span className="amount">{getPrice(t(`plans.${plan}.price`))}</span>
-                  <span className="period">{t('perMonth')}</span>
+                  <span className="period">/{isYearly ? 'mês' : 'mensal'}</span>
                 </div>
+                {isYearly && (
+                  <p className="yearly-total">R$ {getYearlyTotal(t(`plans.${plan}.price`))} /anual</p>
+                )}
                 <p className="pricing-description">{t(`plans.${plan}.description`)}</p>
               </div>
               <div className="pricing-credits">
                 <Coins size={18} />
-                <strong>{t(`plans.${plan}.credits`)}</strong> créditos por mês
+                <strong>{t(`plans.${plan}.credits`)}</strong> créditos por {isYearly ? 'anual' : 'mensal'}
               </div>
               <ul className="pricing-features">
                 {(t.raw(`plans.${plan}.features`) as string[]).map((feature: string, i: number) => (
@@ -216,6 +224,12 @@ export default function Pricing() {
         .period {
           font-size: 1rem;
           color: var(--text-secondary);
+        }
+
+        .yearly-total {
+          font-size: 0.9rem;
+          color: var(--text-muted);
+          margin-bottom: 8px;
         }
 
         .pricing-description {

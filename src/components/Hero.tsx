@@ -8,8 +8,51 @@ export default function Hero() {
   const t = useTranslations('hero');
   const [currentConversation, setCurrentConversation] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  const typewriterTexts = [
+    t('titleHighlight'),
+    t('titleHighlight2'),
+  ];
+
+  const subtitles = [
+    t('subtitle'),
+    t('subtitle2'),
+  ];
 
   const totalConversations = 10;
+
+  // Typewriter effect
+  useEffect(() => {
+    const currentFullText = typewriterTexts[currentTextIndex];
+    const typingSpeed = isDeleting ? 50 : 150;
+    const pauseDelay = 2000;
+
+    if (!isDeleting && displayedText === currentFullText) {
+      // Pause before deleting
+      const timeout = setTimeout(() => setIsDeleting(true), pauseDelay);
+      return () => clearTimeout(timeout);
+    }
+
+    if (isDeleting && displayedText === '') {
+      // Move to next text
+      setIsDeleting(false);
+      setCurrentTextIndex((prev) => (prev + 1) % typewriterTexts.length);
+      return;
+    }
+
+    const timeout = setTimeout(() => {
+      if (isDeleting) {
+        setDisplayedText(currentFullText.substring(0, displayedText.length - 1));
+      } else {
+        setDisplayedText(currentFullText.substring(0, displayedText.length + 1));
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayedText, isDeleting, currentTextIndex, typewriterTexts]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -31,9 +74,15 @@ export default function Hero() {
         <div className="hero-grid">
           <div className="hero-content">
             <h1 className="hero-title">
-              {t('title')} <span className="text-highlight">{t('titleHighlight')}</span>
+              {t('title')}{' '}
+              <span className="text-highlight-wrapper">
+                <span className="text-highlight-placeholder" aria-hidden="true">
+                  {typewriterTexts.reduce((a, b) => a.length > b.length ? a : b)}
+                </span>
+                <span className="text-highlight">{displayedText}<span className="cursor">|</span></span>
+              </span>
             </h1>
-            <p className="hero-subtitle">{t('subtitle')}</p>
+            <p key={currentTextIndex} className="hero-subtitle animate-subtitle">{subtitles[currentTextIndex]}</p>
 
             <div className="hero-buttons">
               <a href="https://app.automateflow.chat/accounts/signup/" className="btn btn-white">
@@ -145,9 +194,31 @@ export default function Hero() {
           color: white;
         }
 
+        .text-highlight-wrapper {
+          position: relative;
+          display: inline;
+        }
+
+        .text-highlight-placeholder {
+          visibility: hidden;
+        }
+
         .text-highlight {
+          position: absolute;
+          left: 0;
+          top: 0;
           color: white;
           opacity: 0.9;
+        }
+
+        .cursor {
+          animation: blink 1s infinite;
+          font-weight: 400;
+        }
+
+        @keyframes blink {
+          0%, 50% { opacity: 1; }
+          51%, 100% { opacity: 0; }
         }
 
         .hero-subtitle {
@@ -155,6 +226,21 @@ export default function Hero() {
           opacity: 0.9;
           margin-bottom: 32px;
           line-height: 1.7;
+        }
+
+        .animate-subtitle {
+          animation: slideUpSubtitle 0.5s ease-out;
+        }
+
+        @keyframes slideUpSubtitle {
+          from {
+            opacity: 0;
+            transform: translateY(15px);
+          }
+          to {
+            opacity: 0.9;
+            transform: translateY(0);
+          }
         }
 
         .hero-buttons {

@@ -1,7 +1,6 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import WhyChoose from '@/components/WhyChoose';
-import Agents from '@/components/Agents';
 import HowItWorks from '@/components/HowItWorks';
 import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
@@ -14,7 +13,6 @@ export default function Home() {
       <Header />
       <Hero />
       <WhyChoose />
-      <Agents />
       <HowItWorks />
       <Pricing />
       <FAQ />

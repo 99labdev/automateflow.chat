@@ -10,7 +10,9 @@
   "hero": {
     "title": "Transforme seu negócio com",
     "titleHighlight": "Agentes de IA personalizados",
+    "titleHighlight2": "Automações inteligentes",
     "subtitle": "Automatize atendimentos, qualifique leads e aumente suas vendas 24/7 com inteligência artificial que nunca descansa.",
+    "subtitle2": "Crie fluxos automatizados para WhatsApp, Instagram e muito mais. Seus clientes recebem respostas instantâneas enquanto você foca no que importa.",
     "stats": {
       "available": "Disponível 24/7",
       "setup": "Configure em 5 min",
@@ -79,43 +81,24 @@
   },
   "whyChoose": {
     "title": "Por que escolher a AutomateFlow?",
-    "subtitle": "Descubra como nossos agentes de IA podem transformar seu negócio",
+    "subtitle": "Plataforma completa com multicanais, IAs de ponta e CRM integrado",
     "cards": {
       "revenue": {
-        "title": "Aumente sua Receita",
-        "description": "Nossos agentes qualificam leads e fecham vendas automaticamente, aumentando sua conversão em até 40%."
+        "title": "Multicanais Integrados",
+        "description": "WhatsApp API Oficial, WhatsApp não oficial, Instagram DM e Webchat. Todos os canais em uma única plataforma."
       },
       "experience": {
-        "title": "Experiência Premium",
-        "description": "Ofereça atendimento instantâneo e personalizado para cada cliente, 24 horas por dia."
+        "title": "IAs de Última Geração",
+        "description": "Escolha entre OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek e outras IAs do mercado."
       },
       "roi": {
-        "title": "ROI Garantido",
-        "description": "Reduza custos operacionais em até 60% enquanto multiplica sua capacidade de atendimento."
+        "title": "CRM Completo",
+        "description": "Gestão de leads, tasks e negociações em um só lugar. Kanban de vendas e histórico completo de conversas."
       },
       "team": {
-        "title": "Potencialize sua Equipe",
-        "description": "Libere seu time para tarefas estratégicas enquanto a IA cuida do operacional."
+        "title": "Automações Inteligentes",
+        "description": "Crie gatilhos no Instagram como 'responda EU QUERO' e envie links automaticamente. Perfeito para lançamentos!"
       }
-    }
-  },
-  "agents": {
-    "title": "Agentes Especializados",
-    "subtitle": "Cada agente é treinado para uma função específica, garantindo máxima eficiência",
-    "sales": {
-      "title": "Agente de Vendas",
-      "description": "Especialista em conversão e fechamento",
-      "features": ["Qualificação de leads", "Apresentação de produtos", "Negociação automatizada", "Follow-up inteligente"]
-    },
-    "support": {
-      "title": "Agente de Suporte",
-      "description": "Atendimento ao cliente 24/7",
-      "features": ["Resolução de dúvidas", "Suporte técnico", "Gestão de tickets", "Base de conhecimento"]
-    },
-    "sdr": {
-      "title": "Agente SDR",
-      "description": "Prospecção e qualificação de leads",
-      "features": ["Outreach automatizado", "Agendamento de reuniões", "Pesquisa de prospects", "Enriquecimento de dados"]
     }
   },
   "howItWorks": {
@@ -141,31 +124,31 @@
     "subtitle": "Escolha o plano ideal para o seu negócio",
     "monthly": "Mensal",
     "yearly": "Anual",
-    "yearlyDiscount": "Economize 20%",
+    "yearlyDiscount": "Economize 10%",
     "perMonth": "/mês",
     "cta": "Começar Agora",
     "popular": "Mais Popular",
     "plans": {
       "basic": {
-        "name": "Basic",
+        "name": "Básico",
         "price": "87",
-        "credits": "1.000",
-        "description": "Perfeito para começar",
-        "features": ["1 Agente de IA", "1.000 mensagens/mês", "Integração WhatsApp", "Suporte por email", "Relatórios básicos"]
+        "credits": "2500",
+        "description": "Perfeito para pequenas equipes que estão começando",
+        "features": ["5 agentes", "Widget para sites", "Intenções avançadas", "Acesso completo à API"]
       },
       "standard": {
-        "name": "Standard",
+        "name": "Padrão",
         "price": "397",
-        "credits": "10.000",
-        "description": "Para negócios em crescimento",
-        "features": ["3 Agentes de IA", "10.000 mensagens/mês", "Integração WhatsApp + Web", "Suporte prioritário", "Relatórios avançados", "API de integração"]
+        "credits": "11500",
+        "description": "Plano mais popular para equipes em crescimento",
+        "features": ["20 agentes", "Widget para sites", "Intenções avançadas", "Acesso completo à API"]
       },
       "corporate": {
-        "name": "Corporate",
+        "name": "Corporativo",
         "price": "997",
-        "credits": "Ilimitados",
-        "description": "Para grandes operações",
-        "features": ["Agentes ilimitados", "Mensagens ilimitadas", "Todas as integrações", "Suporte 24/7 dedicado", "Dashboard personalizado", "Treinamento da equipe", "SLA garantido"]
+        "credits": "30000",
+        "description": "Solução de nível empresarial para grandes organizações",
+        "features": ["50 agentes", "Widget para sites", "Intenções avançadas", "Acesso completo à API"]
       }
     }
   },

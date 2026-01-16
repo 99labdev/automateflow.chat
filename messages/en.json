@@ -10,7 +10,9 @@
   "hero": {
     "title": "Transform your business with",
     "titleHighlight": "customized AI Agents",
+    "titleHighlight2": "Smart Automations",
     "subtitle": "Automate customer service, qualify leads and boost your sales 24/7 with artificial intelligence that never rests.",
+    "subtitle2": "Create automated workflows for WhatsApp, Instagram and more. Your customers get instant responses while you focus on what matters.",
     "stats": {
       "available": "Available 24/7",
       "setup": "Setup in 5 min",
@@ -79,43 +81,24 @@
   },
   "whyChoose": {
     "title": "Why choose AutomateFlow?",
-    "subtitle": "Discover how our AI agents can transform your business",
+    "subtitle": "Complete platform with multi-channel, cutting-edge AIs and integrated CRM",
     "cards": {
       "revenue": {
-        "title": "Increase Revenue",
-        "description": "Our agents qualify leads and close sales automatically, increasing your conversion by up to 40%."
+        "title": "Multi-Channel Integration",
+        "description": "Official WhatsApp API, unofficial WhatsApp, Instagram DM and Webchat. All channels in one platform."
       },
       "experience": {
-        "title": "Premium Experience",
-        "description": "Offer instant and personalized service to every customer, 24 hours a day."
+        "title": "Cutting-Edge AIs",
+        "description": "Choose from OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek and other market-leading AIs."
       },
       "roi": {
-        "title": "Guaranteed ROI",
-        "description": "Reduce operational costs by up to 60% while multiplying your service capacity."
+        "title": "Complete CRM",
+        "description": "Lead management, tasks and deals in one place. Sales kanban and complete conversation history."
       },
       "team": {
-        "title": "Empower Your Team",
-        "description": "Free your team for strategic tasks while AI handles operations."
+        "title": "Smart Automations",
+        "description": "Create Instagram triggers like 'reply I WANT' and send links automatically. Perfect for launches!"
       }
-    }
-  },
-  "agents": {
-    "title": "Specialized Agents",
-    "subtitle": "Each agent is trained for a specific function, ensuring maximum efficiency",
-    "sales": {
-      "title": "Sales Agent",
-      "description": "Expert in conversion and closing",
-      "features": ["Lead qualification", "Product presentation", "Automated negotiation", "Smart follow-up"]
-    },
-    "support": {
-      "title": "Support Agent",
-      "description": "24/7 customer service",
-      "features": ["Query resolution", "Technical support", "Ticket management", "Knowledge base"]
-    },
-    "sdr": {
-      "title": "SDR Agent",
-      "description": "Lead prospecting and qualification",
-      "features": ["Automated outreach", "Meeting scheduling", "Prospect research", "Data enrichment"]
     }
   },
   "howItWorks": {
@@ -141,7 +124,7 @@
     "subtitle": "Choose the ideal plan for your business",
     "monthly": "Monthly",
     "yearly": "Yearly",
-    "yearlyDiscount": "Save 20%",
+    "yearlyDiscount": "Save 10%",
     "perMonth": "/month",
     "cta": "Get Started",
     "popular": "Most Popular",
@@ -149,23 +132,23 @@
       "basic": {
         "name": "Basic",
         "price": "87",
-        "credits": "1,000",
-        "description": "Perfect to get started",
-        "features": ["1 AI Agent", "1,000 messages/month", "WhatsApp integration", "Email support", "Basic reports"]
+        "credits": "2500",
+        "description": "Perfect for small teams getting started",
+        "features": ["5 agents", "Website widget", "Advanced intents", "Full API access"]
       },
       "standard": {
         "name": "Standard",
         "price": "397",
-        "credits": "10,000",
-        "description": "For growing businesses",
-        "features": ["3 AI Agents", "10,000 messages/month", "WhatsApp + Web integration", "Priority support", "Advanced reports", "Integration API"]
+        "credits": "11500",
+        "description": "Most popular plan for growing teams",
+        "features": ["20 agents", "Website widget", "Advanced intents", "Full API access"]
       },
       "corporate": {
         "name": "Corporate",
         "price": "997",
-        "credits": "Unlimited",
-        "description": "For large operations",
-        "features": ["Unlimited agents", "Unlimited messages", "All integrations", "24/7 dedicated support", "Custom dashboard", "Team training", "Guaranteed SLA"]
+        "credits": "30000",
+        "description": "Enterprise-level solution for large organizations",
+        "features": ["50 agents", "Website widget", "Advanced intents", "Full API access"]
       }
     }
   },
