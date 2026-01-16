@@ -9,11 +9,11 @@ export default function InstagramAutomation() {
   const [activeAutomation, setActiveAutomation] = useState(0);
   const [animationKey, setAnimationKey] = useState(0);
 
-  // Restart animation every 10 seconds
+  // Restart animation every 12 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimationKey(prev => prev + 1);
-    }, 10000);
+    }, 12000);
 
     return () => clearInterval(interval);
   }, []);
@@ -78,11 +78,7 @@ export default function InstagramAutomation() {
                         <div className="instagram-header">
                           <div className="instagram-user">
                             <div className="instagram-avatar">
-                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                              </svg>
+                              <img src="/logo.png" alt="AutomateFlow" width="32" height="32" className="avatar-logo" />
                             </div>
                             <span className="instagram-username">automateflow</span>
                           </div>
@@ -109,12 +105,29 @@ export default function InstagramAutomation() {
                         </div>
 
                         <div className="instagram-comments">
-                          <div className="comment animate-comment" style={{ animationDelay: '0.5s' }}>
-                            <span className="comment-user">usuario_123</span>
+                          <div className="comment animate-comment" style={{ animationDelay: '0.8s' }}>
+                            <div className="comment-avatar avatar-male">
+                              <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                              </svg>
+                            </div>
+                            <span className="comment-user">hudsonbrendon</span>
                             <span className="comment-text">{t('automationSection.comment1')}</span>
                           </div>
-                          <div className="comment animate-comment" style={{ animationDelay: '1.5s' }}>
-                            <span className="comment-user">maria_silva</span>
+                          <div className="comment comment-reply animate-comment" style={{ animationDelay: '2s' }}>
+                            <div className="comment-avatar">
+                              <img src="/logo.png" alt="AutomateFlow" />
+                            </div>
+                            <span className="comment-user">automateflow</span>
+                            <span className="comment-text">{t('automationSection.commentReply')}</span>
+                          </div>
+                          <div className="comment animate-comment" style={{ animationDelay: '3.2s' }}>
+                            <div className="comment-avatar avatar-female">
+                              <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                              </svg>
+                            </div>
+                            <span className="comment-user">mariamayse</span>
                             <span className="comment-text">{t('automationSection.comment2')}</span>
                           </div>
                         </div>
@@ -130,11 +143,7 @@ export default function InstagramAutomation() {
                           </div>
                           <div className="dm-header-user">
                             <div className="dm-header-avatar">
-                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                              </svg>
+                              <img src="/logo.png" alt="AutomateFlow" width="32" height="32" className="avatar-logo" />
                             </div>
                             <div className="dm-header-info">
                               <span className="dm-header-name">automateflow</span>
@@ -153,34 +162,25 @@ export default function InstagramAutomation() {
                         </div>
 
                         <div className="dm-messages">
-                          <div className="dm-message received animate-dm-msg" style={{ animationDelay: '3.2s' }}>
+                          <div className="dm-message received animate-dm-msg" style={{ animationDelay: '5.5s' }}>
                             <div className="dm-msg-avatar">
-                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                              </svg>
+                              <img src="/logo.png" alt="AutomateFlow" width="24" height="24" className="avatar-logo" />
                             </div>
                             <div className="dm-msg-bubble">
                               <span>{t('automationSection.dmGreeting')}</span>
                             </div>
                           </div>
-                          <div className="dm-message received animate-dm-msg" style={{ animationDelay: '3.8s' }}>
+                          <div className="dm-message received animate-dm-msg" style={{ animationDelay: '6.5s' }}>
                             <div className="dm-msg-avatar">
-                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                              </svg>
+                              <img src="/logo.png" alt="AutomateFlow" width="24" height="24" className="avatar-logo" />
                             </div>
                             <div className="dm-msg-bubble">
                               <span>{t('automationSection.dmText')}</span>
                             </div>
                           </div>
-                          <div className="dm-message received animate-dm-msg link-message" style={{ animationDelay: '4.4s' }}>
+                          <div className="dm-message received animate-dm-msg link-message" style={{ animationDelay: '7.5s' }}>
                             <div className="dm-msg-avatar">
-                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                              </svg>
+                              <img src="/logo.png" alt="AutomateFlow" width="24" height="24" className="avatar-logo" />
                             </div>
                             <div className="dm-msg-bubble dm-link-bubble">
                               <div className="dm-link-preview">
@@ -192,7 +192,7 @@ export default function InstagramAutomation() {
                                 </div>
                                 <div className="dm-link-info">
                                   <span className="dm-link-title">{t('automationSection.dmLinkTitle')}</span>
-                                  <span className="dm-link-url">automateflow.chat/oferta</span>
+                                  <span className="dm-link-url">automateflow.chat</span>
                                 </div>
                               </div>
                             </div>
@@ -528,13 +528,13 @@ export default function InstagramAutomation() {
 
         .screen-post {
           animation: slideOutLeft 0.6s ease forwards;
-          animation-delay: 2.5s;
+          animation-delay: 4.5s;
         }
 
         .screen-dm {
           transform: translateX(100%);
           animation: slideInRight 0.6s ease forwards;
-          animation-delay: 2.5s;
+          animation-delay: 4.5s;
         }
 
         @keyframes slideOutLeft {
@@ -564,11 +564,17 @@ export default function InstagramAutomation() {
           width: 32px;
           height: 32px;
           border-radius: 50%;
-          background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: white;
+          overflow: hidden;
+        }
+
+        .avatar-logo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
         }
 
         .instagram-username {
@@ -646,6 +652,41 @@ export default function InstagramAutomation() {
           font-size: 0.75rem;
           opacity: 0;
           transform: translateX(-10px);
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .comment-avatar {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          overflow: hidden;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .comment-avatar img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .comment-avatar svg {
+          width: 14px;
+          height: 14px;
+        }
+
+        .comment-avatar.avatar-male {
+          background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+          color: white;
+        }
+
+        .comment-avatar.avatar-female {
+          background: linear-gradient(135deg, #ec4899, #be185d);
+          color: white;
         }
 
         .animate-comment {
@@ -668,6 +709,7 @@ export default function InstagramAutomation() {
         .comment-text {
           color: var(--text-secondary);
         }
+
 
         /* DM Screen Styles */
         .dm-screen-header {
@@ -694,11 +736,10 @@ export default function InstagramAutomation() {
           width: 32px;
           height: 32px;
           border-radius: 50%;
-          background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: white;
+          overflow: hidden;
         }
 
         .dm-header-info {
@@ -759,11 +800,10 @@ export default function InstagramAutomation() {
           width: 24px;
           height: 24px;
           border-radius: 50%;
-          background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: white;
+          overflow: hidden;
           flex-shrink: 0;
         }
 

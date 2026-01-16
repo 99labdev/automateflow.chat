@@ -109,7 +109,7 @@
         "multichannelMsg3": "Yes! We support WhatsApp, Instagram, Webchat and more. All conversations are centralized here!"
       },
       "aimodels": {
-        "title": "Cutting-Edge AIs",
+        "title": "Cutting-Edge AI Models",
         "description": "ChatGPT, Claude, Llama, Mistral, DeepSeek and others",
         "aimodelsMsg1": "Hi! I'm an agent powered by Claude from Anthropic. How can I help?",
         "aimodelsMsg2": "Can I switch to ChatGPT if I want?",
@@ -136,11 +136,12 @@
       "postText": "Comment \"I WANT\" to get the link!",
       "likes": "likes",
       "comment1": "I want",
+      "commentReply": "@hudsonbrendon check your DM!",
       "comment2": "I want it!",
       "dmActive": "Active now",
       "dmGreeting": "Hi! I saw you commented on the post.",
       "dmText": "Here's the exclusive link you requested:",
-      "dmLinkTitle": "Special Offer",
+      "dmLinkTitle": "Automateflow",
       "dmPlaceholder": "Send message..."
     },
     "automations": {

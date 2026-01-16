@@ -109,7 +109,7 @@
         "multichannelMsg3": "¡Sí! Atendemos por WhatsApp, Instagram, Webchat y más. ¡Todas las conversaciones quedan centralizadas aquí!"
       },
       "aimodels": {
-        "title": "IAs de Última Generación",
+        "title": "Modelos de IA de Última Generación",
         "description": "ChatGPT, Claude, Llama, Mistral, DeepSeek y otras",
         "aimodelsMsg1": "¡Hola! Soy un agente powered by Claude de Anthropic. ¿Cómo puedo ayudarte?",
         "aimodelsMsg2": "¿Puedo cambiar a ChatGPT si quiero?",
@@ -136,11 +136,12 @@
       "postText": "¡Comenta \"QUIERO\" para recibir el link!",
       "likes": "me gusta",
       "comment1": "quiero",
+      "commentReply": "@hudsonbrendon ¡revisa tu DM!",
       "comment2": "¡yo quiero!",
       "dmActive": "Activo ahora",
       "dmGreeting": "¡Hola! Vi que comentaste en el post.",
       "dmText": "Aquí está el link exclusivo que pediste:",
-      "dmLinkTitle": "Oferta Especial",
+      "dmLinkTitle": "Automateflow",
       "dmPlaceholder": "Enviar mensaje..."
     },
     "automations": {
