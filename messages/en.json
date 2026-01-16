@@ -11,9 +11,9 @@
     "startFree": "Start Free"
   },
   "hero": {
-    "title": "Transform your business with",
-    "titleHighlight": "customized AI Agents",
-    "titleHighlight2": "Smart Automations",
+    "title": "Transform your business",
+    "titleHighlight": "with AI Agents",
+    "titleHighlight2": "with Automations",
     "subtitle": "Automate customer service, qualify leads and boost your sales 24/7 with artificial intelligence that never rests.",
     "subtitle2": "Create automated workflows for WhatsApp, Instagram and more. Your customers get instant responses while you focus on what matters.",
     "stats": {
@@ -87,12 +87,12 @@
     "subtitle": "Smart agents, powerful automations and complete CRM for your business",
     "cards": {
       "agents": {
-        "title": "Customer Service Agents",
-        "description": "AI agents that serve your customers 24/7 on WhatsApp, Instagram and Webchat. Instant and personalized responses."
+        "title": "Custom AI Agents",
+        "description": "Create agents with Gemini, OpenAI, Anthropic and more. Configure knowledge base, multiple languages and human handoff."
       },
       "team": {
-        "title": "Smart Automations",
-        "description": "Create Instagram triggers like 'reply I WANT' and send links automatically. Perfect for launches!"
+        "title": "Multi-Channel Automations",
+        "description": "Turn comments into leads on Instagram with automatic DM sending. WhatsApp, Email and Scheduling coming soon!"
       },
       "roi": {
         "title": "Complete CRM",
@@ -101,8 +101,8 @@
     }
   },
   "agentsShowcase": {
-    "title": "Discover our Features",
-    "subtitle": "Complete platform with multi-channel, cutting-edge AIs and powerful integrations",
+    "title": "Agents",
+    "subtitle": "Create custom AI agents that serve your customers 24/7, qualify leads and boost your sales",
     "agents": {
       "multichannel": {
         "title": "Multi-Channel Integration",
@@ -113,29 +113,29 @@
       },
       "aimodels": {
         "title": "Cutting-Edge AI Models",
-        "description": "ChatGPT, Claude, Llama, Mistral, DeepSeek and others",
-        "aimodelsMsg1": "Hi! I'm an agent powered by Claude from Anthropic. How can I help?",
-        "aimodelsMsg2": "Can I switch to ChatGPT if I want?",
-        "aimodelsMsg3": "Of course! You can switch between ChatGPT, Claude, Llama, Mistral or DeepSeek anytime in the settings."
+        "description": "Gemini, OpenAI, Anthropic, Llama, Mistral, DeepSeek and others",
+        "aimodelsMsg1": "Hi! I'm an agent powered by Gemini 2.5 Pro. How can I help?",
+        "aimodelsMsg2": "Can I switch to OpenAI or Anthropic?",
+        "aimodelsMsg3": "Of course! You can switch between Gemini, OpenAI, Anthropic, Llama, Mistral or DeepSeek anytime in the settings."
       },
       "integrations": {
-        "title": "Powerful Integrations",
-        "description": "Google Calendar, CRM, webhooks and automations",
-        "integrationsMsg1": "Want to schedule a demo? I can check the available slots.",
-        "integrationsMsg2": "Yes! I want to schedule for this week",
-        "integrationsMsg3": "Perfect! I've scheduled for Thursday at 2pm on your Google Calendar. You'll receive an invite by email!"
+        "title": "Advanced Settings",
+        "description": "Human handoff, timezone, response delay and multi-language support",
+        "integrationsMsg1": "I noticed your question is complex. Would you like me to transfer you to a human agent?",
+        "integrationsMsg2": "Yes, please!",
+        "integrationsMsg3": "Transferring now! A specialist will continue your support. Average wait time: 2 minutes."
       },
       "leadcapture": {
-        "title": "Lead Capture",
-        "description": "Automatic qualification and intelligent contact management",
-        "leadcaptureMsg1": "Hi! To personalize your service, what's your company size?",
-        "leadcaptureMsg2": "We're a team of 20 people",
-        "leadcaptureMsg3": "Great! I've saved your info to the CRM. Based on your profile, the Standard plan is ideal. Want to know more?"
+        "title": "Knowledge Base",
+        "description": "Train your agent with documents, FAQs and company information",
+        "leadcaptureMsg1": "Based on the company documentation, I can help with information about our products!",
+        "leadcaptureMsg2": "What's the delivery time to New York?",
+        "leadcaptureMsg3": "According to our knowledge base, deliveries to New York take 2-3 business days. Want me to check availability?"
       }
     },
     "automationSection": {
-      "title": "Instagram Automation",
-      "subtitle": "Turn comments into qualified leads automatically",
+      "title": "Automations",
+      "subtitle": "Turn comments into leads and send automatic messages on Instagram, WhatsApp and more",
       "postText": "Comment \"I WANT\" to get the link!",
       "likes": "likes",
       "comment1": "I want",
@@ -149,26 +149,29 @@
     },
     "automations": {
       "commentToDm": {
-        "title": "Comment to DM",
-        "description": "Send links automatically when someone comments keywords"
+        "title": "Instagram DM Automation",
+        "description": "Automatically send direct messages to users who comment with a specific keyword"
       },
       "autoReply": {
-        "title": "Auto Reply",
-        "description": "Reply to comments and DMs automatically with AI"
+        "title": "WhatsApp Automation",
+        "description": "Automate WhatsApp messages based on triggers and conditions",
+        "comingSoon": true
       },
       "leadCapture": {
-        "title": "Lead Capture",
-        "description": "Collect contact information intelligently"
+        "title": "Email Automation",
+        "description": "Create automated email campaigns and sequences",
+        "comingSoon": true
       },
       "engagement": {
-        "title": "Auto Engagement",
-        "description": "Boost engagement with automated interactions"
+        "title": "Scheduling Automation",
+        "description": "Schedule tasks and actions based on time triggers",
+        "comingSoon": true
       }
     }
   },
   "crmShowcase": {
-    "title": "Complete Sales CRM",
-    "subtitle": "Manage your leads and deals in a visual and intuitive pipeline",
+    "title": "CRM",
+    "subtitle": "From first contact to closing, track every deal in real time",
     "features": {
       "pipeline": {
         "title": "Sales Pipeline",

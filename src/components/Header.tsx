@@ -56,7 +56,7 @@ export default function Header() {
         </Link>
 
         <nav className={`nav ${mobileMenuOpen ? 'nav-open' : ''}`}>
-          <a href="#how-it-works" className="nav-link" onClick={(e) => handleNavClick(e, 'how-it-works')}>{t('howItWorks')}</a>
+          <a href="#why-choose" className="nav-link" onClick={(e) => handleNavClick(e, 'why-choose')}>{t('whyChoose')}</a>
           <a href="#agents-showcase" className="nav-link" onClick={(e) => handleNavClick(e, 'agents-showcase')}>{t('agents')}</a>
           <a href="#instagram-automation" className="nav-link" onClick={(e) => handleNavClick(e, 'instagram-automation')}>{t('automations')}</a>
           <a href="#crm-showcase" className="nav-link" onClick={(e) => handleNavClick(e, 'crm-showcase')}>{t('crm')}</a>

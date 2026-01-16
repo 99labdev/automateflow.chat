@@ -2,9 +2,9 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
-import { Heart, MessageCircle, Send, Bookmark, UserCheck } from 'lucide-react';
+import { Heart, MessageCircle, Send, Bookmark, Instagram, Phone, Mail, Calendar } from 'lucide-react';
 
-export default function InstagramAutomation() {
+export default function AutomationShowcase() {
   const t = useTranslations('agentsShowcase');
   const [activeAutomation, setActiveAutomation] = useState(0);
   const [animationKey, setAnimationKey] = useState(0);
@@ -23,23 +23,27 @@ export default function InstagramAutomation() {
   const automations = [
     {
       key: 'commentToDm',
-      icon: MessageCircle,
+      icon: Instagram,
       color: primaryColor,
+      available: true,
     },
     {
       key: 'autoReply',
-      icon: Send,
+      icon: Phone,
       color: primaryColor,
+      available: false,
     },
     {
       key: 'leadCapture',
-      icon: UserCheck,
+      icon: Mail,
       color: primaryColor,
+      available: false,
     },
     {
       key: 'engagement',
-      icon: Heart,
+      icon: Calendar,
       color: primaryColor,
+      available: false,
     },
   ];
 
@@ -47,7 +51,7 @@ export default function InstagramAutomation() {
     <section id="instagram-automation" className="section instagram-automation-section">
       <div className="container">
         <div className="automation-section">
-          <h3 className="automation-title">{t('automationSection.title')}</h3>
+          <h2 className="section-title">{t('automationSection.title')}</h2>
           <p className="automation-subtitle">{t('automationSection.subtitle')}</p>
 
           <div className="automation-grid">
@@ -237,9 +241,10 @@ export default function InstagramAutomation() {
                 return (
                   <button
                     key={automation.key}
-                    className={`agent-tab ${activeAutomation === index ? 'active' : ''}`}
-                    onClick={() => setActiveAutomation(index)}
+                    className={`agent-tab ${activeAutomation === index ? 'active' : ''} ${!automation.available ? 'coming-soon' : ''}`}
+                    onClick={() => automation.available && setActiveAutomation(index)}
                     style={{ '--agent-color': automation.color } as React.CSSProperties}
+                    disabled={!automation.available}
                   >
                     <div className="agent-tab-icon">
                       <Icon size={24} />
@@ -248,6 +253,9 @@ export default function InstagramAutomation() {
                       <h3 className="agent-tab-title">{t(`automations.${automation.key}.title`)}</h3>
                       <p className="agent-tab-desc">{t(`automations.${automation.key}.description`)}</p>
                     </div>
+                    {!automation.available && (
+                      <span className="coming-soon-badge">Em Breve</span>
+                    )}
                   </button>
                 );
               })}
@@ -261,19 +269,13 @@ export default function InstagramAutomation() {
           background: var(--bg-primary);
           overflow: hidden;
           padding-top: 0;
+          scroll-margin-top: 100px;
         }
 
         .automation-section {
           padding-top: 60px;
           border-top: 1px solid var(--border-color);
-        }
-
-        .automation-title {
-          font-size: 2rem;
-          font-weight: 700;
-          text-align: center;
-          color: var(--text-primary);
-          margin-bottom: 12px;
+          scroll-margin-top: 100px;
         }
 
         .automation-subtitle {
@@ -336,6 +338,26 @@ export default function InstagramAutomation() {
 
         .agent-tab.active .agent-tab-icon {
           transform: scale(1.1);
+        }
+
+        .agent-tab.coming-soon {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+
+        .agent-tab.coming-soon:hover {
+          border-color: var(--border-color);
+          transform: none;
+        }
+
+        .coming-soon-badge {
+          background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+          color: white;
+          font-size: 0.7rem;
+          font-weight: 600;
+          padding: 4px 10px;
+          border-radius: 12px;
+          white-space: nowrap;
         }
 
         .agent-tab-content {

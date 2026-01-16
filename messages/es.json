@@ -11,9 +11,9 @@
     "startFree": "Empezar Gratis"
   },
   "hero": {
-    "title": "Transforma tu negocio con",
-    "titleHighlight": "Agentes de IA personalizados",
-    "titleHighlight2": "Automatizaciones inteligentes",
+    "title": "Transforma tu negocio",
+    "titleHighlight": "con Agentes de IA",
+    "titleHighlight2": "con Automatizaciones",
     "subtitle": "Automatiza la atención al cliente, califica leads y aumenta tus ventas 24/7 con inteligencia artificial que nunca descansa.",
     "subtitle2": "Crea flujos automatizados para WhatsApp, Instagram y más. Tus clientes reciben respuestas instantáneas mientras te enfocas en lo importante.",
     "stats": {
@@ -87,12 +87,12 @@
     "subtitle": "Agentes inteligentes, automatizaciones poderosas y CRM completo para tu negocio",
     "cards": {
       "agents": {
-        "title": "Agentes de Atención",
-        "description": "Agentes de IA que atienden a tus clientes 24/7 en WhatsApp, Instagram y Webchat. Respuestas instantáneas y personalizadas."
+        "title": "Agentes de IA Personalizados",
+        "description": "Crea agentes con Gemini, OpenAI, Anthropic y más. Configura base de conocimiento, múltiples idiomas y transferencia a humano."
       },
       "team": {
-        "title": "Automatizaciones Inteligentes",
-        "description": "Crea disparadores en Instagram como 'responde YO QUIERO' y envía links automáticamente. ¡Perfecto para lanzamientos!"
+        "title": "Automatizaciones Multicanal",
+        "description": "Transforma comentarios en leads en Instagram con envío automático de DMs. ¡WhatsApp, Email y Programación próximamente!"
       },
       "roi": {
         "title": "CRM Completo",
@@ -101,8 +101,8 @@
     }
   },
   "agentsShowcase": {
-    "title": "Descubre nuestros Recursos",
-    "subtitle": "Plataforma completa con multicanales, IAs de punta e integraciones poderosas",
+    "title": "Agentes",
+    "subtitle": "Crea agentes de IA personalizados que atienden a tus clientes 24/7, califican leads y aumentan tus ventas",
     "agents": {
       "multichannel": {
         "title": "Multicanales Integrados",
@@ -113,29 +113,29 @@
       },
       "aimodels": {
         "title": "Modelos de IA de Última Generación",
-        "description": "ChatGPT, Claude, Llama, Mistral, DeepSeek y otras",
-        "aimodelsMsg1": "¡Hola! Soy un agente powered by Claude de Anthropic. ¿Cómo puedo ayudarte?",
-        "aimodelsMsg2": "¿Puedo cambiar a ChatGPT si quiero?",
-        "aimodelsMsg3": "¡Claro! Puedes alternar entre ChatGPT, Claude, Llama, Mistral o DeepSeek en cualquier momento en las configuraciones."
+        "description": "Gemini, OpenAI, Anthropic, Llama, Mistral, DeepSeek y otras",
+        "aimodelsMsg1": "¡Hola! Soy un agente powered by Gemini 2.5 Pro. ¿Cómo puedo ayudarte?",
+        "aimodelsMsg2": "¿Puedo cambiar a OpenAI o Anthropic?",
+        "aimodelsMsg3": "¡Claro! Puedes alternar entre Gemini, OpenAI, Anthropic, Llama, Mistral o DeepSeek en cualquier momento en las configuraciones."
       },
       "integrations": {
-        "title": "Integraciones Poderosas",
-        "description": "Google Calendar, CRM, webhooks y automatizaciones",
-        "integrationsMsg1": "¿Quieres agendar una demostración? Puedo verificar la agenda disponible.",
-        "integrationsMsg2": "¡Sí! Quiero agendar para esta semana",
-        "integrationsMsg3": "¡Perfecto! Agendé para el jueves a las 14h en tu Google Calendar. ¡Recibirás una invitación por email!"
+        "title": "Configuraciones Avanzadas",
+        "description": "Transferencia a humano, zona horaria, retraso de respuesta y multi-idiomas",
+        "integrationsMsg1": "Noté que tu duda es compleja. ¿Quieres que te transfiera a un agente humano?",
+        "integrationsMsg2": "¡Sí, por favor!",
+        "integrationsMsg3": "¡Transfiriendo ahora! Un especialista continuará tu atención. Tiempo promedio de espera: 2 minutos."
       },
       "leadcapture": {
-        "title": "Captura de Leads",
-        "description": "Calificación automática y gestión inteligente de contactos",
-        "leadcaptureMsg1": "¡Hola! Para personalizar tu atención, ¿cuál es el tamaño de tu empresa?",
-        "leadcaptureMsg2": "Somos un equipo de 20 personas",
-        "leadcaptureMsg3": "¡Genial! Ya guardé tu información en el CRM. Según tu perfil, el plan Estándar es ideal. ¿Quieres saber más?"
+        "title": "Base de Conocimiento",
+        "description": "Entrena tu agente con documentos, FAQs e información de tu empresa",
+        "leadcaptureMsg1": "¡Basándome en la documentación de la empresa, puedo ayudarte con información sobre nuestros productos!",
+        "leadcaptureMsg2": "¿Cuál es el tiempo de entrega para Madrid?",
+        "leadcaptureMsg3": "Según nuestra base de conocimiento, las entregas a Madrid se realizan en 2-3 días hábiles. ¿Quieres que verifique la disponibilidad?"
       }
     },
     "automationSection": {
-      "title": "Automatización para Instagram",
-      "subtitle": "Transforma comentarios en leads calificados automáticamente",
+      "title": "Automatizaciones",
+      "subtitle": "Transforma comentarios en leads y envía mensajes automáticos en Instagram, WhatsApp y más",
       "postText": "¡Comenta \"QUIERO\" para recibir el link!",
       "likes": "me gusta",
       "comment1": "quiero",
@@ -149,26 +149,29 @@
     },
     "automations": {
       "commentToDm": {
-        "title": "Comentario a DM",
-        "description": "Envía links automáticamente cuando alguien comente palabras clave"
+        "title": "Automatización de DM de Instagram",
+        "description": "Envía automáticamente mensajes directos a usuarios que comentan con una palabra clave específica"
       },
       "autoReply": {
-        "title": "Respuesta Automática",
-        "description": "Responde comentarios y DMs automáticamente con IA"
+        "title": "Automatización de WhatsApp",
+        "description": "Automatiza mensajes de WhatsApp basados en disparadores y condiciones",
+        "comingSoon": true
       },
       "leadCapture": {
-        "title": "Captura de Leads",
-        "description": "Recopila información de contacto de forma inteligente"
+        "title": "Automatización de E-mail",
+        "description": "Crea campañas y secuencias de email automatizadas",
+        "comingSoon": true
       },
       "engagement": {
-        "title": "Engagement Automático",
-        "description": "Aumenta el engagement con interacciones automatizadas"
+        "title": "Automatización de Programación",
+        "description": "Programa tareas y acciones basadas en disparadores de tiempo",
+        "comingSoon": true
       }
     }
   },
   "crmShowcase": {
-    "title": "CRM Completo para Ventas",
-    "subtitle": "Gestiona tus leads y negociaciones en un embudo visual e intuitivo",
+    "title": "CRM",
+    "subtitle": "Desde el primer contacto hasta el cierre, acompaña cada negociación en tiempo real",
     "features": {
       "pipeline": {
         "title": "Embudo de Ventas",

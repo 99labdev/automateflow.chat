@@ -74,7 +74,7 @@ export default function Hero() {
         <div className="hero-grid">
           <div className="hero-content">
             <h1 className="hero-title">
-              {t('title')}{' '}
+              <span className="hero-title-main">{t('title')}</span>
               <span className="text-highlight-wrapper">
                 <span className="text-highlight-placeholder" aria-hidden="true">
                   {typewriterTexts.reduce((a, b) => a.length > b.length ? a : b)}
@@ -183,7 +183,7 @@ export default function Hero() {
         }
 
         .hero-content {
-          max-width: 560px;
+          max-width: 640px;
         }
 
         .hero-title {
@@ -192,11 +192,18 @@ export default function Hero() {
           line-height: 1.15;
           margin-bottom: 24px;
           color: white;
+          text-align: center;
+        }
+
+        .hero-title-main {
+          white-space: nowrap;
         }
 
         .text-highlight-wrapper {
           position: relative;
-          display: inline;
+          display: block;
+          text-align: center;
+          white-space: nowrap;
         }
 
         .text-highlight-placeholder {
@@ -205,8 +212,9 @@ export default function Hero() {
 
         .text-highlight {
           position: absolute;
-          left: 0;
+          left: 50%;
           top: 0;
+          transform: translateX(-50%);
           color: white;
           opacity: 0.9;
         }
@@ -307,7 +315,7 @@ export default function Hero() {
 
         .hero-visual {
           display: flex;
-          justify-content: center;
+          justify-content: flex-end;
         }
 
         .chat-demo {
@@ -533,6 +541,10 @@ export default function Hero() {
           .chat-demo {
             margin-top: 40px;
           }
+
+          .hero-visual {
+            justify-content: center;
+          }
         }
 
         @media (max-width: 768px) {
@@ -541,7 +553,16 @@ export default function Hero() {
           }
 
           .hero-title {
-            font-size: 2rem;
+            font-size: 1.75rem;
+          }
+
+          .text-highlight-wrapper {
+            margin-top: 4px;
+          }
+
+          .text-highlight-placeholder,
+          .text-highlight {
+            white-space: nowrap;
           }
 
           .hero-buttons {

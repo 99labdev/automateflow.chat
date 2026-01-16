@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
-import { Share2, Brain, CalendarCheck, UserCheck, Bot } from 'lucide-react';
+import { Share2, Brain, Settings, BookOpen, Bot } from 'lucide-react';
 
 export default function AgentsShowcase() {
   const t = useTranslations('agentsShowcase');
@@ -48,7 +48,7 @@ export default function AgentsShowcase() {
     },
     {
       key: 'integrations',
-      icon: CalendarCheck,
+      icon: Settings,
       color: primaryColor,
       messages: [
         { type: 'bot', text: 'integrationsMsg1' },
@@ -58,7 +58,7 @@ export default function AgentsShowcase() {
     },
     {
       key: 'leadcapture',
-      icon: UserCheck,
+      icon: BookOpen,
       color: primaryColor,
       messages: [
         { type: 'bot', text: 'leadcaptureMsg1' },
