@@ -2,6 +2,9 @@
   "nav": {
     "howItWorks": "How It Works",
     "whyChoose": "Why Choose",
+    "agents": "Features",
+    "automations": "Automations",
+    "crm": "CRM",
     "plans": "Pricing",
     "faq": "FAQ",
     "login": "Login",
@@ -161,6 +164,34 @@
         "title": "Auto Engagement",
         "description": "Boost engagement with automated interactions"
       }
+    }
+  },
+  "crmShowcase": {
+    "title": "Complete Sales CRM",
+    "subtitle": "Manage your leads and deals in a visual and intuitive pipeline",
+    "features": {
+      "pipeline": {
+        "title": "Sales Pipeline",
+        "description": "Visualize all deals in an intuitive Kanban board"
+      },
+      "leads": {
+        "title": "Lead Management",
+        "description": "Capture and qualify leads automatically from all channels"
+      },
+      "analytics": {
+        "title": "Reports & Metrics",
+        "description": "Track your team's performance in real time"
+      },
+      "tasks": {
+        "title": "Tasks & Follow-up",
+        "description": "Never miss a follow-up with automatic reminders"
+      }
+    },
+    "kanban": {
+      "newLeads": "New Leads",
+      "negotiating": "Negotiating",
+      "closed": "Closed",
+      "won": "Won"
     }
   },
   "howItWorks": {

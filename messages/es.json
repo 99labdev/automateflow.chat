@@ -2,6 +2,9 @@
   "nav": {
     "howItWorks": "Cómo Funciona",
     "whyChoose": "Por qué Elegir",
+    "agents": "Agentes",
+    "automations": "Automatizaciones",
+    "crm": "CRM",
     "plans": "Planes",
     "faq": "FAQ",
     "login": "Iniciar Sesión",
@@ -161,6 +164,34 @@
         "title": "Engagement Automático",
         "description": "Aumenta el engagement con interacciones automatizadas"
       }
+    }
+  },
+  "crmShowcase": {
+    "title": "CRM Completo para Ventas",
+    "subtitle": "Gestiona tus leads y negociaciones en un embudo visual e intuitivo",
+    "features": {
+      "pipeline": {
+        "title": "Embudo de Ventas",
+        "description": "Visualiza todas las negociaciones en un Kanban intuitivo"
+      },
+      "leads": {
+        "title": "Gestión de Leads",
+        "description": "Captura y califica leads automáticamente de todos los canales"
+      },
+      "analytics": {
+        "title": "Reportes y Métricas",
+        "description": "Acompaña el desempeño de tu equipo en tiempo real"
+      },
+      "tasks": {
+        "title": "Tareas y Follow-up",
+        "description": "Nunca pierdas un follow-up con recordatorios automáticos"
+      }
+    },
+    "kanban": {
+      "newLeads": "Nuevos Leads",
+      "negotiating": "En Negociación",
+      "closed": "Cerrado",
+      "won": "Ganado"
     }
   },
   "howItWorks": {

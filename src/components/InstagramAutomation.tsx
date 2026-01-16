@@ -44,7 +44,7 @@ export default function InstagramAutomation() {
   ];
 
   return (
-    <section className="section instagram-automation-section">
+    <section id="instagram-automation" className="section instagram-automation-section">
       <div className="container">
         <div className="automation-section">
           <h3 className="automation-title">{t('automationSection.title')}</h3>
@@ -834,6 +834,9 @@ export default function InstagramAutomation() {
           padding: 10px;
           border-radius: 12px;
           border: 1px solid var(--border-color);
+          min-width: 0;
+          overflow: hidden;
+          max-width: 100%;
         }
 
         .dm-link-icon {
@@ -852,17 +855,25 @@ export default function InstagramAutomation() {
           display: flex;
           flex-direction: column;
           gap: 2px;
+          min-width: 0;
+          overflow: hidden;
         }
 
         .dm-link-title {
           font-size: 0.75rem;
           font-weight: 600;
           color: var(--text-primary);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .dm-link-url {
           font-size: 0.65rem;
           color: #8b5cf6;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .dm-input-bar {
@@ -967,6 +978,28 @@ export default function InstagramAutomation() {
 
           .automation-subtitle {
             font-size: 1rem;
+          }
+
+          .dm-link-preview {
+            gap: 8px;
+            padding: 8px;
+          }
+
+          .dm-link-icon {
+            width: 30px;
+            height: 30px;
+          }
+
+          .dm-link-title {
+            font-size: 0.7rem;
+          }
+
+          .dm-link-url {
+            font-size: 0.6rem;
+          }
+
+          .dm-msg-bubble {
+            max-width: 85%;
           }
         }
       `}</style>
