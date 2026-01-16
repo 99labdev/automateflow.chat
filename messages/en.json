@@ -1,7 +1,7 @@
 {
   "nav": {
-    "agents": "Agents",
     "howItWorks": "How It Works",
+    "whyChoose": "Why Choose",
     "plans": "Pricing",
     "faq": "FAQ",
     "login": "Login",
@@ -157,36 +157,36 @@
     "subtitle": "Get your questions about AutomateFlow answered",
     "questions": {
       "q1": {
+        "question": "Which communication channels do you support?",
+        "answer": "We support Official WhatsApp API, unofficial WhatsApp, Instagram DM and Webchat. All channels are centralized in a single screen so you never miss a message."
+      },
+      "q2": {
+        "question": "Which AI models can I use?",
+        "answer": "We support the best AIs on the market: OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek and others. You can switch between them at any time."
+      },
+      "q3": {
+        "question": "Does the platform have integrated CRM?",
+        "answer": "Yes! We have a complete CRM with lead management, tasks, deals, kanban sales funnel and complete conversation history. Each conversation automatically becomes a lead in the CRM."
+      },
+      "q4": {
+        "question": "What's the difference with official WhatsApp API?",
+        "answer": "The Official API has a verified green badge and greater stability. We also offer unofficial API for those who prefer more flexibility. You choose the best option for your business."
+      },
+      "q5": {
+        "question": "Do you have Instagram automation?",
+        "answer": "Yes! Create smart automations like 'reply I WANT and we'll send the link automatically via DM'. Perfect for launches and lead capture."
+      },
+      "q6": {
+        "question": "Can I handle WhatsApp and Instagram together?",
+        "answer": "Absolutely! WhatsApp, Instagram DM and Webchat are all on a single screen. Centralize all your support and never miss a message again."
+      },
+      "q7": {
         "question": "How does the free trial work?",
         "answer": "You have 7 days to test all platform features without commitment. No credit card required to start."
       },
-      "q2": {
-        "question": "Can I cancel anytime?",
-        "answer": "Yes! You can cancel your subscription at any time without fines or additional fees."
-      },
-      "q3": {
-        "question": "Do the agents work in English?",
-        "answer": "Yes! Our agents are native in English, Portuguese and Spanish, with support for over 50 languages."
-      },
-      "q4": {
-        "question": "How do I integrate with WhatsApp?",
-        "answer": "Integration is simple and takes less than 5 minutes. Just scan a QR code and your agent will be ready."
-      },
-      "q5": {
-        "question": "Do I need technical knowledge?",
-        "answer": "No! Our platform was designed to be intuitive. Anyone can set up an agent in minutes."
-      },
-      "q6": {
-        "question": "What happens if I exceed the message limit?",
-        "answer": "You will be notified when you are close to the limit and can upgrade your plan at any time."
-      },
-      "q7": {
-        "question": "Is customer data secure?",
-        "answer": "Yes! We use end-to-end encryption and follow all data protection regulations."
-      },
       "q8": {
-        "question": "Can I customize agent responses?",
-        "answer": "Absolutely! You have full control over tone of voice, default responses and agent behavior."
+        "question": "Do I need technical knowledge?",
+        "answer": "No! Our platform was designed to be intuitive. Set up your agent in less than 5 minutes, just scan a QR code and you're ready."
       }
     }
   },

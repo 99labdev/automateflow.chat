@@ -26,7 +26,7 @@ export default function WhyChoose() {
   ];
 
   return (
-    <section className="section benefits-section">
+    <section id="why-choose" className="section benefits-section">
       <div className="container">
         <h2 className="section-title">{t('title')}</h2>
         <p className="section-subtitle">{t('subtitle')}</p>
