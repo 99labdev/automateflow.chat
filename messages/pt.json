@@ -145,7 +145,8 @@
       "dmGreeting": "Oi! Vi que você comentou no post.",
       "dmText": "Aqui está o link exclusivo que você pediu:",
       "dmLinkTitle": "Automateflow",
-      "dmPlaceholder": "Enviar mensagem..."
+      "dmPlaceholder": "Enviar mensagem...",
+      "comingSoonBadge": "Em Breve"
     },
     "automations": {
       "commentToDm": {
@@ -194,7 +195,22 @@
       "newLeads": "Novos Leads",
       "negotiating": "Em Negociação",
       "closed": "Fechado",
-      "won": "Ganho"
+      "won": "Ganho",
+      "title": "Kanban",
+      "subtitle": "Visualize e gerencie suas ofertas",
+      "listButton": "Lista",
+      "newDealButton": "Nova Oferta",
+      "totalDeals": "Total de Negócios",
+      "totalValue": "Valor Total",
+      "deal": "oferta",
+      "deals": "ofertas",
+      "cards": {
+        "digitalConsulting": "Consultoria Digital",
+        "ecommerceSetup": "E-commerce Setup",
+        "saasPlatform": "Plataforma SaaS",
+        "apiIntegration": "Integração API",
+        "crmSystem": "Sistema CRM"
+      }
     }
   },
   "howItWorks": {

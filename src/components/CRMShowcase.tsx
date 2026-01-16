@@ -208,8 +208,8 @@ export default function CRMShowcase() {
                     </svg>
                   </div>
                   <div className="kanban-header-text">
-                    <span className="kanban-header-title">Kanban</span>
-                    <span className="kanban-header-subtitle">Visualize e gerencie suas ofertas</span>
+                    <span className="kanban-header-title">{t('kanban.title')}</span>
+                    <span className="kanban-header-subtitle">{t('kanban.subtitle')}</span>
                   </div>
                 </div>
                 <div className="kanban-header-actions">
@@ -222,14 +222,14 @@ export default function CRMShowcase() {
                       <line x1="3" x2="3.01" y1="12" y2="12" />
                       <line x1="3" x2="3.01" y1="18" y2="18" />
                     </svg>
-                    Lista
+                    {t('kanban.listButton')}
                   </button>
                   <button className="kanban-btn-primary">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M5 12h14" />
                       <path d="M12 5v14" />
                     </svg>
-                    Nova Oferta
+                    {t('kanban.newDealButton')}
                   </button>
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function CRMShowcase() {
                   </div>
                   <div className="stat-content">
                     <span className="stat-number stat-animated">{columnStats.totalCount}</span>
-                    <span className="stat-label">Total de Negócios</span>
+                    <span className="stat-label">{t('kanban.totalDeals')}</span>
                   </div>
                 </div>
                 <div className="kanban-stat-card">
@@ -258,7 +258,7 @@ export default function CRMShowcase() {
                   </div>
                   <div className="stat-content">
                     <span className="stat-number stat-animated">R$ {columnStats.total},00</span>
-                    <span className="stat-label">Valor Total</span>
+                    <span className="stat-label">{t('kanban.totalValue')}</span>
                   </div>
                 </div>
               </div>
@@ -270,11 +270,11 @@ export default function CRMShowcase() {
                     <span className="kanban-column-icon">📋</span>
                     <span className="kanban-column-title">{t('kanban.newLeads')}</span>
                   </div>
-                  <div className="kanban-column-stats stat-animated">{columnStats.newLeads.count} {columnStats.newLeads.count === 1 ? 'oferta' : 'ofertas'} • R$ {columnStats.newLeads.value}</div>
+                  <div className="kanban-column-stats stat-animated">{columnStats.newLeads.count} {columnStats.newLeads.count === 1 ? t('kanban.deal') : t('kanban.deals')} • R$ {columnStats.newLeads.value}</div>
                   <div className="kanban-cards">
                     <div className="kanban-card card-moving-out">
                       <div className="card-title-row">
-                        <span className="card-title">Consultoria Digital</span>
+                        <span className="card-title">{t('kanban.cards.digitalConsulting')}</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                           <polyline points="15 3 21 3 21 9" />
@@ -289,7 +289,7 @@ export default function CRMShowcase() {
                     </div>
                     <div className="kanban-card">
                       <div className="card-title-row">
-                        <span className="card-title">E-commerce Setup</span>
+                        <span className="card-title">{t('kanban.cards.ecommerceSetup')}</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                           <polyline points="15 3 21 3 21 9" />
@@ -311,11 +311,11 @@ export default function CRMShowcase() {
                     <span className="kanban-column-icon">💬</span>
                     <span className="kanban-column-title">{t('kanban.negotiating')}</span>
                   </div>
-                  <div className="kanban-column-stats stat-animated">{columnStats.negotiating.count} {columnStats.negotiating.count === 1 ? 'oferta' : 'ofertas'} • R$ {columnStats.negotiating.value}</div>
+                  <div className="kanban-column-stats stat-animated">{columnStats.negotiating.count} {columnStats.negotiating.count === 1 ? t('kanban.deal') : t('kanban.deals')} • R$ {columnStats.negotiating.value}</div>
                   <div className="kanban-cards">
                     <div className="kanban-card card-arriving">
                       <div className="card-title-row">
-                        <span className="card-title">Plataforma SaaS</span>
+                        <span className="card-title">{t('kanban.cards.saasPlatform')}</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                           <polyline points="15 3 21 3 21 9" />
@@ -330,7 +330,7 @@ export default function CRMShowcase() {
                     </div>
                     <div className="kanban-card card-moving-out-2">
                       <div className="card-title-row">
-                        <span className="card-title">Integração API</span>
+                        <span className="card-title">{t('kanban.cards.apiIntegration')}</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                           <polyline points="15 3 21 3 21 9" />
@@ -352,11 +352,11 @@ export default function CRMShowcase() {
                     <span className="kanban-column-icon">✅</span>
                     <span className="kanban-column-title">{t('kanban.closed')}</span>
                   </div>
-                  <div className="kanban-column-stats stat-animated">{columnStats.closed.count} {columnStats.closed.count === 1 ? 'oferta' : 'ofertas'} • R$ {columnStats.closed.value}</div>
+                  <div className="kanban-column-stats stat-animated">{columnStats.closed.count} {columnStats.closed.count === 1 ? t('kanban.deal') : t('kanban.deals')} • R$ {columnStats.closed.value}</div>
                   <div className="kanban-cards">
                     <div className="kanban-card card-won card-arriving-2">
                       <div className="card-title-row">
-                        <span className="card-title">Sistema CRM</span>
+                        <span className="card-title">{t('kanban.cards.crmSystem')}</span>
                         <CheckCircle size={14} className="check-icon" />
                       </div>
                       <div className="card-value">R$ 7.500,00</div>

@@ -254,7 +254,7 @@ export default function AutomationShowcase() {
                       <p className="agent-tab-desc">{t(`automations.${automation.key}.description`)}</p>
                     </div>
                     {!automation.available && (
-                      <span className="coming-soon-badge">Em Breve</span>
+                      <span className="coming-soon-badge">{t('automationSection.comingSoonBadge')}</span>
                     )}
                   </button>
                 );

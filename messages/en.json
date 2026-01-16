@@ -2,7 +2,7 @@
   "nav": {
     "howItWorks": "How It Works",
     "whyChoose": "Why Choose",
-    "agents": "Features",
+    "agents": "Agents",
     "automations": "Automations",
     "crm": "CRM",
     "plans": "Pricing",
@@ -145,7 +145,8 @@
       "dmGreeting": "Hi! I saw you commented on the post.",
       "dmText": "Here's the exclusive link you requested:",
       "dmLinkTitle": "Automateflow",
-      "dmPlaceholder": "Send message..."
+      "dmPlaceholder": "Send message...",
+      "comingSoonBadge": "Coming Soon"
     },
     "automations": {
       "commentToDm": {
@@ -194,7 +195,22 @@
       "newLeads": "New Leads",
       "negotiating": "Negotiating",
       "closed": "Closed",
-      "won": "Won"
+      "won": "Won",
+      "title": "Kanban",
+      "subtitle": "Visualize and manage your deals",
+      "listButton": "List",
+      "newDealButton": "New Deal",
+      "totalDeals": "Total Deals",
+      "totalValue": "Total Value",
+      "deal": "deal",
+      "deals": "deals",
+      "cards": {
+        "digitalConsulting": "Digital Consulting",
+        "ecommerceSetup": "E-commerce Setup",
+        "saasPlatform": "SaaS Platform",
+        "apiIntegration": "API Integration",
+        "crmSystem": "CRM System"
+      }
     }
   },
   "howItWorks": {
