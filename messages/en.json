@@ -275,11 +275,11 @@
       },
       "q2": {
         "question": "Which AI models can I use?",
-        "answer": "We support the best AIs on the market: OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek and others. You can switch between them at any time."
+        "answer": "We support the best AIs on the market: Google Gemini, OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek and others. You can switch between them at any time in the agent settings."
       },
       "q3": {
         "question": "Does the platform have integrated CRM?",
-        "answer": "Yes! We have a complete CRM with lead management, tasks, deals, kanban sales funnel and complete conversation history. Each conversation automatically becomes a lead in the CRM."
+        "answer": "Yes! We have a complete CRM with lead management, tasks, deals, kanban sales funnel and complete conversation history. Track reports and performance metrics in real time. Each conversation automatically becomes a lead in the CRM."
       },
       "q4": {
         "question": "What's the difference with official WhatsApp API?",
@@ -287,17 +287,25 @@
       },
       "q5": {
         "question": "Do you have Instagram automation?",
-        "answer": "Yes! Create smart automations like 'reply I WANT and we'll send the link automatically via DM'. Perfect for launches and lead capture."
+        "answer": "Yes! Create smart automations like 'reply I WANT and we'll send the link automatically via DM'. Perfect for launches and lead capture. WhatsApp, Email and Scheduling automations coming soon."
       },
       "q6": {
-        "question": "Can I handle WhatsApp and Instagram together?",
-        "answer": "Absolutely! WhatsApp, Instagram DM and Webchat are all on a single screen. Centralize all your support and never miss a message again."
+        "question": "Can I train the agent with my company information?",
+        "answer": "Yes! Our Knowledge Base allows you to train your agent with documents, FAQs and specific information about your company. This way it responds accurately about your products and services."
       },
       "q7": {
+        "question": "What advanced settings do the agents have?",
+        "answer": "Agents have automatic transfer to human support, timezone configuration, custom response delay and multi-language support. Everything for a personalized experience."
+      },
+      "q8": {
+        "question": "What plans are available?",
+        "answer": "We offer 3 plans: Basic (5 agents, 2,500 credits), Standard (20 agents, 11,500 credits) and Corporate (50 agents, 30,000 credits). All include website widget, advanced intents and full API access."
+      },
+      "q9": {
         "question": "How does the free trial work?",
         "answer": "You have 7 days to test all platform features without commitment. No credit card required to start."
       },
-      "q8": {
+      "q10": {
         "question": "Do I need technical knowledge?",
         "answer": "No! Our platform was designed to be intuitive. Set up your agent in less than 5 minutes, just scan a QR code and you're ready."
       }

@@ -894,6 +894,26 @@ export default function CRMShowcase() {
             font-size: 1rem;
           }
 
+          .kanban-stats {
+            grid-template-columns: 1fr;
+            gap: 12px;
+            padding: 12px 16px;
+          }
+
+          .kanban-stat-card {
+            padding: 14px;
+            gap: 10px;
+          }
+
+          .stat-icon {
+            width: 40px;
+            height: 40px;
+          }
+
+          .stat-number {
+            font-size: 1.1rem;
+          }
+
           .kanban-board {
             flex-direction: column;
           }

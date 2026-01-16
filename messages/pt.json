@@ -275,11 +275,11 @@
       },
       "q2": {
         "question": "Quais inteligências artificiais posso usar?",
-        "answer": "Suportamos as melhores IAs do mercado: OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek e outras. Você pode alternar entre elas a qualquer momento."
+        "answer": "Suportamos as melhores IAs do mercado: Google Gemini, OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek e outras. Você pode alternar entre elas a qualquer momento nas configurações do agente."
       },
       "q3": {
         "question": "A plataforma tem CRM integrado?",
-        "answer": "Sim! Temos CRM completo com gestão de leads, tasks, negociações, funil de vendas em kanban e histórico completo de conversas. Cada conversa vira automaticamente um lead no CRM."
+        "answer": "Sim! Temos CRM completo com gestão de leads, tasks, negociações, funil de vendas em kanban e histórico completo de conversas. Acompanhe relatórios e métricas de desempenho em tempo real. Cada conversa vira automaticamente um lead no CRM."
       },
       "q4": {
         "question": "Qual a diferença do WhatsApp API oficial?",
@@ -287,17 +287,25 @@
       },
       "q5": {
         "question": "Vocês têm automação para Instagram?",
-        "answer": "Sim! Crie automações inteligentes como 'responda EU QUERO que enviamos o link automaticamente no DM'. Perfeito para lançamentos e captação de leads."
+        "answer": "Sim! Crie automações inteligentes como 'responda EU QUERO que enviamos o link automaticamente no DM'. Perfeito para lançamentos e captação de leads. Em breve também teremos automações para WhatsApp, E-mail e Agendamento."
       },
       "q6": {
-        "question": "Posso atender WhatsApp e Instagram juntos?",
-        "answer": "Com certeza! WhatsApp, Instagram DM e Webchat ficam em uma única tela. Centralize todos os atendimentos e nunca mais perca uma mensagem."
+        "question": "Posso treinar o agente com informações da minha empresa?",
+        "answer": "Sim! Nossa Base de Conhecimento permite treinar seu agente com documentos, FAQs e informações específicas da sua empresa. Assim ele responde com precisão sobre seus produtos e serviços."
       },
       "q7": {
+        "question": "Quais configurações avançadas os agentes têm?",
+        "answer": "Os agentes possuem transferência automática para atendente humano, configuração de fuso horário, atraso de resposta personalizado e suporte a múltiplos idiomas. Tudo para uma experiência personalizada."
+      },
+      "q8": {
+        "question": "Quais são os planos disponíveis?",
+        "answer": "Oferecemos 3 planos: Básico (5 agentes, 2.500 créditos), Padrão (20 agentes, 11.500 créditos) e Corporativo (50 agentes, 30.000 créditos). Todos incluem widget para sites, intenções avançadas e acesso completo à API."
+      },
+      "q9": {
         "question": "Como funciona o período de teste gratuito?",
         "answer": "Você tem 7 dias para testar todas as funcionalidades da plataforma sem compromisso. Não é necessário cartão de crédito para começar."
       },
-      "q8": {
+      "q10": {
         "question": "Preciso de conhecimento técnico?",
         "answer": "Não! Nossa plataforma foi criada para ser intuitiva. Configure seu agente em menos de 5 minutos, basta escanear um QR code e pronto."
       }
