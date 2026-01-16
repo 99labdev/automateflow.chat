@@ -97,6 +97,71 @@
       }
     }
   },
+  "agentsShowcase": {
+    "title": "Discover our Features",
+    "subtitle": "Complete platform with multi-channel, cutting-edge AIs and powerful integrations",
+    "agents": {
+      "multichannel": {
+        "title": "Multi-Channel Integration",
+        "description": "WhatsApp, Instagram DM, Webchat and more in one platform",
+        "multichannelMsg1": "Hi! I received your message from Instagram. How can I help?",
+        "multichannelMsg2": "Do you also support WhatsApp?",
+        "multichannelMsg3": "Yes! We support WhatsApp, Instagram, Webchat and more. All conversations are centralized here!"
+      },
+      "aimodels": {
+        "title": "Cutting-Edge AIs",
+        "description": "ChatGPT, Claude, Llama, Mistral, DeepSeek and others",
+        "aimodelsMsg1": "Hi! I'm an agent powered by Claude from Anthropic. How can I help?",
+        "aimodelsMsg2": "Can I switch to ChatGPT if I want?",
+        "aimodelsMsg3": "Of course! You can switch between ChatGPT, Claude, Llama, Mistral or DeepSeek anytime in the settings."
+      },
+      "integrations": {
+        "title": "Powerful Integrations",
+        "description": "Google Calendar, CRM, webhooks and automations",
+        "integrationsMsg1": "Want to schedule a demo? I can check the available slots.",
+        "integrationsMsg2": "Yes! I want to schedule for this week",
+        "integrationsMsg3": "Perfect! I've scheduled for Thursday at 2pm on your Google Calendar. You'll receive an invite by email!"
+      },
+      "leadcapture": {
+        "title": "Lead Capture",
+        "description": "Automatic qualification and intelligent contact management",
+        "leadcaptureMsg1": "Hi! To personalize your service, what's your company size?",
+        "leadcaptureMsg2": "We're a team of 20 people",
+        "leadcaptureMsg3": "Great! I've saved your info to the CRM. Based on your profile, the Standard plan is ideal. Want to know more?"
+      }
+    },
+    "automationSection": {
+      "title": "Instagram Automation",
+      "subtitle": "Turn comments into qualified leads automatically",
+      "postText": "Comment \"I WANT\" to get the link!",
+      "likes": "likes",
+      "comment1": "I want",
+      "comment2": "I want it!",
+      "dmActive": "Active now",
+      "dmGreeting": "Hi! I saw you commented on the post.",
+      "dmText": "Here's the exclusive link you requested:",
+      "dmLinkTitle": "Special Offer",
+      "dmPlaceholder": "Send message..."
+    },
+    "automations": {
+      "commentToDm": {
+        "title": "Comment to DM",
+        "description": "Send links automatically when someone comments keywords"
+      },
+      "autoReply": {
+        "title": "Auto Reply",
+        "description": "Reply to comments and DMs automatically with AI"
+      },
+      "leadCapture": {
+        "title": "Lead Capture",
+        "description": "Collect contact information intelligently"
+      },
+      "engagement": {
+        "title": "Auto Engagement",
+        "description": "Boost engagement with automated interactions"
+      }
+    }
+  },
   "howItWorks": {
     "title": "How It Works",
     "subtitle": "Set up your AI agent in just 3 simple steps",

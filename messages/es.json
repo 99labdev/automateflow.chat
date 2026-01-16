@@ -97,6 +97,71 @@
       }
     }
   },
+  "agentsShowcase": {
+    "title": "Descubre nuestros Recursos",
+    "subtitle": "Plataforma completa con multicanales, IAs de punta e integraciones poderosas",
+    "agents": {
+      "multichannel": {
+        "title": "Multicanales Integrados",
+        "description": "WhatsApp, Instagram DM, Webchat y más en una sola plataforma",
+        "multichannelMsg1": "¡Hola! Recibí tu mensaje por Instagram. ¿Cómo puedo ayudarte?",
+        "multichannelMsg2": "¿También atienden por WhatsApp?",
+        "multichannelMsg3": "¡Sí! Atendemos por WhatsApp, Instagram, Webchat y más. ¡Todas las conversaciones quedan centralizadas aquí!"
+      },
+      "aimodels": {
+        "title": "IAs de Última Generación",
+        "description": "ChatGPT, Claude, Llama, Mistral, DeepSeek y otras",
+        "aimodelsMsg1": "¡Hola! Soy un agente powered by Claude de Anthropic. ¿Cómo puedo ayudarte?",
+        "aimodelsMsg2": "¿Puedo cambiar a ChatGPT si quiero?",
+        "aimodelsMsg3": "¡Claro! Puedes alternar entre ChatGPT, Claude, Llama, Mistral o DeepSeek en cualquier momento en las configuraciones."
+      },
+      "integrations": {
+        "title": "Integraciones Poderosas",
+        "description": "Google Calendar, CRM, webhooks y automatizaciones",
+        "integrationsMsg1": "¿Quieres agendar una demostración? Puedo verificar la agenda disponible.",
+        "integrationsMsg2": "¡Sí! Quiero agendar para esta semana",
+        "integrationsMsg3": "¡Perfecto! Agendé para el jueves a las 14h en tu Google Calendar. ¡Recibirás una invitación por email!"
+      },
+      "leadcapture": {
+        "title": "Captura de Leads",
+        "description": "Calificación automática y gestión inteligente de contactos",
+        "leadcaptureMsg1": "¡Hola! Para personalizar tu atención, ¿cuál es el tamaño de tu empresa?",
+        "leadcaptureMsg2": "Somos un equipo de 20 personas",
+        "leadcaptureMsg3": "¡Genial! Ya guardé tu información en el CRM. Según tu perfil, el plan Estándar es ideal. ¿Quieres saber más?"
+      }
+    },
+    "automationSection": {
+      "title": "Automatización para Instagram",
+      "subtitle": "Transforma comentarios en leads calificados automáticamente",
+      "postText": "¡Comenta \"QUIERO\" para recibir el link!",
+      "likes": "me gusta",
+      "comment1": "quiero",
+      "comment2": "¡yo quiero!",
+      "dmActive": "Activo ahora",
+      "dmGreeting": "¡Hola! Vi que comentaste en el post.",
+      "dmText": "Aquí está el link exclusivo que pediste:",
+      "dmLinkTitle": "Oferta Especial",
+      "dmPlaceholder": "Enviar mensaje..."
+    },
+    "automations": {
+      "commentToDm": {
+        "title": "Comentario a DM",
+        "description": "Envía links automáticamente cuando alguien comente palabras clave"
+      },
+      "autoReply": {
+        "title": "Respuesta Automática",
+        "description": "Responde comentarios y DMs automáticamente con IA"
+      },
+      "leadCapture": {
+        "title": "Captura de Leads",
+        "description": "Recopila información de contacto de forma inteligente"
+      },
+      "engagement": {
+        "title": "Engagement Automático",
+        "description": "Aumenta el engagement con interacciones automatizadas"
+      }
+    }
+  },
   "howItWorks": {
     "title": "Cómo Funciona",
     "subtitle": "Configura tu agente de IA en solo 3 simples pasos",

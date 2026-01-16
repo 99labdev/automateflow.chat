@@ -1,6 +1,8 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import WhyChoose from '@/components/WhyChoose';
+import AgentsShowcase from '@/components/AgentsShowcase';
+import InstagramAutomation from '@/components/InstagramAutomation';
 import HowItWorks from '@/components/HowItWorks';
 import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
@@ -14,6 +16,8 @@ export default function Home() {
       <Hero />
       <HowItWorks />
       <WhyChoose />
+      <AgentsShowcase />
+      <InstagramAutomation />
       <Pricing />
       <FAQ />
       <CTA />

@@ -141,26 +141,46 @@ export default function WhyChoose() {
 
         @media (max-width: 768px) {
           .timeline::before {
-            left: 20px;
+            left: 50%;
+            transform: translateX(-50%);
           }
 
           .timeline-item {
             width: 100%;
-            padding-left: 60px;
-            padding-right: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
           }
 
           .timeline-item.left,
           .timeline-item.right {
             left: 0;
-            padding-left: 60px;
-            padding-right: 20px;
+            padding: 20px;
+          }
+
+          .timeline-content {
+            width: 100%;
+          }
+
+          .timeline-dot {
+            position: relative;
+            top: auto;
+            left: auto;
+            right: auto;
+            transform: none;
+            margin: 16px 0;
+            order: 1;
           }
 
           .timeline-item.left .timeline-dot,
           .timeline-item.right .timeline-dot {
-            left: 10px;
+            left: auto;
             right: auto;
+          }
+
+          .timeline-item .timeline-content {
+            order: 0;
           }
         }
       `}</style>
