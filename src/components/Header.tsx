@@ -11,11 +11,22 @@ export default function Header() {
   const router = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langMenuOpen, setLangMenuOpen] = useState(false);
+  const [langModalOpen, setLangModalOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const theme = document.documentElement.getAttribute('data-theme');
     setIsDark(theme === 'dark');
+  }, []);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 992);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   const toggleTheme = () => {
@@ -28,6 +39,15 @@ export default function Header() {
   const changeLocale = (locale: 'en' | 'pt' | 'es') => {
     router.replace(pathname, { locale });
     setLangMenuOpen(false);
+    setLangModalOpen(false);
+  };
+
+  const handleLangButtonClick = () => {
+    if (isMobile) {
+      setLangModalOpen(true);
+    } else {
+      setLangMenuOpen(!langMenuOpen);
+    }
   };
 
   const languages = [
@@ -68,12 +88,12 @@ export default function Header() {
           <div className="lang-selector">
             <button
               className="icon-btn"
-              onClick={() => setLangMenuOpen(!langMenuOpen)}
+              onClick={handleLangButtonClick}
               aria-label="Change language"
             >
               <Globe size={20} />
             </button>
-            {langMenuOpen && (
+            {langMenuOpen && !isMobile && (
               <div className="lang-menu">
                 {languages.map((lang) => (
                   <button
@@ -109,6 +129,33 @@ export default function Header() {
           </button>
         </div>
       </div>
+
+      {/* Language Modal for Mobile */}
+      {langModalOpen && (
+        <div className="lang-modal-overlay" onClick={() => setLangModalOpen(false)}>
+          <div className="lang-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="lang-modal-header">
+              <Globe size={24} />
+              <span>{t('selectLanguage')}</span>
+              <button className="lang-modal-close" onClick={() => setLangModalOpen(false)}>
+                <X size={20} />
+              </button>
+            </div>
+            <div className="lang-modal-options">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  className="lang-modal-option"
+                  onClick={() => changeLocale(lang.code as 'en' | 'pt' | 'es')}
+                >
+                  <span className="lang-flag">{lang.flag}</span>
+                  <span className="lang-label">{lang.label}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       <style jsx>{`
         .header {
@@ -248,6 +295,114 @@ export default function Header() {
         .mobile-menu-btn {
           display: none;
           color: var(--text-primary);
+        }
+
+        /* Language Modal Styles */
+        .lang-modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          backdrop-filter: blur(4px);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 9999;
+          padding: 20px;
+        }
+
+        .lang-modal {
+          position: relative;
+          background: var(--card-bg);
+          border-radius: 16px;
+          width: calc(100% - 40px);
+          max-width: 320px;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          border: 1px solid var(--border-color);
+          overflow: hidden;
+          animation: modalSlideIn 0.3s ease;
+          margin: auto;
+        }
+
+        @keyframes modalSlideIn {
+          from {
+            opacity: 0;
+            transform: scale(0.9) translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+          }
+        }
+
+        .lang-modal-header {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 20px;
+          border-bottom: 1px solid var(--border-color);
+          background: var(--secondary-color);
+          color: var(--primary-color);
+          border-radius: 16px 16px 0 0;
+        }
+
+        .lang-modal-header span {
+          flex: 1;
+          font-weight: 600;
+          font-size: 1.1rem;
+          color: var(--text-primary);
+        }
+
+        .lang-modal-close {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          border-radius: var(--radius-md);
+          color: var(--text-secondary);
+          transition: all var(--transition-fast);
+        }
+
+        .lang-modal-close:hover {
+          background: var(--border-color);
+          color: var(--text-primary);
+        }
+
+        .lang-modal-options {
+          padding: 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .lang-modal-option {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          padding: 16px 20px;
+          border-radius: var(--radius-lg);
+          color: var(--text-primary);
+          transition: all var(--transition-fast);
+          font-size: 1rem;
+        }
+
+        .lang-modal-option:hover {
+          background: var(--secondary-color);
+        }
+
+        .lang-modal-option:active {
+          transform: scale(0.98);
+        }
+
+        .lang-flag {
+          font-size: 1.5rem;
+        }
+
+        .lang-label {
+          font-weight: 500;
         }
 
         @media (max-width: 992px) {
