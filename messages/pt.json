@@ -275,6 +275,11 @@
         "description": "Solução de nível empresarial para grandes organizações",
         "features": ["50 agentes", "Widget para sites", "Intenções avançadas", "Acesso completo à API"]
       }
+    },
+    "customPlan": {
+      "title": "Precisa de mais volume?",
+      "description": "Se você precisa de mais agentes, créditos ou funcionalidades personalizadas, entre em contato conosco para criar um plano sob medida para o seu negócio.",
+      "cta": "Falar no WhatsApp"
     }
   },
   "faq": {

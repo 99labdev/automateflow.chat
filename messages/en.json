@@ -275,6 +275,11 @@
         "description": "Enterprise-level solution for large organizations",
         "features": ["50 agents", "Website widget", "Advanced intents", "Full API access"]
       }
+    },
+    "customPlan": {
+      "title": "Need more volume?",
+      "description": "If you need more agents, credits, or custom features, contact us to create a tailored plan for your business.",
+      "cta": "Chat on WhatsApp"
     }
   },
   "faq": {
