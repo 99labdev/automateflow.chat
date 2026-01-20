@@ -4,21 +4,59 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Check, Coins } from 'lucide-react';
 
+type BillingPeriod = 'yearly' | 'semiannual' | 'quarterly' | 'monthly';
+
 export default function Pricing() {
   const t = useTranslations('pricing');
-  const [isYearly, setIsYearly] = useState(true);
+  const [billingPeriod, setBillingPeriod] = useState<BillingPeriod>('yearly');
 
   const plans = ['basic', 'standard', 'corporate'];
 
-  const getPrice = (basePrice: string) => {
-    const price = parseInt(basePrice);
-    return isYearly ? Math.round(price * 0.9) : price;
+  const discounts: Record<BillingPeriod, number> = {
+    yearly: 0.10,      // 10% discount
+    semiannual: 0.07,  // 7% discount
+    quarterly: 0.05,   // 5% discount
+    monthly: 0,        // no discount
   };
 
-  const getYearlyTotal = (basePrice: string) => {
-    const price = parseInt(basePrice);
-    return Math.round(price * 0.9 * 12);
+  const periodMultipliers: Record<BillingPeriod, number> = {
+    yearly: 12,
+    semiannual: 6,
+    quarterly: 3,
+    monthly: 1,
   };
+
+  const periodLabels: Record<BillingPeriod, string> = {
+    yearly: t('periods.yearly'),
+    semiannual: t('periods.semiannual'),
+    quarterly: t('periods.quarterly'),
+    monthly: t('periods.monthly'),
+  };
+
+  const periodCreditsLabel: Record<BillingPeriod, string> = {
+    yearly: t('periods.yearlyCredits'),
+    semiannual: t('periods.semiannualCredits'),
+    quarterly: t('periods.quarterlyCredits'),
+    monthly: t('periods.monthlyCredits'),
+  };
+
+  const getMonthlyPrice = (basePrice: string) => {
+    const price = parseInt(basePrice);
+    const discount = discounts[billingPeriod];
+    return Math.round(price * (1 - discount));
+  };
+
+  const getTotalPrice = (basePrice: string) => {
+    const monthlyPrice = getMonthlyPrice(basePrice);
+    return monthlyPrice * periodMultipliers[billingPeriod];
+  };
+
+  const billingOptions: { key: BillingPeriod; discount: string | null }[] = [
+    { key: 'yearly', discount: t('discounts.yearly') },
+    { key: 'semiannual', discount: t('discounts.semiannual') },
+    { key: 'quarterly', discount: t('discounts.quarterly') },
+    { key: 'monthly', discount: null },
+  ];
 
   return (
     <section id="pricing" className="section pricing-section">
@@ -26,18 +64,19 @@ export default function Pricing() {
         <h2 className="section-title">{t('title')}</h2>
         <p className="section-subtitle">{t('subtitle')}</p>
 
-        <div className="billing-toggle">
-          <span className={!isYearly ? 'active' : ''}>{t('monthly')}</span>
-          <button
-            className={`toggle ${isYearly ? 'yearly' : ''}`}
-            onClick={() => setIsYearly(!isYearly)}
-          >
-            <span className="toggle-handle"></span>
-          </button>
-          <span className={isYearly ? 'active' : ''}>
-            {t('yearly')}
-            <span className="discount-badge">{t('yearlyDiscount')}</span>
-          </span>
+        <div className="billing-tabs">
+          {billingOptions.map((option) => (
+            <button
+              key={option.key}
+              className={`billing-tab ${billingPeriod === option.key ? 'active' : ''}`}
+              onClick={() => setBillingPeriod(option.key)}
+            >
+              {periodLabels[option.key]}
+              {option.discount && (
+                <span className="discount-badge">{option.discount}</span>
+              )}
+            </button>
+          ))}
         </div>
 
         <div className="plans-grid">
@@ -53,17 +92,17 @@ export default function Pricing() {
                 <h3>{t(`plans.${plan}.name`)}</h3>
                 <div className="pricing-price">
                   <span className="currency">R$</span>
-                  <span className="amount">{getPrice(t(`plans.${plan}.price`))}</span>
-                  <span className="period">/{isYearly ? 'mês' : 'mensal'}</span>
+                  <span className="amount">{getMonthlyPrice(t(`plans.${plan}.price`))}</span>
+                  <span className="period">/{billingPeriod === 'monthly' ? 'mensal' : 'mês'}</span>
                 </div>
-                {isYearly && (
-                  <p className="yearly-total">R$ {getYearlyTotal(t(`plans.${plan}.price`))} /anual</p>
+                {billingPeriod !== 'monthly' && (
+                  <p className="period-total">R$ {getTotalPrice(t(`plans.${plan}.price`))} /{periodLabels[billingPeriod].toLowerCase()}</p>
                 )}
                 <p className="pricing-description">{t(`plans.${plan}.description`)}</p>
               </div>
               <div className="pricing-credits">
                 <Coins size={18} />
-                <strong>{t(`plans.${plan}.credits`)}</strong> créditos por {isYearly ? 'anual' : 'mensal'}
+                <strong>{t(`plans.${plan}.credits`)}</strong> {periodCreditsLabel[billingPeriod]}
               </div>
               <ul className="pricing-features">
                 {(t.raw(`plans.${plan}.features`) as string[]).map((feature: string, i: number) => (
@@ -89,63 +128,55 @@ export default function Pricing() {
           background: var(--bg-primary);
         }
 
-        .billing-toggle {
+        .billing-tabs {
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 16px;
+          gap: 8px;
           margin-bottom: 48px;
+          flex-wrap: wrap;
         }
 
-        .billing-toggle span {
-          color: var(--text-muted);
+        .billing-tab {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px 20px;
+          background: var(--surface-color);
+          border: 2px solid var(--border-color);
+          border-radius: var(--radius-full);
+          font-size: 0.95rem;
           font-weight: 500;
-          transition: color var(--transition-fast);
+          color: var(--text-secondary);
+          cursor: pointer;
+          transition: all var(--transition-fast);
         }
 
-        .billing-toggle span.active {
+        .billing-tab:hover {
+          border-color: var(--primary-color);
           color: var(--text-primary);
         }
 
-        .toggle {
-          width: 56px;
-          height: 28px;
-          background: var(--border-color);
-          border-radius: var(--radius-full);
-          position: relative;
-          cursor: pointer;
-          transition: background var(--transition-normal);
-        }
-
-        .toggle.yearly {
+        .billing-tab.active {
           background: var(--primary-color);
+          border-color: var(--primary-color);
+          color: white;
         }
 
-        .toggle-handle {
-          position: absolute;
-          top: 2px;
-          left: 2px;
-          width: 24px;
-          height: 24px;
-          background: var(--surface-color);
-          border-radius: 50%;
-          transition: transform var(--transition-normal);
-          box-shadow: var(--shadow-sm);
-        }
-
-        .toggle.yearly .toggle-handle {
-          transform: translateX(28px);
+        .billing-tab.active .discount-badge {
+          background: rgba(255, 255, 255, 0.2);
+          color: white;
         }
 
         .discount-badge {
           display: inline-block;
-          margin-left: 8px;
           padding: 4px 10px;
           background: rgba(139, 92, 246, 0.1);
           color: var(--primary-color);
-          font-size: 0.75rem;
+          font-size: 0.7rem;
           font-weight: 600;
           border-radius: var(--radius-full);
+          text-transform: uppercase;
         }
 
         .plans-grid {
@@ -203,7 +234,7 @@ export default function Pricing() {
         }
 
         .pricing-price {
-          margin-bottom: 12px;
+          margin-bottom: 8px;
           display: flex;
           align-items: baseline;
           justify-content: center;
@@ -226,7 +257,7 @@ export default function Pricing() {
           color: var(--text-secondary);
         }
 
-        .yearly-total {
+        .period-total {
           font-size: 0.9rem;
           color: var(--text-muted);
           margin-bottom: 8px;
@@ -283,6 +314,20 @@ export default function Pricing() {
         }
 
         @media (max-width: 1024px) {
+          .billing-tabs {
+            gap: 6px;
+          }
+
+          .billing-tab {
+            padding: 10px 14px;
+            font-size: 0.85rem;
+          }
+
+          .discount-badge {
+            font-size: 0.65rem;
+            padding: 3px 8px;
+          }
+
           .plans-grid {
             grid-template-columns: 1fr;
             max-width: 400px;
@@ -295,6 +340,18 @@ export default function Pricing() {
 
           .pricing-card.featured:hover {
             transform: translateY(-5px);
+          }
+        }
+
+        @media (max-width: 600px) {
+          .billing-tabs {
+            flex-direction: column;
+            gap: 8px;
+          }
+
+          .billing-tab {
+            width: 100%;
+            justify-content: center;
           }
         }
       `}</style>

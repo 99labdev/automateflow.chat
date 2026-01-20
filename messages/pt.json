@@ -235,9 +235,21 @@
   "pricing": {
     "title": "Planos e Preços",
     "subtitle": "Escolha o plano ideal para o seu negócio",
-    "monthly": "Mensal",
-    "yearly": "Anual",
-    "yearlyDiscount": "Economize 10%",
+    "periods": {
+      "yearly": "Anual",
+      "semiannual": "Semestral",
+      "quarterly": "Trimestral",
+      "monthly": "Mensal",
+      "yearlyCredits": "créditos por anual",
+      "semiannualCredits": "créditos por semestral",
+      "quarterlyCredits": "créditos por trimestral",
+      "monthlyCredits": "créditos por mensal"
+    },
+    "discounts": {
+      "yearly": "Economize 10%",
+      "semiannual": "Economize 7%",
+      "quarterly": "Economize 5%"
+    },
     "perMonth": "/mês",
     "cta": "Começar Agora",
     "popular": "Mais Popular",
