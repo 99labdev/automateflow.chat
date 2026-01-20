@@ -235,9 +235,21 @@
   "pricing": {
     "title": "Plans & Pricing",
     "subtitle": "Choose the ideal plan for your business",
-    "monthly": "Monthly",
-    "yearly": "Yearly",
-    "yearlyDiscount": "Save 10%",
+    "periods": {
+      "yearly": "Yearly",
+      "semiannual": "Semiannual",
+      "quarterly": "Quarterly",
+      "monthly": "Monthly",
+      "yearlyCredits": "credits per year",
+      "semiannualCredits": "credits per semester",
+      "quarterlyCredits": "credits per quarter",
+      "monthlyCredits": "credits per month"
+    },
+    "discounts": {
+      "yearly": "Save 10%",
+      "semiannual": "Save 7%",
+      "quarterly": "Save 5%"
+    },
     "perMonth": "/month",
     "cta": "Get Started",
     "popular": "Most Popular",
