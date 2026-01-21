@@ -1,5 +1,6 @@
 import './globals.css';
 import Script from 'next/script';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import WebChat from '@/components/WebChat';
 
 export const metadata = {
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body>
         {children}
         <WebChat />
+        <SpeedInsights />
       </body>
     </html>
   );
