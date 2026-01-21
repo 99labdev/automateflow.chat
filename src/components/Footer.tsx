@@ -40,7 +40,7 @@ export default function Footer() {
         <hr className="footer-divider" />
 
         <div className="footer-bottom">
-          <p className="copyright">{t('copyright')}</p>
+          <p className="copyright">{t('copyright', { year: new Date().getFullYear() })}</p>
           <div className="footer-legal">
             <Link href="/terms">{t('legal.terms')}</Link>
             <Link href="/privacy">{t('legal.privacy')}</Link>

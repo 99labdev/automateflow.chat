@@ -354,7 +354,7 @@
       "terms": "Términos de Servicio",
       "privacy": "Política de Privacidad"
     },
-    "copyright": "© 2025 AutomateFlow. Todos los derechos reservados."
+    "copyright": "© {year} AutomateFlow. Todos los derechos reservados."
   },
   "terms": {
     "title": "Términos de Servicio",
