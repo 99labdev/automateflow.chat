@@ -59,18 +59,21 @@ export default function AutomationShowcase() {
               <div className="iphone-mockup">
                 <div className="iphone-frame">
                   <div className="iphone-screen">
-                    <div className="dynamic-island"></div>
+                    <div className="iphone-dynamic-island"></div>
                     <div className="status-bar">
                       <span className="status-time">9:41</span>
                       <div className="status-icons">
-                        <svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor">
-                          <path d="M1 4.5C1 3.67 1.67 3 2.5 3h1C4.33 3 5 3.67 5 4.5v5c0 .83-.67 1.5-1.5 1.5h-1C1.67 11 1 10.33 1 9.5v-5zM6 3.5C6 2.67 6.67 2 7.5 2h1C9.33 2 10 2.67 10 3.5v6c0 .83-.67 1.5-1.5 1.5h-1C6.67 10 6 9.33 6 8.5v-5zM11 2.5c0-.83.67-1.5 1.5-1.5h1c.83 0 1.5.67 1.5 1.5v7c0 .83-.67 1.5-1.5 1.5h-1c-.83 0-1.5-.67-1.5-1.5v-7z"/>
+                        <svg width="9" height="8" viewBox="0 0 17 12" fill="currentColor">
+                          <rect x="0" y="8" width="3" height="4" rx="0.5"/>
+                          <rect x="4.5" y="5.5" width="3" height="6.5" rx="0.5"/>
+                          <rect x="9" y="3" width="3" height="9" rx="0.5"/>
+                          <rect x="13.5" y="0" width="3" height="12" rx="0.5"/>
                         </svg>
-                        <svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor">
+                        <svg width="12" height="9" viewBox="0 0 16 12" fill="currentColor">
                           <path d="M8 2.4c2.5 0 4.8 1 6.5 2.6.3.3.3.8 0 1.1-.3.3-.8.3-1.1 0C12 4.8 10.1 4 8 4S4 4.8 2.6 6.1c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1C3.2 3.4 5.5 2.4 8 2.4zm0 3c1.6 0 3.1.6 4.2 1.7.3.3.3.8 0 1.1-.3.3-.8.3-1.1 0-.8-.8-1.9-1.2-3.1-1.2s-2.3.4-3.1 1.2c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1C4.9 6 6.4 5.4 8 5.4zm0 3c.8 0 1.5.3 2 .9.3.3.3.8 0 1.1-.3.3-.8.3-1.1 0-.2-.2-.5-.4-.9-.4s-.7.2-.9.4c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1.5-.6 1.2-.9 2-.9z"/>
                         </svg>
-                        <div className="battery-icon">
-                          <div className="battery-level"></div>
+                        <div className="iphone-battery-icon-sm">
+                          <div className="iphone-battery-level"></div>
                         </div>
                       </div>
                     </div>
@@ -225,7 +228,7 @@ export default function AutomationShowcase() {
                       </div>
                     </div>
 
-                    <div className="home-indicator"></div>
+                    <div className="iphone-home-indicator"></div>
                   </div>
                 </div>
                 <div className="iphone-button-left-1"></div>
@@ -420,16 +423,16 @@ export default function AutomationShowcase() {
           position: relative;
         }
 
-        .dynamic-island {
+        .iphone-dynamic-island {
           position: absolute;
           top: 12px;
           left: 50%;
           transform: translateX(-50%);
-          width: 95px;
-          height: 28px;
+          width: 72px;
+          height: 25px;
           background: #000;
           border-radius: 20px;
-          z-index: 100;
+          z-index: 10;
         }
 
         .status-bar {
@@ -454,28 +457,28 @@ export default function AutomationShowcase() {
           color: var(--text-primary);
         }
 
-        .battery-icon {
-          width: 25px;
-          height: 12px;
-          border: 1.5px solid var(--text-primary);
-          border-radius: 3px;
-          padding: 1.5px;
+        .iphone-battery-icon-sm {
+          width: 18px;
+          height: 9px;
+          border: 1.5px solid currentColor;
+          border-radius: 2px;
+          padding: 1px;
           position: relative;
         }
 
-        .battery-icon::after {
+        .iphone-battery-icon-sm::after {
           content: '';
           position: absolute;
-          right: -4px;
+          right: -3px;
           top: 50%;
           transform: translateY(-50%);
-          width: 2px;
-          height: 5px;
-          background: var(--text-primary);
+          width: 1.5px;
+          height: 4px;
+          background: currentColor;
           border-radius: 0 1px 1px 0;
         }
 
-        .battery-level {
+        .iphone-battery-level {
           width: 100%;
           height: 100%;
           background: #4ade80;
@@ -522,7 +525,7 @@ export default function AutomationShowcase() {
           border-radius: 0 2px 2px 0;
         }
 
-        .home-indicator {
+        .iphone-home-indicator {
           width: 135px;
           height: 5px;
           background: var(--text-secondary);
@@ -956,9 +959,9 @@ export default function AutomationShowcase() {
             border-radius: 40px;
           }
 
-          .dynamic-island {
-            width: 80px;
-            height: 24px;
+          .iphone-dynamic-island {
+            width: 65px;
+            height: 22px;
             top: 10px;
           }
 
@@ -992,6 +995,12 @@ export default function AutomationShowcase() {
           .iphone-mockup {
             width: 240px;
             height: 500px;
+          }
+
+          .iphone-dynamic-island {
+            width: 50px;
+            height: 20px;
+            top: 9px;
           }
 
           .automation-title {
