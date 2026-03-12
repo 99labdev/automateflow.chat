@@ -256,24 +256,68 @@
     "plans": {
       "basic": {
         "name": "Básico",
-        "price": "87",
-        "credits": "2500",
-        "description": "Perfeito para pequenas equipes que estão começando",
-        "features": ["5 agentes", "Widget para sites", "Intenções avançadas", "Acesso completo à API"]
+        "price": "247",
+        "credits": "4000",
+        "description": "Perfeito para começar sua jornada de automação",
+        "features": [
+          "1 agente",
+          "1 base de conhecimento",
+          "1 integração de agente",
+          "1 automação",
+          "1 conexão Evolution API",
+          "1 conexão Uazapi",
+          "1 conexão WhatsApp Cloud",
+          "1 conexão Webchat",
+          "1 conexão Instagram",
+          "1 membro do time",
+          "Acesso total ao dashboard",
+          "Acesso total ao CRM",
+          "Leads ilimitados"
+        ]
       },
       "standard": {
         "name": "Padrão",
         "price": "397",
-        "credits": "11500",
+        "credits": "12000",
         "description": "Plano mais popular para equipes em crescimento",
-        "features": ["20 agentes", "Widget para sites", "Intenções avançadas", "Acesso completo à API"]
+        "features": [
+          "2 agentes",
+          "2 bases de conhecimento",
+          "2 integrações de agente",
+          "2 automações",
+          "2 conexões Evolution API",
+          "2 conexões Uazapi",
+          "2 conexões WhatsApp Cloud",
+          "2 conexões Webchat",
+          "2 conexões Instagram",
+          "2 membros do time",
+          "Acesso total ao dashboard",
+          "Acesso total ao CRM",
+          "Leads ilimitados"
+        ]
       },
       "corporate": {
         "name": "Corporativo",
         "price": "997",
         "credits": "30000",
-        "description": "Solução de nível empresarial para grandes organizações",
-        "features": ["50 agentes", "Widget para sites", "Intenções avançadas", "Acesso completo à API"]
+        "description": "Solução completa com IA e automações avançadas",
+        "features": [
+          "3 agentes",
+          "3 bases de conhecimento",
+          "Integrações de agente ilimitadas",
+          "3 automações",
+          "3 conexões Evolution API",
+          "3 conexões Uazapi",
+          "3 conexões WhatsApp Cloud",
+          "3 conexões Webchat",
+          "3 conexões Instagram",
+          "Membros do time ilimitados",
+          "Acesso total ao dashboard",
+          "Acesso total ao CRM",
+          "Leads ilimitados",
+          "Pipelines de automação no CRM",
+          "Qualificação de leads por IA"
+        ]
       }
     },
     "customPlan": {
@@ -316,7 +360,7 @@
       },
       "q8": {
         "question": "Quais são os planos disponíveis?",
-        "answer": "Oferecemos 3 planos: Básico (5 agentes, 2.500 créditos), Padrão (20 agentes, 11.500 créditos) e Corporativo (50 agentes, 30.000 créditos). Todos incluem widget para sites, intenções avançadas e acesso completo à API."
+        "answer": "Oferecemos 3 planos: Básico (R$ 247/mês, 1 agente, 4.000 créditos), Padrão (R$ 397/mês, 2 agentes, 12.000 créditos) e Corporativo (R$ 997/mês, 3 agentes, 30.000 créditos). Todos incluem acesso total ao dashboard, CRM e leads ilimitados."
       },
       "q9": {
         "question": "Como funciona o período de teste gratuito?",

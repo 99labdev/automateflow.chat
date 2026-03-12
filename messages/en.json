@@ -256,24 +256,68 @@
     "plans": {
       "basic": {
         "name": "Basic",
-        "price": "87",
-        "credits": "2500",
-        "description": "Perfect for small teams getting started",
-        "features": ["5 agents", "Website widget", "Advanced intents", "Full API access"]
+        "price": "247",
+        "credits": "4000",
+        "description": "Perfect to start your automation journey",
+        "features": [
+          "1 agent",
+          "1 knowledge base",
+          "1 agent integration",
+          "1 automation",
+          "1 Evolution API connection",
+          "1 Uazapi connection",
+          "1 WhatsApp Cloud connection",
+          "1 Webchat connection",
+          "1 Instagram connection",
+          "1 team member",
+          "Full dashboard access",
+          "Full CRM access",
+          "Unlimited leads"
+        ]
       },
       "standard": {
         "name": "Standard",
         "price": "397",
-        "credits": "11500",
+        "credits": "12000",
         "description": "Most popular plan for growing teams",
-        "features": ["20 agents", "Website widget", "Advanced intents", "Full API access"]
+        "features": [
+          "2 agents",
+          "2 knowledge bases",
+          "2 agent integrations",
+          "2 automations",
+          "2 Evolution API connections",
+          "2 Uazapi connections",
+          "2 WhatsApp Cloud connections",
+          "2 Webchat connections",
+          "2 Instagram connections",
+          "2 team members",
+          "Full dashboard access",
+          "Full CRM access",
+          "Unlimited leads"
+        ]
       },
       "corporate": {
         "name": "Corporate",
         "price": "997",
         "credits": "30000",
-        "description": "Enterprise-level solution for large organizations",
-        "features": ["50 agents", "Website widget", "Advanced intents", "Full API access"]
+        "description": "Complete solution with AI and advanced automations",
+        "features": [
+          "3 agents",
+          "3 knowledge bases",
+          "Unlimited agent integrations",
+          "3 automations",
+          "3 Evolution API connections",
+          "3 Uazapi connections",
+          "3 WhatsApp Cloud connections",
+          "3 Webchat connections",
+          "3 Instagram connections",
+          "Unlimited team members",
+          "Full dashboard access",
+          "Full CRM access",
+          "Unlimited leads",
+          "CRM automation pipelines",
+          "AI lead qualification"
+        ]
       }
     },
     "customPlan": {
@@ -316,7 +360,7 @@
       },
       "q8": {
         "question": "What plans are available?",
-        "answer": "We offer 3 plans: Basic (5 agents, 2,500 credits), Standard (20 agents, 11,500 credits) and Corporate (50 agents, 30,000 credits). All include website widget, advanced intents and full API access."
+        "answer": "We offer 3 plans: Basic (R$ 247/month, 1 agent, 4,000 credits), Standard (R$ 397/month, 2 agents, 12,000 credits) and Corporate (R$ 997/month, 3 agents, 30,000 credits). All include full dashboard access, CRM and unlimited leads."
       },
       "q9": {
         "question": "How does the free trial work?",
