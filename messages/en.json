@@ -320,10 +320,20 @@
         ]
       }
     },
-    "customPlan": {
-      "title": "Need more volume?",
-      "description": "If you need more agents, credits, or custom features, contact us to create a tailored plan for your business.",
-      "cta": "Chat on WhatsApp"
+    "enterprise": {
+      "name": "Enterprise",
+      "badge": "Enterprise",
+      "priceLabel": "Custom",
+      "description": "Tailored solution for companies that need scale, security, and dedicated support.",
+      "customResources": "Custom resources",
+      "features": [
+        "Custom resources",
+        "Custom credit volume",
+        "Dedicated account manager",
+        "Personalized onboarding",
+        "SLA and priority support"
+      ],
+      "cta": "Talk to a Consultant"
     }
   },
   "faq": {

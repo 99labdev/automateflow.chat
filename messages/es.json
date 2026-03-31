@@ -320,10 +320,20 @@
         ]
       }
     },
-    "customPlan": {
-      "title": "¿Necesitas más volumen?",
-      "description": "Si necesitas más agentes, créditos o funcionalidades personalizadas, contáctanos para crear un plan a medida para tu negocio.",
-      "cta": "Hablar por WhatsApp"
+    "enterprise": {
+      "name": "Enterprise",
+      "badge": "Enterprise",
+      "priceLabel": "A Medida",
+      "description": "Solución a medida para empresas que necesitan escala, seguridad y soporte dedicado.",
+      "customResources": "Recursos personalizados",
+      "features": [
+        "Recursos a medida",
+        "Volumen personalizado de créditos",
+        "Gerente de cuenta dedicado",
+        "Onboarding personalizado",
+        "SLA y soporte prioritario"
+      ],
+      "cta": "Hablar con un Consultor"
     }
   },
   "faq": {
