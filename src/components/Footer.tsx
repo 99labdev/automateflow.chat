@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="footer-social">
             <h4>{t('social')}</h4>
             <div className="social-links">
-              <a href="https://www.linkedin.com/company/automateflow" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://www.linkedin.com/company/automateflowchat" target="_blank" rel="noopener noreferrer" className="social-link">
                 <Linkedin size={20} />
               </a>
               <a href="https://www.instagram.com/automateflow.chat" target="_blank" rel="noopener noreferrer" className="social-link">
