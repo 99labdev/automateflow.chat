@@ -386,7 +386,11 @@
     "title": "Pronto para transformar seu atendimento?",
     "subtitle": "Junte-se a milhares de empresas que já automatizaram seu negócio",
     "button": "Teste Grátis por 7 Dias",
-    "features": ["Sem cartão de crédito", "Cancele quando quiser", "Suporte completo"]
+    "features": [
+      "Sem cartão de crédito",
+      "Cancele quando quiser",
+      "Suporte completo"
+    ]
   },
   "footer": {
     "description": "Plataforma líder para criação de agentes de IA para automação de vendas e atendimento.",
@@ -459,7 +463,7 @@
   },
   "privacy": {
     "title": "Política de Privacidade",
-    "lastUpdated": "Última atualização: Janeiro de 2025",
+    "lastUpdated": "Última atualização: Agosto de 2026",
     "intro": "A AutomateFlow está comprometida em proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos suas informações pessoais quando você utiliza nossa plataforma de agentes de inteligência artificial.",
     "sections": {
       "collection": {
@@ -473,6 +477,10 @@
       "sharing": {
         "title": "Compartilhamento de Dados",
         "content": "Não vendemos suas informações pessoais a terceiros. Podemos compartilhar dados com provedores de serviços que nos auxiliam nas operações (como processadores de pagamento), quando exigido por lei ou ordem judicial, para proteger nossos direitos legais ou em caso de fusão ou aquisição da empresa. Todos os terceiros com quem compartilhamos dados são obrigados a proteger suas informações."
+      },
+      "googleUserData": {
+        "title": "Dados de usuário do Google (Google Calendar e Google Drive)",
+        "content": "O uso e a transferência, pela AutomateFlow, de informações recebidas das APIs do Google para qualquer outro aplicativo seguem a Política de Dados do Usuário dos Serviços de API do Google, incluindo os requisitos de Uso Limitado. Quando você conecta o Google Calendar ou o Google Drive a um agente, acessamos apenas os dados necessários para o recurso ativado: os eventos de agenda que você escolhe gerenciar e acesso somente leitura aos arquivos dentro da única pasta do Drive que você seleciona. O conteúdo dos arquivos do Drive é lido sob demanda para responder às conversas atendidas pelo seu agente, não é armazenado além do contexto daquela conversa, nunca é usado para treinar modelos de IA e nunca é vendido nem compartilhado com terceiros além do provedor de IA que processa a conversa. Você pode desconectar uma integração a qualquer momento nas configurações do agente, o que exclui os tokens de acesso armazenados, e também pode revogar o acesso da AutomateFlow na página de permissões da sua Conta do Google."
       },
       "storage": {
         "title": "Armazenamento e Retenção",

@@ -11,6 +11,7 @@ export default function PrivacyPage() {
     'collection',
     'use',
     'sharing',
+    'googleUserData',
     'storage',
     'security',
     'rights',
