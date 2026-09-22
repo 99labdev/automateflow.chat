@@ -18,6 +18,7 @@
 
 ## Global Constraints
 
+- This worktree has no `node_modules`: run `npm install` once before Task 1. Every lucide icon named in this plan must be checked once with `node -e "const l=require('lucide-react');console.log(['Funnel','MessageCircleMore','CalendarClock','Headset','Clapperboard','Images','CalendarCheck','MessageSquareText','ClipboardList','KeyRound','Plug','Shuffle','UserCheck','Link2','Sparkles'].filter(n=>!l[n]))"`; any name printed is missing in lucide 0.453 and gets the fallback named in its task (or `Filter`, `MessageCircle`, `Calendar`, `Image`, `Key`, `Link`, `Star` respectively).
 - Locales: `en`, `pt`, `es`; default `pt` (`src/i18n/routing.ts`). Every string in a component comes from `useTranslations`; no hardcoded user-visible text.
 - Key parity: `messages/pt.json`, `en.json`, `es.json` must have identical key trees and identical array lengths. `npm run build` fails otherwise (Task 1).
 - Existing section ids stay: `why-choose`, `instagram-automation`, `agents-showcase`, `crm-showcase`, `pricing`, `faq`. New ids: `mcp`, `schedule`, `funnel`.
