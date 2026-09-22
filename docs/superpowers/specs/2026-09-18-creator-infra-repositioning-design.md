@@ -1,7 +1,7 @@
 # Reposicionamento do site: infraestrutura para criadores
 
 Data: 2026-09-18
-Status: aprovado em brainstorming, aguardando revisão do spec
+Status: aprovado (2026-09-22)
 
 ## Contexto
 
@@ -31,9 +31,9 @@ Quem produz conteúdo entra no site e entende em uma rolagem que:
 | Hierarquia | Infraestrutura primeiro; MCP como prova e diferencial. |
 | Estrutura | Jornada do criador: seções na ordem do fluxo real, cada uma alimentando a próxima. |
 | MCP | Público, todos os planos. Seção própria logo após o hero e chip de prompt em cada passo. |
-| Pricing | Intocado (componente e copy). |
+| Pricing | Componente e preços ficam. Copy (nomes, descrições, recursos) atualizada a partir de `app.automateflow.chat/plans/` (lido em 2026-09-22). |
 | Público | Criadores de conteúdo e infoprodutores. Atendimento vira feature, não produto. |
-| Redes do agendador | Instagram (feed e reels). Outras redes entram depois, só copy. |
+| Redes do agendador | Instagram e TikTok (conforme os planos do app: "perfis sociais (Instagram + TikTok)"). |
 | Não lançado | Automação de e-mail e de WhatsApp saem do site. Sem "em breve". |
 
 ## Estrutura da página
@@ -51,7 +51,7 @@ Quem produz conteúdo entra no site e entende em uma rolagem que:
 | 3 | `FunnelShowcase` | novo | `funnel` |
 | 4 | `AgentsShowcase` | copy + selo | `agents-showcase` (mantido) |
 | 5 | `CRMShowcase` | copy + selo | `crm-showcase` (mantido) |
-| — | `Pricing` | intocado | atual |
+| — | `Pricing` | copy | `pricing` (mantido) |
 | — | `FAQ`, `CTA`, `Footer` | copy | atuais |
 
 Âncoras existentes são mantidas para não quebrar links externos e anúncios.
@@ -157,6 +157,34 @@ operável via MCP." `title`, `description` e OG atualizados por idioma em
 Tom: direto, segunda pessoa, sem superlativo. A copy final passa pelas skills
 `copywriting` e `humanizer`.
 
+## Pricing (fonte: app, 2026-09-22)
+
+Preços, créditos e layout do componente não mudam. Só copy, nos 3 idiomas:
+
+| Chave | Nome | Preço/mês | Créditos | Perfis sociais | Membros |
+|-------|------|-----------|----------|----------------|---------|
+| `basic` | Creator | R$ 247 | 4.000 | 2 (Instagram + TikTok) | 1 |
+| `standard` | Pro | R$ 397 | 12.000 | 5 (Instagram + TikTok) | 3 |
+| `corporate` | Agency | R$ 997 | 30.000 | 15 (Instagram + TikTok) | ilimitados |
+
+Descrições ficam as atuais. Recursos comuns aos três, na ordem:
+
+1. N perfis sociais (Instagram + TikTok)
+2. N membros do time
+3. Agendamento de posts ilimitado
+4. Automações de DM ilimitadas
+5. Funis, VSLs e páginas ilimitados
+6. Captura de leads ilimitada
+7. Acesso MCP: opere tudo pelo seu assistente de IA
+8. Agentes de IA e bases de conhecimento ilimitados
+9. CRM completo com pipelines e qualificação de leads por IA
+10. Conexões API Não Oficial do WhatsApp ilimitadas (R$47,00/mês cada)
+
+O app repete "créditos por mês" no cabeçalho e na lista; no site fica só no
+cabeçalho (`credits` + `periods.monthlyCredits`), como já é hoje. `enterprise`
+não muda. Chaves `basic`/`standard`/`corporate` são mantidas (só o `name` muda)
+para não tocar no componente.
+
 ## Traduções
 
 - Namespaces novos: `mcp`, `schedule`, `funnel`.
@@ -198,8 +226,8 @@ Commits pequenos, site funcional em cada um:
 
 ## Fora de escopo
 
-- Pricing (planos, preços, lista de features)
+- Pricing: preços, créditos, períodos e layout (só copy entra)
 - Termos e privacidade
 - Identidade visual
 - Página dedicada `/mcp`
-- Outras redes no agendador além de Instagram
+- Outras redes no agendador além de Instagram e TikTok
