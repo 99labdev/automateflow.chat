@@ -2,7 +2,8 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
-import { Heart, MessageCircle, Send, Bookmark, Instagram, Phone, Mail, Calendar } from 'lucide-react';
+import { Heart, MessageCircle, Send, Bookmark, Instagram, UserCheck, Shuffle } from 'lucide-react';
+import McpPrompt from '@/components/McpPrompt';
 
 export default function AutomationShowcase() {
   const t = useTranslations('agentsShowcase');
@@ -21,38 +22,19 @@ export default function AutomationShowcase() {
   const primaryColor = '#8b5cf6';
 
   const automations = [
-    {
-      key: 'commentToDm',
-      icon: Instagram,
-      color: primaryColor,
-      available: true,
-    },
-    {
-      key: 'autoReply',
-      icon: Phone,
-      color: primaryColor,
-      available: false,
-    },
-    {
-      key: 'leadCapture',
-      icon: Mail,
-      color: primaryColor,
-      available: false,
-    },
-    {
-      key: 'engagement',
-      icon: Calendar,
-      color: primaryColor,
-      available: false,
-    },
+    { key: 'commentToDm', icon: Instagram, color: primaryColor },
+    { key: 'requireFollow', icon: UserCheck, color: primaryColor },
+    { key: 'variations', icon: Shuffle, color: primaryColor },
   ];
 
   return (
     <section id="instagram-automation" className="section instagram-automation-section">
       <div className="container">
         <div className="automation-section">
+          <div className="step-badge-wrap"><span className="step-badge">{t('automationSection.step')}</span></div>
           <h2 className="section-title">{t('automationSection.title')}</h2>
-          <p className="automation-subtitle">{t('automationSection.subtitle')}</p>
+          <p className="section-subtitle">{t('automationSection.subtitle')}</p>
+          <div className="text-center"><McpPrompt text={t('automationSection.prompt')} /></div>
 
           <div className="automation-grid">
             <div className="agent-demo">
@@ -244,10 +226,9 @@ export default function AutomationShowcase() {
                 return (
                   <button
                     key={automation.key}
-                    className={`agent-tab ${activeAutomation === index ? 'active' : ''} ${!automation.available ? 'coming-soon' : ''}`}
-                    onClick={() => automation.available && setActiveAutomation(index)}
+                    className={`agent-tab ${activeAutomation === index ? 'active' : ''}`}
+                    onClick={() => setActiveAutomation(index)}
                     style={{ '--agent-color': automation.color } as React.CSSProperties}
-                    disabled={!automation.available}
                   >
                     <div className="agent-tab-icon">
                       <Icon size={24} />
@@ -256,9 +237,6 @@ export default function AutomationShowcase() {
                       <h3 className="agent-tab-title">{t(`automations.${automation.key}.title`)}</h3>
                       <p className="agent-tab-desc">{t(`automations.${automation.key}.description`)}</p>
                     </div>
-                    {!automation.available && (
-                      <span className="coming-soon-badge">{t('automationSection.comingSoonBadge')}</span>
-                    )}
                   </button>
                 );
               })}
@@ -341,26 +319,6 @@ export default function AutomationShowcase() {
 
         .agent-tab.active .agent-tab-icon {
           transform: scale(1.1);
-        }
-
-        .agent-tab.coming-soon {
-          opacity: 0.6;
-          cursor: not-allowed;
-        }
-
-        .agent-tab.coming-soon:hover {
-          border-color: var(--border-color);
-          transform: none;
-        }
-
-        .coming-soon-badge {
-          background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
-          color: white;
-          font-size: 0.7rem;
-          font-weight: 600;
-          padding: 4px 10px;
-          border-radius: 12px;
-          white-space: nowrap;
         }
 
         .agent-tab-content {

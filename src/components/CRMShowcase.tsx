@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useState, useEffect, useMemo } from 'react';
 import { Users, Target, TrendingUp, CheckCircle } from 'lucide-react';
+import McpPrompt from '@/components/McpPrompt';
 
 export default function CRMShowcase() {
   const t = useTranslations('crmShowcase');
@@ -171,8 +172,10 @@ export default function CRMShowcase() {
     <section id="crm-showcase" className="section crm-showcase-section">
       <div className="container">
         <div className="crm-section">
-          <h3 className="crm-title">{t('title')}</h3>
+          <div className="step-badge-wrap"><span className="step-badge">{t('step')}</span></div>
+          <h2 className="crm-title">{t('title')}</h2>
           <p className="crm-subtitle">{t('subtitle')}</p>
+          <div className="text-center"><McpPrompt text={t('prompt')} /></div>
 
           <div className="crm-grid">
             <div className="features-tabs">

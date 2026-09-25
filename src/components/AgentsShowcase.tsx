@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import { Share2, Brain, Settings, BookOpen, Bot } from 'lucide-react';
+import McpPrompt from '@/components/McpPrompt';
 
 export default function AgentsShowcase() {
   const t = useTranslations('agentsShowcase');
@@ -73,8 +74,10 @@ export default function AgentsShowcase() {
   return (
     <section id="agents-showcase" className="section agents-section">
       <div className="container">
+        <div className="step-badge-wrap"><span className="step-badge">{t('step')}</span></div>
         <h2 className="section-title">{t('title')}</h2>
         <p className="section-subtitle">{t('subtitle')}</p>
+        <div className="text-center"><McpPrompt text={t('prompt')} /></div>
 
         <div className="agents-grid">
           <div className="agents-tabs">
