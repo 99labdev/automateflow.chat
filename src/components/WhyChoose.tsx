@@ -1,15 +1,16 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Bot, Cog, TrendingUp } from 'lucide-react';
+import { CalendarClock, MessageCircleMore, Filter, Headset } from 'lucide-react';
 
 export default function WhyChoose() {
   const t = useTranslations('whyChoose');
 
   const cards = [
-    { key: 'agents', icon: Bot },
-    { key: 'team', icon: Cog },
-    { key: 'roi', icon: TrendingUp },
+    { key: 'content', icon: CalendarClock },
+    { key: 'automations', icon: MessageCircleMore },
+    { key: 'funnels', icon: Filter },
+    { key: 'support', icon: Headset },
   ];
 
   return (

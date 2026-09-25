@@ -1,58 +1,14 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { ArrowRight, Bot } from 'lucide-react';
+import { ArrowRight, Instagram } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Hero() {
   const t = useTranslations('hero');
   const [currentConversation, setCurrentConversation] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [displayedText, setDisplayedText] = useState('');
-  const [isDeleting, setIsDeleting] = useState(false);
-
-  const typewriterTexts = [
-    t('titleHighlight'),
-    t('titleHighlight2'),
-  ];
-
-  const subtitles = [
-    t('subtitle'),
-    t('subtitle2'),
-  ];
-
-  const totalConversations = 10;
-
-  // Typewriter effect
-  useEffect(() => {
-    const currentFullText = typewriterTexts[currentTextIndex];
-    const typingSpeed = isDeleting ? 50 : 150;
-    const pauseDelay = 2000;
-
-    if (!isDeleting && displayedText === currentFullText) {
-      // Pause before deleting
-      const timeout = setTimeout(() => setIsDeleting(true), pauseDelay);
-      return () => clearTimeout(timeout);
-    }
-
-    if (isDeleting && displayedText === '') {
-      // Move to next text
-      setIsDeleting(false);
-      setCurrentTextIndex((prev) => (prev + 1) % typewriterTexts.length);
-      return;
-    }
-
-    const timeout = setTimeout(() => {
-      if (isDeleting) {
-        setDisplayedText(currentFullText.substring(0, displayedText.length - 1));
-      } else {
-        setDisplayedText(currentFullText.substring(0, displayedText.length + 1));
-      }
-    }, typingSpeed);
-
-    return () => clearTimeout(timeout);
-  }, [displayedText, isDeleting, currentTextIndex, typewriterTexts]);
+  const totalConversations = 3;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -66,7 +22,8 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, []);
 
-  const getConversationKey = (index: number) => `conversations.c${index + 1}`;
+  const conversationKey = `conversations.c${currentConversation + 1}`;
+  const pillars = t.raw('pillars') as string[];
 
   return (
     <section className="hero-section">
@@ -75,46 +32,32 @@ export default function Hero() {
           <div className="hero-content">
             <h1 className="hero-title">
               <span className="hero-title-main">{t('title')}</span>
-              <span className="text-highlight-wrapper">
-                <span className="text-highlight-placeholder" aria-hidden="true">
-                  {typewriterTexts.reduce((a, b) => a.length > b.length ? a : b)}
-                </span>
-                <span className="text-highlight">{displayedText}<span className="cursor">|</span></span>
-              </span>
+              <span className="text-highlight">{t('titleHighlight')}</span>
             </h1>
-            <p key={currentTextIndex} className="hero-subtitle animate-subtitle">{subtitles[currentTextIndex]}</p>
+            <p className="hero-subtitle">{t('subtitle')}</p>
 
             <div className="hero-buttons">
               <a href="https://app.automateflow.chat/accounts/signup/" className="btn btn-white">
                 {t('cta.trial')}
                 <ArrowRight size={18} />
               </a>
-              <a href="#how-it-works" className="btn btn-outline-white">
-                {t('cta.howItWorks')}
+              <a href="#mcp" className="btn btn-outline-white">
+                {t('cta.mcp')}
               </a>
             </div>
 
-            <div className="hero-stats">
-              <div className="stat-item">
-                <span className="stat-number">24/7</span>
-                <span className="stat-label">{t('stats.available')}</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">5 min</span>
-                <span className="stat-label">{t('stats.setup')}</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">∞</span>
-                <span className="stat-label">{t('stats.unlimited')}</span>
-              </div>
-            </div>
+            <ul className="hero-pillars">
+              {pillars.map((p) => (
+                <li key={p} className="hero-pillar">{p}</li>
+              ))}
+            </ul>
           </div>
 
-          <div className="hero-visual">
+          <div className="hero-visual" aria-hidden="true">
             <div className="chat-demo">
               <div className="chat-header">
                 <div className="chat-avatar">
-                  <Bot size={24} color="white" />
+                  <Instagram size={22} color="white" />
                 </div>
                 <div className="chat-info">
                   <span className="chat-name">{t('chatDemo.agentName')}</span>
@@ -126,15 +69,15 @@ export default function Hero() {
               </div>
               <div className={`chat-messages ${isAnimating ? 'fade-out' : 'fade-in'}`}>
                 <div className="message received animate-message">
-                  <p>{t(`${getConversationKey(currentConversation)}.greeting`)}</p>
+                  <p>{t(`${conversationKey}.greeting`)}</p>
                   <span className="time">10:30</span>
                 </div>
                 <div className="message sent animate-message delay-1">
-                  <p>{t(`${getConversationKey(currentConversation)}.userMessage`)}</p>
+                  <p>{t(`${conversationKey}.userMessage`)}</p>
                   <span className="time">10:32</span>
                 </div>
                 <div className="message received animate-message delay-2">
-                  <p>{t(`${getConversationKey(currentConversation)}.response`)}</p>
+                  <p>{t(`${conversationKey}.response`)}</p>
                   <span className="time">10:32</span>
                 </div>
               </div>
@@ -187,46 +130,22 @@ export default function Hero() {
         }
 
         .hero-title {
-          font-size: 3.5rem;
+          font-size: 3.25rem;
           font-weight: 800;
           line-height: 1.15;
           margin-bottom: 24px;
           color: white;
-          text-align: center;
+          text-align: left;
         }
 
-        .hero-title-main {
-          white-space: nowrap;
-        }
-
-        .text-highlight-wrapper {
-          position: relative;
+        .hero-title-main,
+        .text-highlight {
           display: block;
-          text-align: center;
-          white-space: nowrap;
-        }
-
-        .text-highlight-placeholder {
-          visibility: hidden;
         }
 
         .text-highlight {
-          position: absolute;
-          left: 50%;
-          top: 0;
-          transform: translateX(-50%);
           color: white;
-          opacity: 0.9;
-        }
-
-        .cursor {
-          animation: blink 1s infinite;
-          font-weight: 400;
-        }
-
-        @keyframes blink {
-          0%, 50% { opacity: 1; }
-          51%, 100% { opacity: 0; }
+          opacity: 0.85;
         }
 
         .hero-subtitle {
@@ -234,21 +153,6 @@ export default function Hero() {
           opacity: 0.9;
           margin-bottom: 32px;
           line-height: 1.7;
-        }
-
-        .animate-subtitle {
-          animation: slideUpSubtitle 0.5s ease-out;
-        }
-
-        @keyframes slideUpSubtitle {
-          from {
-            opacity: 0;
-            transform: translateY(15px);
-          }
-          to {
-            opacity: 0.9;
-            transform: translateY(0);
-          }
         }
 
         .hero-buttons {
@@ -290,27 +194,19 @@ export default function Hero() {
           border-color: white;
         }
 
-        .hero-stats {
+        .hero-pillars {
           display: flex;
-          gap: 32px;
+          flex-wrap: wrap;
+          gap: 10px;
         }
 
-        .stat-item {
-          text-align: center;
-        }
-
-        .stat-number {
-          display: block;
-          font-size: 2rem;
-          font-weight: 700;
-          color: white;
-        }
-
-        .stat-label {
-          display: block;
-          font-size: 0.875rem;
-          opacity: 0.8;
-          margin-top: 4px;
+        .hero-pillar {
+          padding: 6px 14px;
+          border: 1px solid rgba(255, 255, 255, 0.35);
+          border-radius: var(--radius-full);
+          font-size: 0.85rem;
+          font-weight: 500;
+          opacity: 0.95;
         }
 
         .hero-visual {
@@ -528,13 +424,14 @@ export default function Hero() {
 
           .hero-title {
             font-size: 2.5rem;
+            text-align: center;
           }
 
           .hero-buttons {
             justify-content: center;
           }
 
-          .hero-stats {
+          .hero-pillars {
             justify-content: center;
           }
 
@@ -553,16 +450,7 @@ export default function Hero() {
           }
 
           .hero-title {
-            font-size: 1.75rem;
-          }
-
-          .text-highlight-wrapper {
-            margin-top: 4px;
-          }
-
-          .text-highlight-placeholder,
-          .text-highlight {
-            white-space: nowrap;
+            font-size: 2rem;
           }
 
           .hero-buttons {
@@ -575,11 +463,18 @@ export default function Hero() {
             width: 100%;
             justify-content: center;
           }
+        }
 
-          .hero-stats {
-            flex-direction: column;
-            align-items: center;
-            gap: 24px;
+        @media (prefers-reduced-motion: reduce) {
+          .hero-section::before,
+          .chat-demo,
+          .animate-message,
+          .typing-dot,
+          .status-dot {
+            animation: none;
+          }
+          .animate-message {
+            opacity: 1;
           }
         }
       `}</style>

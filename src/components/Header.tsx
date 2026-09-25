@@ -76,10 +76,11 @@ export default function Header() {
         </Link>
 
         <nav className={`nav ${mobileMenuOpen ? 'nav-open' : ''}`}>
-          <a href="#why-choose" className="nav-link" onClick={(e) => handleNavClick(e, 'why-choose')}>{t('whyChoose')}</a>
-          <a href="#agents-showcase" className="nav-link" onClick={(e) => handleNavClick(e, 'agents-showcase')}>{t('agents')}</a>
+          <a href="#mcp" className="nav-link" onClick={(e) => handleNavClick(e, 'mcp')}>{t('mcp')}</a>
+          <a href="#schedule" className="nav-link" onClick={(e) => handleNavClick(e, 'schedule')}>{t('content')}</a>
           <a href="#instagram-automation" className="nav-link" onClick={(e) => handleNavClick(e, 'instagram-automation')}>{t('automations')}</a>
-          <a href="#crm-showcase" className="nav-link" onClick={(e) => handleNavClick(e, 'crm-showcase')}>{t('crm')}</a>
+          <a href="#funnel" className="nav-link" onClick={(e) => handleNavClick(e, 'funnel')}>{t('funnels')}</a>
+          <a href="#agents-showcase" className="nav-link" onClick={(e) => handleNavClick(e, 'agents-showcase')}>{t('support')}</a>
           <a href="#pricing" className="nav-link" onClick={(e) => handleNavClick(e, 'pricing')}>{t('plans')}</a>
           <a href="#faq" className="nav-link" onClick={(e) => handleNavClick(e, 'faq')}>{t('faq')}</a>
         </nav>

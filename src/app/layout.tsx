@@ -4,8 +4,6 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import WebChat from '@/components/WebChat';
 
 export const metadata = {
-  title: 'AutomateFlow - Agentes de IA para seu Negócio',
-  description: 'Transforme seu negócio com agentes de IA personalizados. Automatize atendimentos, qualifique leads e aumente suas vendas 24/7.',
   icons: {
     icon: '/logo.png',
     apple: '/logo.png',
