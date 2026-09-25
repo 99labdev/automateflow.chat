@@ -1,181 +1,259 @@
 {
   "mcp": {
-    "promptLabel": "or ask Claude:"
+    "promptLabel": "or ask Claude:",
+    "badge": "MCP",
+    "title": "Set everything up by chatting",
+    "subtitle": "Connect AutomateFlow to Claude and just ask. No forms, no hours of setup. Prefer doing it by hand? The dashboard is still there.",
+    "chat": {
+      "user": "Schedule this reel for Thursday at 6pm, create the CLAUDE keyword automation and a name + email capture for the guide.",
+      "tools": {
+        "publication": "Reel scheduled for Thursday, 18:00",
+        "automation": "Automation \"CLAUDE\" created and active",
+        "capture": "Capture \"claude-guide\" created"
+      },
+      "assistant": "Done. You only need to upload the video through the link I sent. Want a 24h follow-up for whoever grabs the guide?"
+    },
+    "steps": {
+      "title": "Three steps and you're in",
+      "s1": {
+        "title": "Generate your token",
+        "description": "In the dashboard, under Integrations → MCP."
+      },
+      "s2": {
+        "title": "Paste it into your assistant",
+        "description": "Claude Code, Codex, Cursor, VS Code or any MCP client."
+      },
+      "s3": {
+        "title": "Ask",
+        "description": "Schedule, automate, create captures and pages by text."
+      }
+    },
+    "clientsLabel": "Works with",
+    "clients": [
+      "Claude Code",
+      "Codex",
+      "Cursor",
+      "VS Code"
+    ],
+    "cta": "See the MCP docs"
   },
   "nav": {
-    "whyChoose": "Why Choose",
-    "agents": "Agents",
+    "mcp": "MCP",
+    "content": "Content",
     "automations": "Automations",
-    "crm": "CRM",
-    "plans": "Pricing",
+    "funnels": "Funnels",
+    "support": "Support",
+    "plans": "Plans",
     "faq": "FAQ",
     "login": "Login",
     "startFree": "Start Free",
     "selectLanguage": "Select language"
   },
   "hero": {
-    "title": "Transform your business",
-    "titleHighlight": "with AI Agents",
-    "titleHighlight2": "with Automations",
-    "subtitle": "Automate customer service, qualify leads and boost your sales 24/7 with artificial intelligence that never rests.",
-    "subtitle2": "Create automated workflows for WhatsApp, Instagram and more. Your customers get instant responses while you focus on what matters.",
-    "stats": {
-      "available": "Available 24/7",
-      "setup": "Setup in 5 min",
-      "unlimited": "Unlimited chats"
-    },
+    "title": "All the infrastructure for your content",
+    "titleHighlight": "in one place.",
+    "subtitle": "Schedule posts, turn comments into leads, build funnels and sell on autopilot — by hand or by asking Claude through MCP.",
     "cta": {
-      "trial": "7-Day Free Trial",
-      "howItWorks": "How It Works"
+      "trial": "Start free",
+      "mcp": "See the MCP"
     },
+    "pillars": [
+      "Scheduling",
+      "DM automations",
+      "Funnels & capture",
+      "AI support"
+    ],
     "chatDemo": {
-      "agentName": "AutomateFlow Agent",
-      "status": "Online"
+      "agentName": "Your Instagram profile",
+      "status": "Automation on"
     },
     "conversations": {
       "c1": {
-        "greeting": "Hello! Integrate all your channels in one place!",
-        "userMessage": "What support channels do you offer?",
-        "response": "We have Official WhatsApp API, unofficial WhatsApp, Instagram DM, Webchat and more! All centralized."
+        "greeting": "Saw you commented CLAUDE on the reel. Following me yet?",
+        "userMessage": "Yes, I am!",
+        "response": "Done 🙌 Your guide is in the button below. Ping me if you need anything."
       },
       "c2": {
-        "greeting": "Welcome! Connect with the best AIs on the market.",
-        "userMessage": "Which artificial intelligences can I use?",
-        "response": "We support OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek and other cutting-edge AIs!"
+        "greeting": "Hey! You grabbed the guide yesterday. Got to apply it?",
+        "userMessage": "Not yet, no time 😅",
+        "response": "No worries. In the mentorship I build it with you. Link in the button."
       },
       "c3": {
-        "greeting": "Hi! Automate your Instagram intelligently!",
-        "userMessage": "Do you have Instagram automation?",
-        "response": "Yes! Create automations like 'reply I WANT and we send the link automatically'. Perfect for launches!"
-      },
-      "c4": {
-        "greeting": "Hello! Complete CRM for your sales team.",
-        "userMessage": "Does the platform have lead management?",
-        "response": "We have complete CRM! Lead management, tasks, deals, sales funnel and much more integrated."
-      },
-      "c5": {
-        "greeting": "Hi! Official or unofficial WhatsApp? You choose!",
-        "userMessage": "What's the difference with official WhatsApp API?",
-        "response": "Official API has green badge and more stability. We also offer unofficial API for those who prefer flexibility!"
-      },
-      "c6": {
-        "greeting": "Welcome! Centralize all your support.",
-        "userMessage": "Can I handle WhatsApp and Instagram together?",
-        "response": "Yes! WhatsApp, Instagram DM and Webchat in a single screen. Never miss a message again!"
-      },
-      "c7": {
-        "greeting": "Hello! Manage your deals intelligently.",
-        "userMessage": "How does your CRM work?",
-        "response": "Complete CRM with kanban deals board, task management, conversation history and smart automations!"
-      },
-      "c8": {
-        "greeting": "Hi! Boost your Instagram with automations.",
-        "userMessage": "How do I automate Instagram comments?",
-        "response": "Set up triggers like 'I WANT' or 'TELL ME MORE' and send links automatically via DM!"
-      },
-      "c9": {
-        "greeting": "Welcome! Cutting-edge AI for your business.",
-        "userMessage": "Can I switch AI whenever I want?",
-        "response": "Of course! Switch between ChatGPT, Claude, Llama, Mistral or DeepSeek anytime. You choose the best!"
-      },
-      "c10": {
-        "greeting": "Hello! Sales on autopilot!",
-        "userMessage": "Does the CRM integrate with conversations?",
-        "response": "Totally! Every conversation becomes a lead in CRM, with complete history and follow-up automations."
+        "greeting": "Hi! I'm the mentorship assistant. How can I help?",
+        "userMessage": "How much is it and when does it start?",
+        "response": "Next cohort opens on the 10th. Want the prices and a reserved seat?"
       }
     }
   },
   "whyChoose": {
-    "title": "Why choose AutomateFlow?",
-    "subtitle": "Smart agents, powerful automations and complete CRM for your business",
+    "title": "One ecosystem, not five tools",
+    "subtitle": "From the scheduled post to the closed sale, each step feeds the next",
     "cards": {
-      "agents": {
-        "title": "Custom AI Agents",
-        "description": "Create agents with Gemini, OpenAI, Anthropic and more. Configure knowledge base, multiple languages and human handoff."
+      "content": {
+        "title": "Content",
+        "description": "Schedule reels, carousels and stories and publish without opening the app."
       },
-      "team": {
-        "title": "Multi-Channel Automations",
-        "description": "Turn comments into leads on Instagram with automatic DM sending. WhatsApp, Email and Scheduling coming soon!"
+      "automations": {
+        "title": "Automations",
+        "description": "A comment becomes a DM, a DM becomes a lead. Buttons, follow requirement and message variations."
       },
-      "roi": {
-        "title": "Complete CRM",
-        "description": "Lead management, tasks and deals in one place. Sales kanban and complete conversation history."
+      "funnels": {
+        "title": "Funnels",
+        "description": "Capture page, VSL and link page ready in minutes, on your brand's domain."
+      },
+      "support": {
+        "title": "Support",
+        "description": "An AI agent replies and qualifies; the CRM follows through to the close."
       }
+    }
+  },
+  "schedule": {
+    "step": "Step 1 · Content",
+    "title": "Schedule and forget",
+    "subtitle": "Reels, carousels, images and stories on Instagram, with caption, hashtags and first comment. Link an automation to the post before it even goes live.",
+    "prompt": "Schedule a reel for Thursday at 6pm with this caption and link it to the CLAUDE automation",
+    "calendar": {
+      "title": "Publications",
+      "week": "This week",
+      "days": [
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "posts": {
+        "p1": {
+          "kind": "Reel",
+          "time": "18:00"
+        },
+        "p2": {
+          "kind": "Carousel",
+          "time": "12:00"
+        },
+        "p3": {
+          "kind": "Story",
+          "time": "09:00"
+        },
+        "p4": {
+          "kind": "Reel",
+          "time": "18:00"
+        }
+      }
+    },
+    "card": {
+      "kind": "Reel",
+      "name": "How I use Claude to schedule",
+      "status": "Scheduled",
+      "when": "Thu · 18:00",
+      "automation": "Automation: CLAUDE",
+      "firstComment": "1st comment: Comment CLAUDE and I'll send you the guide"
     }
   },
   "agentsShowcase": {
-    "title": "Agents",
-    "subtitle": "Create custom AI agents that serve your customers 24/7, qualify leads and boost your sales",
+    "step": "Step 4 · Support",
+    "title": "Nobody goes unanswered",
+    "subtitle": "Automatic follow-ups for whoever grabbed the guide, and an AI agent that replies, qualifies and hands over to you when needed.",
+    "prompt": "Create a follow-up 24h later for whoever received the guide, offering the mentorship",
     "agents": {
       "multichannel": {
-        "title": "Multi-Channel Integration",
-        "description": "WhatsApp, Instagram DM, Webchat and more in one platform",
-        "multichannelMsg1": "Hi! I received your message from Instagram. How can I help?",
-        "multichannelMsg2": "Do you also support WhatsApp?",
-        "multichannelMsg3": "Yes! We support WhatsApp, Instagram, Webchat and more. All conversations are centralized here!"
+        "title": "Automatic follow-up",
+        "description": "Time-based sequences (1h to 7 days) on Instagram DM, with link buttons",
+        "multichannelMsg1": "Hey! You grabbed the guide yesterday. Got to apply it?",
+        "multichannelMsg2": "Not yet, no time",
+        "multichannelMsg3": "No worries. In the mentorship I build it with you. Link in the button 👇"
       },
       "aimodels": {
-        "title": "Cutting-Edge AI Models",
-        "description": "Gemini, OpenAI, Anthropic, Llama, Mistral, DeepSeek and others",
-        "aimodelsMsg1": "Hi! I'm an agent powered by Gemini 2.5 Pro. How can I help?",
-        "aimodelsMsg2": "Can I switch to OpenAI or Anthropic?",
-        "aimodelsMsg3": "Of course! You can switch between Gemini, OpenAI, Anthropic, Llama, Mistral or DeepSeek anytime in the settings."
+        "title": "AI agent on DM and WhatsApp",
+        "description": "Gemini, OpenAI, Anthropic, Llama, Mistral, DeepSeek — your pick",
+        "aimodelsMsg1": "Hi! I'm the mentorship assistant. How can I help?",
+        "aimodelsMsg2": "How much is it and when does it start?",
+        "aimodelsMsg3": "The next cohort opens on the 10th. Want the prices now and a reserved seat?"
       },
       "integrations": {
-        "title": "Advanced Settings",
-        "description": "Human handoff, timezone, response delay and multi-language support",
-        "integrationsMsg1": "I noticed your question is complex. Would you like me to transfer you to a human agent?",
-        "integrationsMsg2": "Yes, please!",
-        "integrationsMsg3": "Transferring now! A specialist will continue your support. Average wait time: 2 minutes."
+        "title": "Handover to a human",
+        "description": "The agent knows when to stop and calls you, with configurable timezone and delay",
+        "integrationsMsg1": "This one's about payment. I'll get Hudson to answer you, ok?",
+        "integrationsMsg2": "Ok, thanks!",
+        "integrationsMsg3": "Pinged him. He'll reply here within 2 min."
       },
       "leadcapture": {
-        "title": "Knowledge Base",
-        "description": "Train your agent with documents, FAQs and company information",
-        "leadcaptureMsg1": "Based on the company documentation, I can help with information about our products!",
-        "leadcaptureMsg2": "What's the delivery time to New York?",
-        "leadcaptureMsg3": "According to our knowledge base, deliveries to New York take 2-3 business days. Want me to check availability?"
+        "title": "Knowledge base",
+        "description": "Train the agent on your material, FAQ and offer rules",
+        "leadcaptureMsg1": "I can answer based on the mentorship material!",
+        "leadcaptureMsg2": "Is there a certificate?",
+        "leadcaptureMsg3": "There is: a certificate once you finish the 6 modules. Want the syllabus?"
       }
     },
     "automationSection": {
-      "title": "Automations",
-      "subtitle": "Turn comments into leads and send automatic messages on Instagram, WhatsApp and more",
-      "postText": "Comment \"I WANT\" to get the link!",
+      "step": "Step 2 · Engagement",
+      "title": "A comment becomes a conversation",
+      "subtitle": "Whoever comments the keyword gets the DM right away, with link buttons. Require a follow, vary the message and auto-reply to the comment.",
+      "prompt": "Create an automation: whoever comments CLAUDE gets the guide by DM, only if they follow me",
+      "postText": "Comment \"CLAUDE\" and I'll send you the guide!",
       "likes": "likes",
-      "comment1": "I want",
+      "comment1": "claude",
       "commentReply": "@hudsonbrendon check your DM!",
-      "comment2": "I want it!",
+      "comment2": "CLAUDE 🙏",
       "dmActive": "Active now",
-      "dmGreeting": "Hi! I saw you commented on the post.",
-      "dmText": "Here's the exclusive link you requested:",
-      "dmLinkTitle": "Automateflow",
-      "dmPlaceholder": "Send message...",
-      "comingSoonBadge": "Coming Soon"
+      "dmGreeting": "Saw you commented CLAUDE. Following me yet?",
+      "dmText": "Done! Here's your guide:",
+      "dmLinkTitle": "Claude guide",
+      "dmPlaceholder": "Send message..."
     },
     "automations": {
       "commentToDm": {
-        "title": "Instagram DM Automation",
-        "description": "Automatically send direct messages to users who comment with a specific keyword"
+        "title": "Comment → DM",
+        "description": "A keyword in the comment triggers the DM with link buttons"
       },
-      "autoReply": {
-        "title": "WhatsApp Automation",
-        "description": "Automate WhatsApp messages based on triggers and conditions",
-        "comingSoon": true
+      "requireFollow": {
+        "title": "Require follow",
+        "description": "Only delivers after the person follows you"
       },
-      "leadCapture": {
-        "title": "Email Automation",
-        "description": "Create automated email campaigns and sequences",
-        "comingSoon": true
-      },
-      "engagement": {
-        "title": "Scheduling Automation",
-        "description": "Schedule tasks and actions based on time triggers",
-        "comingSoon": true
+      "variations": {
+        "title": "Message variations",
+        "description": "Up to 10 texts drawn at random so it doesn't feel like a bot"
       }
     }
   },
+  "funnel": {
+    "step": "Step 3 · Lead",
+    "title": "From click to lead",
+    "subtitle": "Capture page, VSL funnel and link page, all ready in minutes. The lead lands in the CRM instantly.",
+    "prompt": "Create a capture with name, email and phone that sends to my funnel, and add the mentorship link to my bio page",
+    "capture": {
+      "label": "Capture",
+      "title": "Grab the free guide",
+      "fields": [
+        "Name",
+        "Email",
+        "WhatsApp"
+      ],
+      "button": "I want the guide"
+    },
+    "vsl": {
+      "label": "VSL funnel",
+      "title": "How I use Claude to sell every day",
+      "duration": "12:40",
+      "button": "Join the mentorship"
+    },
+    "links": {
+      "label": "Link page",
+      "handle": "@99hud",
+      "items": [
+        "Mentorship",
+        "WhatsApp community",
+        "Claude guide"
+      ]
+    }
+  },
   "crmShowcase": {
-    "title": "CRM",
-    "subtitle": "From first contact to closing, track every deal in real time",
+    "step": "Step 5 · Sale",
+    "title": "Close the sale",
+    "subtitle": "Every capture lead and every conversation becomes a card in the CRM. Kanban, tasks and full history.",
+    "prompt": "How many people did the CLAUDE automation reach in the last 7 days?",
     "features": {
       "pipeline": {
         "title": "Sales Pipeline",
@@ -239,68 +317,57 @@
     "popular": "Most Popular",
     "plans": {
       "basic": {
-        "name": "Basic",
+        "name": "Creator",
         "price": "247",
         "credits": "4000",
         "description": "Perfect to start your automation journey",
         "features": [
-          "1 agent",
-          "1 knowledge base",
-          "1 agent integration",
-          "1 automation",
-          "1 Evolution API connection",
-          "1 Uazapi connection",
-          "1 WhatsApp Cloud connection",
-          "1 Webchat connection",
-          "1 Instagram connection",
+          "2 social profiles (Instagram + TikTok)",
           "1 team member",
-          "Full dashboard access",
-          "Full CRM access",
-          "Unlimited leads"
+          "Unlimited post scheduling",
+          "Unlimited DM automations",
+          "Unlimited funnels, VSLs and pages",
+          "Unlimited lead capture",
+          "MCP access: run everything from your AI assistant",
+          "Unlimited AI agents and knowledge bases",
+          "Full CRM with pipelines and AI lead qualification",
+          "Unlimited WhatsApp Unofficial API connections (R$47.00/month each)"
         ]
       },
       "standard": {
-        "name": "Standard",
+        "name": "Pro",
         "price": "397",
         "credits": "12000",
         "description": "Most popular plan for growing teams",
         "features": [
-          "2 agents",
-          "2 knowledge bases",
-          "2 agent integrations",
-          "2 automations",
-          "2 Evolution API connections",
-          "2 Uazapi connections",
-          "2 WhatsApp Cloud connections",
-          "2 Webchat connections",
-          "2 Instagram connections",
-          "2 team members",
-          "Full dashboard access",
-          "Full CRM access",
-          "Unlimited leads"
+          "5 social profiles (Instagram + TikTok)",
+          "3 team members",
+          "Unlimited post scheduling",
+          "Unlimited DM automations",
+          "Unlimited funnels, VSLs and pages",
+          "Unlimited lead capture",
+          "MCP access: run everything from your AI assistant",
+          "Unlimited AI agents and knowledge bases",
+          "Full CRM with pipelines and AI lead qualification",
+          "Unlimited WhatsApp Unofficial API connections (R$47.00/month each)"
         ]
       },
       "corporate": {
-        "name": "Corporate",
+        "name": "Agency",
         "price": "997",
         "credits": "30000",
         "description": "Complete solution with AI and advanced automations",
         "features": [
-          "3 agents",
-          "3 knowledge bases",
-          "Unlimited agent integrations",
-          "3 automations",
-          "3 Evolution API connections",
-          "3 Uazapi connections",
-          "3 WhatsApp Cloud connections",
-          "3 Webchat connections",
-          "3 Instagram connections",
+          "15 social profiles (Instagram + TikTok)",
           "Unlimited team members",
-          "Full dashboard access",
-          "Full CRM access",
-          "Unlimited leads",
-          "CRM automation pipelines",
-          "AI lead qualification"
+          "Unlimited post scheduling",
+          "Unlimited DM automations",
+          "Unlimited funnels, VSLs and pages",
+          "Unlimited lead capture",
+          "MCP access: run everything from your AI assistant",
+          "Unlimited AI agents and knowledge bases",
+          "Full CRM with pipelines and AI lead qualification",
+          "Unlimited WhatsApp Unofficial API connections (R$47.00/month each)"
         ]
       }
     },
@@ -325,59 +392,51 @@
     "subtitle": "Get your questions about AutomateFlow answered",
     "questions": {
       "q1": {
-        "question": "Which communication channels do you support?",
-        "answer": "We support Official WhatsApp API, unofficial WhatsApp, Instagram DM and Webchat. All channels are centralized in a single screen so you never miss a message."
+        "question": "What is MCP and do I need to code?",
+        "answer": "MCP is the protocol that lets an AI assistant use tools. You generate a token in the dashboard, paste it into Claude (or another client) and start asking in plain language: schedule a post, create an automation, create a capture. No code."
       },
       "q2": {
-        "question": "Which AI models can I use?",
-        "answer": "We support the best AIs on the market: Google Gemini, OpenAI (ChatGPT), Anthropic (Claude), Meta Llama, Mistral, DeepSeek and others. You can switch between them at any time in the agent settings."
+        "question": "Which AI assistants does it work with?",
+        "answer": "Claude Code, Codex, Cursor, VS Code and any client that speaks MCP. The endpoint is the same for all: app.automateflow.chat/mcp."
       },
       "q3": {
-        "question": "Does the platform have integrated CRM?",
-        "answer": "Yes! We have a complete CRM with lead management, tasks, deals, kanban sales funnel and complete conversation history. Track reports and performance metrics in real time. Each conversation automatically becomes a lead in the CRM."
+        "question": "Can I do everything without MCP?",
+        "answer": "Yes. The dashboard has every screen: publications, automations, captures, funnels, pages, agents and CRM. MCP is a shortcut, not a requirement."
       },
       "q4": {
-        "question": "What's the difference with official WhatsApp API?",
-        "answer": "The Official API has a verified green badge and greater stability. We also offer unofficial API for those who prefer more flexibility. You choose the best option for your business."
+        "question": "Is it for me if I only want to schedule posts?",
+        "answer": "Yes. Every plan includes unlimited scheduling of reels, carousels, images and stories on Instagram. The rest of the ecosystem is there when you need it."
       },
       "q5": {
-        "question": "Do you have Instagram automation?",
-        "answer": "Yes! Create smart automations like 'reply I WANT and we'll send the link automatically via DM'. Perfect for launches and lead capture. WhatsApp, Email and Scheduling automations coming soon."
+        "question": "Is there still AI-agent support on WhatsApp?",
+        "answer": "Yes. Agents with Gemini, OpenAI, Anthropic, Llama, Mistral or DeepSeek, a knowledge base, human handover, timezone and reply delay. Channels: WhatsApp (official and unofficial API), Instagram DM and Webchat."
       },
       "q6": {
-        "question": "Can I train the agent with my company information?",
-        "answer": "Yes! Our Knowledge Base allows you to train your agent with documents, FAQs and specific information about your company. This way it responds accurately about your products and services."
+        "question": "How does the Instagram comment automation work?",
+        "answer": "You set the keyword. Whoever comments gets a DM with link buttons, optionally only after following you. You can auto-reply to the comment and draw from up to 10 text variations."
       },
       "q7": {
-        "question": "What advanced settings do the agents have?",
-        "answer": "Agents have automatic transfer to human support, timezone configuration, custom response delay and multi-language support. Everything for a personalized experience."
+        "question": "What are the plans?",
+        "answer": "Creator (R$ 247/mo, 2 social profiles, 4,000 credits), Pro (R$ 397/mo, 5 profiles, 12,000 credits) and Agency (R$ 997/mo, 15 profiles, 30,000 credits). All with unlimited scheduling, automations, funnels, capture, MCP, agents and CRM."
       },
       "q8": {
-        "question": "What plans are available?",
-        "answer": "We offer 3 plans: Basic (R$ 247/month, 1 agent, 4,000 credits), Standard (R$ 397/month, 2 agents, 12,000 credits) and Corporate (R$ 997/month, 3 agents, 30,000 credits). All include full dashboard access, CRM and unlimited leads."
-      },
-      "q9": {
         "question": "How does the free trial work?",
-        "answer": "You have 7 days to test all platform features without commitment. No credit card required to start."
-      },
-      "q10": {
-        "question": "Do I need technical knowledge?",
-        "answer": "No! Our platform was designed to be intuitive. Set up your agent in less than 5 minutes, just scan a QR code and you're ready."
+        "answer": "7 days with every feature, no credit card. Cancel anytime."
       }
     }
   },
   "cta": {
-    "title": "Ready to transform your customer service?",
-    "subtitle": "Join thousands of companies that have already automated their business",
-    "button": "7-Day Free Trial",
+    "title": "Ready to stop duct-taping tools together?",
+    "subtitle": "Scheduling, automations, funnels, capture and support in one platform — plus an MCP to run it all.",
+    "button": "Start free for 7 days",
     "features": [
       "No credit card",
       "Cancel anytime",
-      "Full support"
+      "MCP on every plan"
     ]
   },
   "footer": {
-    "description": "Leading platform for creating AI agents for sales and customer service automation.",
+    "description": "Infrastructure for content creators and infoproducers: scheduling, automations, funnels and AI support — all operable through MCP.",
     "social": "Social Media",
     "product": {
       "title": "Product",
@@ -397,6 +456,10 @@
       "privacy": "Privacy Policy"
     },
     "copyright": "© {year} AutomateFlow. All rights reserved."
+  },
+  "metadata": {
+    "title": "AutomateFlow — Infrastructure for content creators",
+    "description": "Schedule posts, turn comments into leads, build funnels and sell on autopilot. Run it all through MCP with Claude or from the dashboard."
   },
   "terms": {
     "title": "Terms of Service",
