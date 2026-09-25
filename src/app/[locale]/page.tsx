@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import WhyChoose from '@/components/WhyChoose';
 import McpShowcase from '@/components/McpShowcase';
+import ScheduleShowcase from '@/components/ScheduleShowcase';
 import AgentsShowcase from '@/components/AgentsShowcase';
 import AutomationShowcase from '@/components/AutomationShowcase';
 import CRMShowcase from '@/components/CRMShowcase';
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <WhyChoose />
       <McpShowcase />
+      <ScheduleShowcase />
       <AgentsShowcase />
       <AutomationShowcase />
       <CRMShowcase />
