@@ -920,10 +920,6 @@ export default function AutomationShowcase() {
             top: 10px;
           }
 
-          .automation-section {
-            padding-top: 40px;
-          }
-
           .automation-title {
             font-size: 1.75rem;
           }
