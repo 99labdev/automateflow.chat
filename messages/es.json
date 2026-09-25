@@ -1,6 +1,5 @@
 {
   "nav": {
-    "howItWorks": "Cómo Funciona",
     "whyChoose": "Por qué Elegir",
     "agents": "Agentes",
     "automations": "Automatizaciones",
@@ -214,24 +213,6 @@
       }
     }
   },
-  "howItWorks": {
-    "title": "Cómo Funciona",
-    "subtitle": "Configura tu agente de IA en solo 3 simples pasos",
-    "steps": {
-      "step1": {
-        "title": "Elige tu Agente",
-        "description": "Selecciona el tipo de agente que mejor se adapte a las necesidades de tu negocio."
-      },
-      "step2": {
-        "title": "Personaliza",
-        "description": "Configura las respuestas, tono de voz e integraciones según tu marca."
-      },
-      "step3": {
-        "title": "Activa y Escala",
-        "description": "Conecta a tu WhatsApp o sitio web y comienza a atender instantáneamente."
-      }
-    }
-  },
   "pricing": {
     "title": "Planes y Precios",
     "subtitle": "Elige el plan ideal para tu negocio",
@@ -386,7 +367,11 @@
     "title": "¿Listo para transformar tu atención al cliente?",
     "subtitle": "Únete a miles de empresas que ya automatizaron su negocio",
     "button": "Prueba Gratis 7 Días",
-    "features": ["Sin tarjeta de crédito", "Cancela cuando quieras", "Soporte completo"]
+    "features": [
+      "Sin tarjeta de crédito",
+      "Cancela cuando quieras",
+      "Soporte completo"
+    ]
   },
   "footer": {
     "description": "Plataforma líder para creación de agentes de IA para automatización de ventas y atención.",

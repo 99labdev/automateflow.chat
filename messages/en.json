@@ -1,6 +1,5 @@
 {
   "nav": {
-    "howItWorks": "How It Works",
     "whyChoose": "Why Choose",
     "agents": "Agents",
     "automations": "Automations",
@@ -214,24 +213,6 @@
       }
     }
   },
-  "howItWorks": {
-    "title": "How It Works",
-    "subtitle": "Set up your AI agent in just 3 simple steps",
-    "steps": {
-      "step1": {
-        "title": "Choose Your Agent",
-        "description": "Select the agent type that best meets your business needs."
-      },
-      "step2": {
-        "title": "Customize",
-        "description": "Configure responses, tone of voice and integrations according to your brand."
-      },
-      "step3": {
-        "title": "Activate and Scale",
-        "description": "Connect to your WhatsApp or website and start serving instantly."
-      }
-    }
-  },
   "pricing": {
     "title": "Plans & Pricing",
     "subtitle": "Choose the ideal plan for your business",
@@ -386,7 +367,11 @@
     "title": "Ready to transform your customer service?",
     "subtitle": "Join thousands of companies that have already automated their business",
     "button": "7-Day Free Trial",
-    "features": ["No credit card", "Cancel anytime", "Full support"]
+    "features": [
+      "No credit card",
+      "Cancel anytime",
+      "Full support"
+    ]
   },
   "footer": {
     "description": "Leading platform for creating AI agents for sales and customer service automation.",
