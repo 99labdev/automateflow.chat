@@ -256,14 +256,6 @@ export default function AutomationShowcase() {
           scroll-margin-top: 100px;
         }
 
-        .automation-subtitle {
-          font-size: 1.1rem;
-          color: var(--text-secondary);
-          text-align: center;
-          max-width: 600px;
-          margin: 0 auto 48px;
-        }
-
         .automation-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -956,10 +948,6 @@ export default function AutomationShowcase() {
 
           .automation-title {
             font-size: 1.5rem;
-          }
-
-          .automation-subtitle {
-            font-size: 1rem;
           }
 
           .dm-link-preview {

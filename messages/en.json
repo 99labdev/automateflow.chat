@@ -35,7 +35,7 @@
       "Cursor",
       "VS Code"
     ],
-    "cta": "See the MCP docs"
+    "cta": "Generate my MCP token"
   },
   "nav": {
     "mcp": "MCP",
@@ -99,7 +99,7 @@
       },
       "funnels": {
         "title": "Funnels",
-        "description": "Capture page, VSL and link page ready in minutes, on your brand's domain."
+        "description": "Capture page, VSL and link page ready in minutes."
       },
       "support": {
         "title": "Support",

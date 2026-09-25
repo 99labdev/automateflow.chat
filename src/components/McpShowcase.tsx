@@ -54,7 +54,7 @@ export default function McpShowcase() {
               <span className="mcp-clients-label">{t('clientsLabel')}</span>
               {clients.map((c) => <span key={c} className="mcp-client">{c}</span>)}
             </div>
-            <a href="https://app.automateflow.chat/mcp/" className="btn btn-outline-primary">
+            <a href="https://app.automateflow.chat/integrations/mcp/" className="btn btn-outline-primary">
               {t('cta')} <ArrowRight size={16} />
             </a>
           </div>
