@@ -28,7 +28,7 @@ export default function Pricing() {
                 <div className="pricing-price">
                   <span className="currency">R$</span>
                   <span className="amount">{t(`plans.${plan}.price`)}</span>
-                  <span className="period">/mês</span>
+                  <span className="period">{t('perMonth')}</span>
                 </div>
                 <p className="pricing-description">{t(`plans.${plan}.description`)}</p>
               </div>
