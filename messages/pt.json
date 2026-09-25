@@ -1,4 +1,7 @@
 {
+  "mcp": {
+    "promptLabel": "ou peça pro Claude:"
+  },
   "nav": {
     "whyChoose": "Por que Escolher",
     "agents": "Agentes",

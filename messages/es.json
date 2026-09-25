@@ -1,4 +1,7 @@
 {
+  "mcp": {
+    "promptLabel": "o pídeselo a Claude:"
+  },
   "nav": {
     "whyChoose": "Por qué Elegir",
     "agents": "Agentes",

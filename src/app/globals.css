@@ -329,3 +329,22 @@ img {
     padding: 14px 20px;
   }
 }
+
+/* Step badge: "Passo 2 · Engajamento vira lead" above a showcase title */
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto 16px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: var(--gradient-primary);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.step-badge-wrap {
+  text-align: center;
+}
