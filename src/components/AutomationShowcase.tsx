@@ -249,13 +249,10 @@ export default function AutomationShowcase() {
         .instagram-automation-section {
           background: var(--bg-primary);
           overflow: hidden;
-          padding-top: 0;
           scroll-margin-top: 100px;
         }
 
         .automation-section {
-          padding-top: 60px;
-          border-top: 1px solid var(--border-color);
           scroll-margin-top: 100px;
         }
 
