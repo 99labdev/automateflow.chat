@@ -1,15 +1,15 @@
 {
   "mcp": {
-    "promptLabel": "o pídeselo a Claude:",
+    "promptLabel": "o pídeselo a tu IA:",
     "badge": "MCP",
     "title": "Configura todo conversando",
-    "subtitle": "Conecta AutomateFlow a Claude y pídelo en tu idioma. Sin formularios, sin horas de configuración. ¿Prefieres hacerlo a mano? El panel sigue ahí.",
+    "subtitle": "Conecta tu IA — Claude, Codex, Cursor u otra — vía MCP y gestiona todo conversando. Sin formularios, sin horas de configuración. ¿Prefieres hacerlo a mano? El panel sigue ahí.",
     "chat": {
-      "user": "Programa este reel para el jueves a las 18h, crea la automatización de la palabra CLAUDE y una captura con nombre y e-mail para el material.",
+      "user": "Programa este reel para el jueves a las 18h, crea la automatización de la palabra QUIERO y una captura con nombre y e-mail para el material.",
       "tools": {
         "publication": "Reel programado para el jueves, 18:00",
-        "automation": "Automatización \"CLAUDE\" creada y activa",
-        "capture": "Captura \"guia-claude\" creada"
+        "automation": "Automatización \"QUIERO\" creada y activa",
+        "capture": "Captura \"material-gratis\" creada"
       },
       "assistant": "Hecho. Solo falta subir el video por el link que te envié. ¿Quieres que cree un follow-up de 24h para quien tome el material?"
     },
@@ -21,20 +21,14 @@
       },
       "s2": {
         "title": "Pégalo en tu asistente",
-        "description": "Claude Code, Codex, Cursor, VS Code o cualquier cliente MCP."
+        "description": "Claude, Codex, Cursor, Antigravity o cualquier cliente MCP."
       },
       "s3": {
         "title": "Pide",
         "description": "Programa, automatiza, crea capturas y páginas por texto."
       }
     },
-    "clientsLabel": "Funciona con",
-    "clients": [
-      "Claude Code",
-      "Codex",
-      "Cursor",
-      "VS Code"
-    ],
+    "clientsLabel": "Funciona con cualquier IA compatible con MCP",
     "cta": "Generar mi token MCP"
   },
   "nav": {
@@ -52,7 +46,7 @@
   "hero": {
     "title": "Toda la infraestructura de tu contenido",
     "titleHighlight": "en un solo lugar.",
-    "subtitle": "Programa posts, convierte comentarios en leads, arma embudos y vende en automático — a mano o pidiéndoselo a Claude vía MCP.",
+    "subtitle": "Programa posts, convierte comentarios en leads, arma embudos y vende en automático — a mano o pidiéndoselo a tu IA vía MCP.",
     "cta": {
       "trial": "Empieza gratis",
       "mcp": "Ver el MCP"
@@ -69,19 +63,19 @@
     },
     "conversations": {
       "c1": {
-        "greeting": "Vi que comentaste CLAUDE en el reel. ¿Ya me sigues?",
+        "greeting": "Vi que comentaste QUIERO en el post. ¿Ya me sigues?",
         "userMessage": "¡Sí, te sigo!",
-        "response": "Listo 🙌 Tu guía está en el botón de abajo. Cualquier duda, escríbeme."
+        "response": "Listo 🙌 Tu material está en el botón de abajo."
       },
       "c2": {
-        "greeting": "¡Hola! Ayer tomaste la guía. ¿Pudiste aplicarla?",
-        "userMessage": "Todavía no, sin tiempo 😅",
-        "response": "Tranquilo. En la mentoría lo armo contigo. Link en el botón."
+        "greeting": "¡Hola! Ayer descargaste el material. ¿Te gustó?",
+        "userMessage": "Todavía no lo leí 😅",
+        "response": "¡Tranquilo! Te lo recuerdo mañana y dejo el link aquí."
       },
       "c3": {
-        "greeting": "¡Hola! Soy el asistente de la mentoría. ¿En qué te ayudo?",
-        "userMessage": "¿Cuánto cuesta y cuándo empieza?",
-        "response": "El próximo grupo abre el día 10. ¿Te paso los valores y te reservo el cupo?"
+        "greeting": "¡Hola! ¿En qué te ayudo?",
+        "userMessage": "¿Cuánto cuesta el curso?",
+        "response": "Te mando los valores y las formas de pago ahora."
       }
     }
   },
@@ -111,7 +105,7 @@
     "step": "Paso 1 · Contenido",
     "title": "Programa y olvídate",
     "subtitle": "Reels, carruseles, imágenes e historias en Instagram, con caption, hashtags y primer comentario. Vincula una automatización al post antes de publicarlo.",
-    "prompt": "Programa un reel para el jueves a las 18h con este caption y vincúlalo a la automatización CLAUDE",
+    "prompt": "Programa un reel para el jueves a las 18h con este caption y vincúlalo a la automatización QUIERO",
     "calendar": {
       "title": "Publicaciones",
       "week": "Esta semana",
@@ -145,44 +139,44 @@
     },
     "card": {
       "kind": "Reel",
-      "name": "Cómo uso Claude para programar",
+      "name": "Cómo organizo mi contenido de la semana",
       "status": "Programado",
       "when": "Jue · 18:00",
-      "automation": "Automatización: CLAUDE",
-      "firstComment": "1er comentario: Comenta CLAUDE y te mando la guía"
+      "automation": "Automatización: QUIERO",
+      "firstComment": "1er comentario: Comenta QUIERO y te mando el material"
     }
   },
   "agentsShowcase": {
     "step": "Paso 4 · Atención",
     "title": "Nadie se queda sin respuesta",
     "subtitle": "Follow-ups automáticos para quien tomó el material y un agente de IA que responde, califica y te transfiere cuando hace falta.",
-    "prompt": "Crea un follow-up 24h después para quien recibió el material, ofreciendo la mentoría",
+    "prompt": "Crea un follow-up 24h después para quien recibió el material, ofreciendo el curso",
     "agents": {
       "multichannel": {
         "title": "Follow-up automático",
         "description": "Secuencias por tiempo (1h a 7 días) en Instagram DM, con botones de link",
-        "multichannelMsg1": "¡Hola! Ayer tomaste la guía. ¿Pudiste aplicarla?",
-        "multichannelMsg2": "Todavía no, sin tiempo",
-        "multichannelMsg3": "Tranquilo. En la mentoría lo armo contigo. Link en el botón 👇"
+        "multichannelMsg1": "¡Hola! Ayer descargaste el material. ¿Te gustó?",
+        "multichannelMsg2": "Todavía no lo leí",
+        "multichannelMsg3": "¡Tranquilo! Si quieres profundizar, el curso completo está en el botón 👇"
       },
       "aimodels": {
         "title": "Agente de IA en DM y WhatsApp",
         "description": "Gemini, OpenAI, Anthropic, Llama, Mistral, DeepSeek — tú eliges",
-        "aimodelsMsg1": "¡Hola! Soy el asistente de la mentoría. ¿En qué te ayudo?",
+        "aimodelsMsg1": "¡Hola! Soy el asistente del curso. ¿En qué te ayudo?",
         "aimodelsMsg2": "¿Cuánto cuesta y cuándo empieza?",
         "aimodelsMsg3": "El próximo grupo abre el día 10. ¿Te paso los valores ahora y te reservo el cupo?"
       },
       "integrations": {
         "title": "Transferencia a humano",
         "description": "El agente sabe cuándo parar y te llama, con zona horaria y retraso configurables",
-        "integrationsMsg1": "Esta duda es sobre el pago. Voy a llamar a Hudson para que te responda, ¿ok?",
+        "integrationsMsg1": "Esta duda es sobre el pago. Voy a llamar al equipo para que te responda, ¿ok?",
         "integrationsMsg2": "Ok, ¡gracias!",
-        "integrationsMsg3": "Ya le avisé. Te responde en hasta 2 min por aquí mismo."
+        "integrationsMsg3": "Ya avisé. Te responden en hasta 2 min por aquí mismo."
       },
       "leadcapture": {
         "title": "Base de conocimiento",
         "description": "Entrena al agente con tu material, FAQ y reglas de tu oferta",
-        "leadcaptureMsg1": "¡Puedo responder con base en el material de la mentoría!",
+        "leadcaptureMsg1": "¡Puedo responder con base en el material del curso!",
         "leadcaptureMsg2": "¿Tiene certificado?",
         "leadcaptureMsg3": "Sí: certificado al terminar los 6 módulos. ¿Te mando el programa?"
       }
@@ -191,16 +185,16 @@
       "step": "Paso 2 · Engagement",
       "title": "El comentario se vuelve conversación",
       "subtitle": "Quien comenta la palabra clave recibe el DM al instante, con botones de link. Exige follow, varía el mensaje y responde el comentario automáticamente.",
-      "prompt": "Crea una automatización: quien comente CLAUDE recibe el material por DM, solo si me sigue",
-      "postText": "¡Comenta \"CLAUDE\" y te mando la guía!",
+      "prompt": "Crea una automatización: quien comente QUIERO recibe el material por DM, solo si me sigue",
+      "postText": "¡Comenta \"QUIERO\" y te mando el material!",
       "likes": "me gusta",
-      "comment1": "claude",
+      "comment1": "quiero",
       "commentReply": "@hudsonbrendon ¡revisa tu DM!",
-      "comment2": "CLAUDE 🙏",
+      "comment2": "QUIERO 🙏",
       "dmActive": "Activo ahora",
-      "dmGreeting": "Vi que comentaste CLAUDE. ¿Ya me sigues?",
-      "dmText": "¡Listo! Tu guía está aquí:",
-      "dmLinkTitle": "Guía de Claude",
+      "dmGreeting": "Vi que comentaste QUIERO. ¿Ya me sigues?",
+      "dmText": "¡Listo! Tu material está aquí:",
+      "dmLinkTitle": "Material gratuito",
       "dmPlaceholder": "Enviar mensaje..."
     },
     "automations": {
@@ -222,7 +216,7 @@
     "step": "Paso 3 · Lead",
     "title": "Del clic al lead",
     "subtitle": "Página de captura, embudo con VSL y página de links, todos listos en minutos. El lead entra al CRM al instante.",
-    "prompt": "Crea una captura con nombre, e-mail y teléfono que envíe a mi embudo, y pon el link de la mentoría en mi página de bio",
+    "prompt": "Crea una captura con nombre, e-mail y teléfono que envíe a mi embudo, y pon el link del curso en mi página de bio",
     "capture": {
       "label": "Captura",
       "title": "Llévate la guía gratis",
@@ -235,17 +229,17 @@
     },
     "vsl": {
       "label": "Embudo VSL",
-      "title": "Cómo uso Claude para vender todos los días",
+      "title": "Cómo organizar tu contenido de la semana en 1 hora",
       "duration": "12:40",
-      "button": "Quiero entrar a la mentoría"
+      "button": "Quiero entrar al curso"
     },
     "links": {
       "label": "Página de links",
       "handle": "@99hud",
       "items": [
-        "Mentoría",
+        "Curso completo",
         "Comunidad en WhatsApp",
-        "Guía de Claude"
+        "Material gratuito"
       ]
     }
   },
@@ -253,7 +247,7 @@
     "step": "Paso 5 · Venta",
     "title": "Cierra la venta",
     "subtitle": "Cada lead de la captura y cada conversación se vuelven una tarjeta en el CRM. Kanban, tareas e historial completo.",
-    "prompt": "¿A cuántas personas llegó la automatización CLAUDE en los últimos 7 días?",
+    "prompt": "¿A cuántas personas llegó la automatización QUIERO en los últimos 7 días?",
     "features": {
       "pipeline": {
         "title": "Embudo de Ventas",
@@ -459,7 +453,7 @@
   },
   "metadata": {
     "title": "AutomateFlow — Infraestructura para creadores de contenido",
-    "description": "Programa posts, convierte comentarios en leads, arma embudos y vende en automático. Todo operable vía MCP con Claude o desde el panel."
+    "description": "Programa posts, convierte comentarios en leads, arma embudos y vende en automático. Todo operable vía MCP con tu IA o desde el panel."
   },
   "terms": {
     "title": "Términos de Servicio",

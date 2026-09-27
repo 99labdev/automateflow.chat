@@ -1,11 +1,11 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { MCP_CLIENT_LOGOS } from '@/components/mcpClientLogos';
 import { CalendarCheck, MessageSquareText, ClipboardList, KeyRound, Plug, MessageCircle, ArrowRight } from 'lucide-react';
 
 export default function McpShowcase() {
   const t = useTranslations('mcp');
-  const clients = t.raw('clients') as string[];
   const tools = [
     { key: 'publication', icon: CalendarCheck },
     { key: 'automation', icon: MessageSquareText },
@@ -52,7 +52,29 @@ export default function McpShowcase() {
             </ol>
             <div className="mcp-clients">
               <span className="mcp-clients-label">{t('clientsLabel')}</span>
-              {clients.map((c) => <span key={c} className="mcp-client">{c}</span>)}
+              <div className="mcp-marquee" role="list" aria-label={t('clientsLabel')}>
+                {/* ponytail: list rendered twice so the -50% translate loops seamlessly */}
+                <div className="mcp-marquee-track">
+                  {[...MCP_CLIENT_LOGOS, ...MCP_CLIENT_LOGOS].map((logo, i) => (
+                    <span
+                      key={`${logo.name}-${i}`}
+                      className="mcp-logo"
+                      role="listitem"
+                      title={logo.name}
+                      aria-hidden={i >= MCP_CLIENT_LOGOS.length}
+                      style={{ '--logo-color': logo.color ?? 'var(--text-primary)' } as React.CSSProperties}
+                    >
+                      {logo.path ? (
+                        <svg viewBox="0 0 24 24" width="28" height="28" role="img" aria-label={logo.name}>
+                          <path d={logo.path} fill="currentColor" />
+                        </svg>
+                      ) : (
+                        <span className="mcp-wordmark">{logo.name}</span>
+                      )}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
             <a href="https://app.automateflow.chat/integrations/mcp/" className="btn btn-outline-primary">
               {t('cta')} <ArrowRight size={16} />
@@ -132,20 +154,45 @@ export default function McpShowcase() {
         }
         .mcp-step strong { display: block; color: var(--text-primary); margin-bottom: 2px; }
         .mcp-step p { color: var(--text-secondary); font-size: 0.95rem; }
-        .mcp-clients { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 24px; }
-        .mcp-clients-label { font-size: 0.85rem; color: var(--text-muted); margin-right: 4px; }
-        .mcp-client {
-          padding: 4px 12px;
-          border: 1px solid var(--border-color);
-          border-radius: var(--radius-full);
-          font-size: 0.85rem;
-          color: var(--text-secondary);
+        /* grid items default to min-width:auto; without this the marquee's max-content width stretches the grid */
+        .mcp-grid > * { min-width: 0; }
+        .mcp-clients { margin-bottom: 24px; }
+        .mcp-clients-label { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px; }
+        .mcp-marquee {
+          overflow: hidden;
+          mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+          -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+        }
+        .mcp-marquee-track {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          width: max-content;
+          padding: 6px 0;
+          animation: mcpMarquee 22s linear infinite;
+        }
+        .mcp-marquee:hover .mcp-marquee-track { animation-play-state: paused; }
+        .mcp-logo {
+          display: inline-flex;
+          align-items: center;
+          color: var(--text-muted);
+          opacity: 0.75;
+          transition: color var(--transition-fast), opacity var(--transition-fast), transform var(--transition-fast);
+        }
+        .mcp-logo:hover { color: var(--logo-color); opacity: 1; transform: scale(1.12); }
+        .mcp-wordmark { font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; }
+        @keyframes mcpMarquee {
+          from { transform: translateX(0); }
+          to { transform: translateX(calc(-50% - 20px)); }
         }
         @media (max-width: 768px) {
           .mcp-grid { grid-template-columns: 1fr; gap: 32px; }
         }
         @media (prefers-reduced-motion: reduce) {
-          .mcp-bubble, .mcp-tool { animation: none; }
+          .mcp-bubble, .mcp-tool, .mcp-marquee-track { animation: none; }
+          .mcp-marquee-track { flex-wrap: wrap; width: auto; }
+          .mcp-logo[aria-hidden='true'] { display: none; }
+          .mcp-marquee { mask-image: none; -webkit-mask-image: none; }
         }
       `}</style>
     </section>

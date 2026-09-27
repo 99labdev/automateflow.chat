@@ -20,7 +20,7 @@ export default function McpPrompt({ text }: { text: string }) {
           flex-wrap: wrap;
           align-items: center;
           gap: 8px 12px;
-          margin: 24px auto 0;
+          margin: 0 auto 56px;
           padding: 10px 16px;
           border: 1px dashed var(--border-light);
           border-radius: var(--radius-full);
