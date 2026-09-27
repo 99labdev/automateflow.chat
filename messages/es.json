@@ -104,8 +104,8 @@
       "Atención con IA"
     ],
     "chatDemo": {
-      "agentName": "Tu perfil de Instagram",
-      "status": "Automatización activa"
+      "status": "Automatización activa",
+      "button": "Obtener el material"
     },
     "conversations": {
       "c1": {
@@ -235,13 +235,26 @@
       "postText": "¡Comenta \"QUIERO\" y te mando el material!",
       "likes": "me gusta",
       "comment1": "quiero",
-      "commentReply": "@hudsonbrendon ¡revisa tu DM!",
+      "commentReply": "@maria.silva ¡revisa tu DM!",
       "comment2": "QUIERO 🙏",
       "dmActive": "Activo ahora",
       "dmGreeting": "Vi que comentaste QUIERO. ¿Ya me sigues?",
       "dmText": "¡Listo! Tu material está aquí:",
-      "dmLinkTitle": "Material gratuito",
-      "dmPlaceholder": "Enviar mensaje..."
+      "dmPlaceholder": "Enviar mensaje...",
+      "postLabel": "Publicaciones",
+      "commentsTitle": "Comentarios",
+      "commentPlaceholder": "Añade un comentario…",
+      "now": "ahora",
+      "followButton": "Ya te seguí ✅",
+      "linkButtons": [
+        "Obtener el material",
+        "Comunidad en WhatsApp"
+      ],
+      "replyVariations": [
+        "@ana.lima ¡revisa tu DM!",
+        "@leo.art te lo mandé por DM 😉",
+        "@bia.cria ¡corre al DM!"
+      ]
     },
     "automations": {
       "commentToDm": {
@@ -256,6 +269,14 @@
         "title": "Variaciones de mensaje",
         "description": "Hasta 10 textos sorteados para no parecer un bot"
       }
+    },
+    "phone": {
+      "agentName": "Asistente del curso",
+      "online": "en línea",
+      "typing": "escribiendo…",
+      "today": "Hoy",
+      "followupButton": "Ver el curso",
+      "message": "Mensaje…"
     }
   },
   "funnel": {

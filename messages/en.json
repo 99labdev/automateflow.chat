@@ -104,8 +104,8 @@
       "AI support"
     ],
     "chatDemo": {
-      "agentName": "Your Instagram profile",
-      "status": "Automation on"
+      "status": "Automation on",
+      "button": "Get the material"
     },
     "conversations": {
       "c1": {
@@ -235,13 +235,26 @@
       "postText": "Comment \"GUIDE\" and I'll send you the material!",
       "likes": "likes",
       "comment1": "guide",
-      "commentReply": "@hudsonbrendon check your DM!",
+      "commentReply": "@maria.silva check your DM!",
       "comment2": "GUIDE 🙏",
       "dmActive": "Active now",
       "dmGreeting": "Saw you commented GUIDE. Following me yet?",
       "dmText": "Done! Here's your material:",
-      "dmLinkTitle": "Free guide",
-      "dmPlaceholder": "Send message..."
+      "dmPlaceholder": "Send message...",
+      "postLabel": "Posts",
+      "commentsTitle": "Comments",
+      "commentPlaceholder": "Add a comment…",
+      "now": "now",
+      "followButton": "I followed you ✅",
+      "linkButtons": [
+        "Get the material",
+        "WhatsApp community"
+      ],
+      "replyVariations": [
+        "@ana.lima check your DM!",
+        "@leo.art sent it to your DMs 😉",
+        "@bia.cria go check your inbox!"
+      ]
     },
     "automations": {
       "commentToDm": {
@@ -256,6 +269,14 @@
         "title": "Message variations",
         "description": "Up to 10 texts drawn at random so it doesn't feel like a bot"
       }
+    },
+    "phone": {
+      "agentName": "Course assistant",
+      "online": "online",
+      "typing": "typing…",
+      "today": "Today",
+      "followupButton": "See the course",
+      "message": "Message…"
     }
   },
   "funnel": {
