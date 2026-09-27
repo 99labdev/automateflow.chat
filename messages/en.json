@@ -4,15 +4,6 @@
     "badge": "MCP",
     "title": "Set everything up by chatting",
     "subtitle": "Connect your AI — Claude, Codex, Cursor or another — through MCP and run everything by chatting. No forms, no hours of setup. Prefer doing it by hand? The dashboard is still there.",
-    "chat": {
-      "user": "Schedule this reel for Thursday at 6pm, create the GUIDE keyword automation and a name + email capture for the material.",
-      "tools": {
-        "publication": "Reel scheduled for Thursday, 18:00",
-        "automation": "Automation \"GUIDE\" created and active",
-        "capture": "Capture \"free-guide\" created"
-      },
-      "assistant": "Done. You only need to upload the video through the link I sent. Want a 24h follow-up for whoever grabs the guide?"
-    },
     "steps": {
       "title": "Three steps and you're in",
       "s1": {
@@ -29,7 +20,62 @@
       }
     },
     "clientsLabel": "Works with any MCP-compatible AI",
-    "cta": "Generate my MCP token"
+    "cta": "Generate my MCP token",
+    "demo": {
+      "tryLabel": "Try:",
+      "claude": {
+        "placeholder": "Reply to Claude…",
+        "thinking": "Thinking…"
+      },
+      "chatgpt": {
+        "placeholder": "Ask anything",
+        "thinking": "Thinking",
+        "calledTool": "Called"
+      },
+      "scenes": {
+        "s1": {
+          "chip": "Schedule reel + automation",
+          "prompt": "Schedule this reel for Thursday at 6pm and create an automation: whoever comments GUIDE gets the material by DM.",
+          "tools": {
+            "t1": "Reel scheduled · Thu 18:00",
+            "t2": "Automation \"GUIDE\" active"
+          },
+          "params": [
+            "kind: \"reel\"",
+            "scheduled_for: \"Thursday, 18:00\"",
+            "linked_automation: \"GUIDE\""
+          ],
+          "answer": "Done! The reel is scheduled for Thursday at 6pm and the GUIDE automation is live. You just need to upload the video through the link I sent."
+        },
+        "s2": {
+          "chip": "Capture + bio link",
+          "prompt": "Create a capture with name, email and WhatsApp that sends to my funnel, and add the course link to my bio page.",
+          "tools": {
+            "t1": "Capture \"free-guide\" created",
+            "t2": "Link \"Full course\" on bio"
+          },
+          "params": [
+            "title: \"Free guide\"",
+            "show_name / show_email / show_phone: true",
+            "redirect_url: \"/f/course-funnel/\""
+          ],
+          "answer": "Done. The capture is live and sends straight to your funnel. The course link shows at the top of your bio page."
+        },
+        "s3": {
+          "chip": "24h follow-up",
+          "prompt": "Create a follow-up 24h later for whoever received the guide, offering the course.",
+          "tools": {
+            "t1": "Sequence \"Post-guide\" created",
+            "t2": "24h message added"
+          },
+          "params": [
+            "name: \"Post-guide\"",
+            "channel: \"instagram\""
+          ],
+          "answer": "Sequence created. Whoever gets the guide receives a message 24h later with the course link in a button."
+        }
+      }
+    }
   },
   "nav": {
     "mcp": "MCP",

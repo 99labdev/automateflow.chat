@@ -4,15 +4,6 @@
     "badge": "MCP",
     "title": "Configura todo conversando",
     "subtitle": "Conecta tu IA — Claude, Codex, Cursor u otra — vía MCP y gestiona todo conversando. Sin formularios, sin horas de configuración. ¿Prefieres hacerlo a mano? El panel sigue ahí.",
-    "chat": {
-      "user": "Programa este reel para el jueves a las 18h, crea la automatización de la palabra QUIERO y una captura con nombre y e-mail para el material.",
-      "tools": {
-        "publication": "Reel programado para el jueves, 18:00",
-        "automation": "Automatización \"QUIERO\" creada y activa",
-        "capture": "Captura \"material-gratis\" creada"
-      },
-      "assistant": "Hecho. Solo falta subir el video por el link que te envié. ¿Quieres que cree un follow-up de 24h para quien tome el material?"
-    },
     "steps": {
       "title": "Tres pasos y listo",
       "s1": {
@@ -29,7 +20,62 @@
       }
     },
     "clientsLabel": "Funciona con cualquier IA compatible con MCP",
-    "cta": "Generar mi token MCP"
+    "cta": "Generar mi token MCP",
+    "demo": {
+      "tryLabel": "Prueba:",
+      "claude": {
+        "placeholder": "Responder a Claude…",
+        "thinking": "Pensando…"
+      },
+      "chatgpt": {
+        "placeholder": "Pregunta lo que quieras",
+        "thinking": "Pensando",
+        "calledTool": "Llamó"
+      },
+      "scenes": {
+        "s1": {
+          "chip": "Programar reel + automatización",
+          "prompt": "Programa este reel para el jueves a las 18h y crea una automatización: quien comente QUIERO recibe el material por DM.",
+          "tools": {
+            "t1": "Reel programado · jue 18:00",
+            "t2": "Automatización \"QUIERO\" activa"
+          },
+          "params": [
+            "kind: \"reel\"",
+            "scheduled_for: \"jueves, 18:00\"",
+            "linked_automation: \"QUIERO\""
+          ],
+          "answer": "¡Listo! El reel está programado para el jueves a las 18h y la automatización QUIERO ya está activa. Solo falta subir el video por el link que te envié."
+        },
+        "s2": {
+          "chip": "Captura + link en la bio",
+          "prompt": "Crea una captura con nombre, e-mail y WhatsApp que envíe a mi embudo, y pon el link del curso en mi página de bio.",
+          "tools": {
+            "t1": "Captura \"material-gratis\" creada",
+            "t2": "Link \"Curso completo\" en la bio"
+          },
+          "params": [
+            "title: \"Material gratuito\"",
+            "show_name / show_email / show_phone: true",
+            "redirect_url: \"/f/curso-embudo/\""
+          ],
+          "answer": "Hecho. La captura ya está en línea y envía directo a tu embudo. El link del curso aparece arriba en tu página de bio."
+        },
+        "s3": {
+          "chip": "Follow-up de 24h",
+          "prompt": "Crea un follow-up 24h después para quien recibió el material, ofreciendo el curso.",
+          "tools": {
+            "t1": "Secuencia \"Post-material\" creada",
+            "t2": "Mensaje de 24h agregado"
+          },
+          "params": [
+            "name: \"Post-material\"",
+            "channel: \"instagram\""
+          ],
+          "answer": "Creé la secuencia. Quien reciba el material recibe un mensaje 24h después con el link del curso en un botón."
+        }
+      }
+    }
   },
   "nav": {
     "mcp": "MCP",

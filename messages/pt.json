@@ -4,15 +4,6 @@
     "badge": "MCP",
     "title": "Configure tudo conversando",
     "subtitle": "Conecte sua IA — Claude, Codex, Cursor ou outra — via MCP e gerencie tudo conversando. Sem formulário, sem horas de configuração. Prefere fazer na mão? O painel continua lá.",
-    "chat": {
-      "user": "Agenda esse reel pra quinta às 18h, cria a automação da palavra QUERO e uma captura com nome e e-mail pro material.",
-      "tools": {
-        "publication": "Reel agendado para quinta, 18:00",
-        "automation": "Automação \"QUERO\" criada e ativa",
-        "capture": "Captura \"material-gratis\" criada"
-      },
-      "assistant": "Feito. Falta só subir o vídeo pelo link que te mandei. Quer que eu crie um follow-up de 24h pra quem pegar o material?"
-    },
     "steps": {
       "title": "Três passos e pronto",
       "s1": {
@@ -29,7 +20,62 @@
       }
     },
     "clientsLabel": "Funciona com qualquer IA compatível com MCP",
-    "cta": "Gerar meu token MCP"
+    "cta": "Gerar meu token MCP",
+    "demo": {
+      "tryLabel": "Experimente:",
+      "claude": {
+        "placeholder": "Responder ao Claude…",
+        "thinking": "Pensando…"
+      },
+      "chatgpt": {
+        "placeholder": "Pergunte alguma coisa",
+        "thinking": "Pensando",
+        "calledTool": "Chamou"
+      },
+      "scenes": {
+        "s1": {
+          "chip": "Agendar reel + automação",
+          "prompt": "Agenda esse reel pra quinta às 18h e cria uma automação: quem comentar QUERO recebe o material por DM.",
+          "tools": {
+            "t1": "Reel agendado · qui 18:00",
+            "t2": "Automação \"QUERO\" ativa"
+          },
+          "params": [
+            "kind: \"reel\"",
+            "scheduled_for: \"quinta, 18:00\"",
+            "linked_automation: \"QUERO\""
+          ],
+          "answer": "Pronto! O reel está agendado pra quinta às 18h e a automação QUERO já está ativa. Falta só subir o vídeo pelo link que te mandei."
+        },
+        "s2": {
+          "chip": "Captura + link na bio",
+          "prompt": "Cria uma captura com nome, e-mail e WhatsApp que manda pro meu funil, e põe o link do curso na minha página de bio.",
+          "tools": {
+            "t1": "Captura \"material-gratis\" criada",
+            "t2": "Link \"Curso completo\" na bio"
+          },
+          "params": [
+            "title: \"Material gratuito\"",
+            "show_name / show_email / show_phone: true",
+            "redirect_url: \"/f/curso-funil/\""
+          ],
+          "answer": "Feito. A captura já está no ar e manda direto pro seu funil. O link do curso aparece no topo da sua página de bio."
+        },
+        "s3": {
+          "chip": "Follow-up de 24h",
+          "prompt": "Cria um follow-up 24h depois pra quem recebeu o material, oferecendo o curso.",
+          "tools": {
+            "t1": "Sequência \"Pós-material\" criada",
+            "t2": "Mensagem de 24h adicionada"
+          },
+          "params": [
+            "name: \"Pós-material\"",
+            "channel: \"instagram\""
+          ],
+          "answer": "Criei a sequência. Quem receber o material ganha uma mensagem 24h depois com o link do curso num botão."
+        }
+      }
+    }
   },
   "nav": {
     "mcp": "MCP",
