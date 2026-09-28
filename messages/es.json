@@ -635,7 +635,7 @@
   },
   "privacy": {
     "title": "Política de Privacidad",
-    "lastUpdated": "Última actualización: Enero de 2025",
+    "lastUpdated": "Última actualización: Agosto de 2026",
     "intro": "AutomateFlow está comprometida con proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, almacenamos y protegemos su información personal cuando utiliza nuestra plataforma de agentes de inteligencia artificial.",
     "sections": {
       "collection": {
@@ -649,6 +649,10 @@
       "sharing": {
         "title": "Compartición de Datos",
         "content": "No vendemos su información personal a terceros. Podemos compartir datos con proveedores de servicios que nos ayudan en las operaciones (como procesadores de pago), cuando lo exija la ley u orden judicial, para proteger nuestros derechos legales o en caso de fusión o adquisición de la empresa. Todos los terceros con quienes compartimos datos están obligados a proteger su información."
+      },
+      "googleUserData": {
+        "title": "Datos de usuario de Google (Google Calendar y Google Drive)",
+        "content": "El uso y la transferencia por parte de AutomateFlow de la información recibida de las API de Google a cualquier otra aplicación se ajustan a la Política de Datos de Usuario de los Servicios de API de Google, incluidos los requisitos de Uso Limitado. Cuando conectas Google Calendar o Google Drive a un agente, accedemos solo a los datos necesarios para la función activada: los eventos de calendario que eliges gestionar y acceso de solo lectura a los archivos dentro de la única carpeta de Drive que seleccionas. El contenido de los archivos de Drive se lee bajo demanda para responder las conversaciones atendidas por tu agente, no se almacena más allá del contexto de esa conversación, nunca se usa para entrenar modelos de IA y nunca se vende ni se comparte con terceros distintos del proveedor de IA que procesa la conversación. Puedes desconectar una integración en cualquier momento desde la configuración del agente, lo que elimina los tokens de acceso almacenados, y también puedes revocar el acceso de AutomateFlow desde la página de permisos de tu Cuenta de Google."
       },
       "storage": {
         "title": "Almacenamiento y Retención",
