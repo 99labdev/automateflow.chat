@@ -171,7 +171,8 @@ export default function CRMShowcase() {
     <section id="crm-showcase" className="section crm-showcase-section">
       <div className="container">
         <div className="crm-section">
-          <h3 className="crm-title">{t('title')}</h3>
+          <div className="step-badge-wrap"><span className="step-badge">{t('step')}</span></div>
+          <h2 className="crm-title">{t('title')}</h2>
           <p className="crm-subtitle">{t('subtitle')}</p>
 
           <div className="crm-grid">
