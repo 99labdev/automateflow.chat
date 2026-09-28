@@ -2,7 +2,7 @@
   "mcp": {
     "badge": "MCP",
     "title": "Configure tudo conversando",
-    "subtitle": "Conecte sua IA — Claude, Codex, Cursor ou outra — via MCP e gerencie tudo conversando. Sem formulário, sem horas de configuração. Prefere fazer na mão? O painel continua lá.",
+    "subtitle": "Conecte o Claude, o Codex, o Cursor ou outra IA via MCP e resolva tudo por mensagem, sem preencher formulário. Se preferir fazer na mão, o painel continua lá.",
     "steps": {
       "title": "Três passos e pronto",
       "s1": {
@@ -15,7 +15,7 @@
       },
       "s3": {
         "title": "Peça",
-        "description": "Agende, automatize, crie capturas e páginas por texto."
+        "description": "Agende posts e crie automações, capturas e páginas escrevendo o que você quer."
       }
     },
     "clientsLabel": "Funciona com qualquer IA compatível com MCP",
@@ -91,7 +91,7 @@
   "hero": {
     "title": "Toda a infraestrutura do seu conteúdo",
     "titleHighlight": "em um só lugar.",
-    "subtitle": "Agende posts, transforme comentários em leads, monte funis e venda no automático — na mão ou pedindo pra sua IA via MCP.",
+    "subtitle": "Agende posts, transforme comentários em leads, monte funis e venda no automático. Faça pelo painel ou peça pra sua IA via MCP.",
     "cta": {
       "trial": "Comece grátis",
       "mcp": "Ver o MCP"
@@ -125,8 +125,8 @@
     }
   },
   "whyChoose": {
-    "title": "Um ecossistema, não cinco ferramentas",
-    "subtitle": "Do post agendado à venda fechada, cada etapa alimenta a próxima",
+    "title": "Cinco ferramentas viraram uma",
+    "subtitle": "O lead que chega pela DM cai direto no funil e no CRM, e você não precisa exportar planilha nenhuma.",
     "cards": {
       "content": {
         "title": "Conteúdo",
@@ -134,7 +134,7 @@
       },
       "automations": {
         "title": "Automações",
-        "description": "Comentário vira DM, DM vira lead. Com botões, exigência de follow e variações de mensagem."
+        "description": "Comentário vira DM e DM vira lead, com botões, exigência de follow e variações de mensagem."
       },
       "funnels": {
         "title": "Funis",
@@ -142,14 +142,14 @@
       },
       "support": {
         "title": "Atendimento",
-        "description": "Agente de IA responde, qualifica e o CRM acompanha até fechar."
+        "description": "Um agente de IA responde e qualifica, e o CRM acompanha até a venda."
       }
     }
   },
   "schedule": {
     "step": "Passo 1 · Conteúdo",
     "title": "Agende e esqueça",
-    "subtitle": "Reels, carrosséis, imagens e stories no Instagram, com legenda, hashtags e primeiro comentário. Vincule uma automação ao post antes mesmo de publicar.",
+    "subtitle": "Reels, carrosséis, imagens e stories no Instagram, com legenda, hashtags e primeiro comentário. Dá pra ligar uma automação no post antes de ele ir ao ar.",
     "calendar": {
       "title": "Publicações",
       "week": "Esta semana",
@@ -193,7 +193,7 @@
   "agentsShowcase": {
     "step": "Passo 4 · Atendimento",
     "title": "Ninguém fica sem resposta",
-    "subtitle": "Follow-ups automáticos pra quem pegou o material e um agente de IA que responde, qualifica e transfere pra você quando precisa.",
+    "subtitle": "Quem pegou o material recebe follow-up automático. As dúvidas ficam com um agente de IA, que chama você quando a conversa precisa de uma pessoa.",
     "agents": {
       "multichannel": {
         "title": "Follow-up automático",
@@ -204,14 +204,14 @@
       },
       "aimodels": {
         "title": "Agente de IA no DM e WhatsApp",
-        "description": "Gemini, OpenAI, Anthropic, Llama, Mistral, DeepSeek — você escolhe",
+        "description": "Gemini, OpenAI, Anthropic, Llama, Mistral ou DeepSeek, você escolhe",
         "aimodelsMsg1": "Olá! Sou o assistente do curso. Como posso ajudar?",
         "aimodelsMsg2": "Quanto custa e quando começa?",
         "aimodelsMsg3": "A próxima turma abre dia 10. Te mando os valores agora e já reservo sua vaga?"
       },
       "integrations": {
         "title": "Transferência pra humano",
-        "description": "O agente reconhece quando parar e chama você, com fuso e atraso configuráveis",
+        "description": "O agente percebe quando parar e chama você. Fuso e atraso de resposta são configuráveis.",
         "integrationsMsg1": "Essa dúvida é sobre pagamento. Vou chamar o time pra te responder, ok?",
         "integrationsMsg2": "Ok, obrigado!",
         "integrationsMsg3": "Já avisei. Respondem em até 2 min por aqui mesmo."
@@ -227,7 +227,7 @@
     "automationSection": {
       "step": "Passo 2 · Engajamento",
       "title": "Comentário vira conversa",
-      "subtitle": "Quem comenta a palavra-chave recebe a DM na hora, com botões de link. Exija follow, varie a mensagem e responda o comentário automaticamente.",
+      "subtitle": "Quem comenta a palavra-chave recebe a DM na hora, com botões de link. Você pode exigir follow antes de entregar e variar o texto pra não parecer robô.",
       "postText": "Comenta \"QUERO\" que eu te mando o material!",
       "likes": "curtidas",
       "comment1": "quero",
@@ -348,7 +348,7 @@
   "funnel": {
     "step": "Passo 3 · Lead",
     "title": "Do clique ao lead",
-    "subtitle": "Página de captura, funil com VSL e página de links, todos prontos em minutos. O lead entra no CRM na hora.",
+    "subtitle": "Página de captura, funil com VSL e página de links ficam prontos em minutos, e cada lead cai no CRM na hora.",
     "capture": {
       "label": "Captura",
       "title": "Pega o guia grátis",
@@ -378,23 +378,23 @@
   "crmShowcase": {
     "step": "Passo 5 · Venda",
     "title": "Feche a venda",
-    "subtitle": "Cada lead da captura e cada conversa viram um card no CRM. Kanban, tarefas e histórico completo.",
+    "subtitle": "Cada lead da captura e cada conversa viram um card no CRM, com tarefas e o histórico da conversa.",
     "features": {
       "pipeline": {
-        "title": "Funil de Vendas",
-        "description": "Visualize todas as negociações em um Kanban intuitivo"
+        "title": "Funil de vendas",
+        "description": "Veja todas as negociações num kanban"
       },
       "leads": {
-        "title": "Gestão de Leads",
-        "description": "Capture e qualifique leads automaticamente de todos os canais"
+        "title": "Gestão de leads",
+        "description": "Leads de todos os canais entram e são qualificados sozinhos"
       },
       "analytics": {
-        "title": "Relatórios e Métricas",
-        "description": "Acompanhe o desempenho do seu time em tempo real"
+        "title": "Relatórios e métricas",
+        "description": "Acompanhe o desempenho do time em tempo real"
       },
       "tasks": {
-        "title": "Tarefas e Follow-up",
-        "description": "Nunca perca um follow-up com lembretes automáticos"
+        "title": "Tarefas e follow-up",
+        "description": "Lembretes automáticos pra ninguém esquecer de retornar"
       }
     },
     "kanban": {
@@ -513,12 +513,12 @@
     }
   },
   "faq": {
-    "title": "Perguntas Frequentes",
+    "title": "Perguntas frequentes",
     "subtitle": "Tire suas dúvidas sobre a AutomateFlow",
     "questions": {
       "q1": {
         "question": "O que é MCP e preciso saber programar?",
-        "answer": "MCP é o protocolo que deixa um assistente de IA usar ferramentas. Você gera um token no painel, cola no Claude (ou outro cliente) e passa a pedir em português: agendar post, criar automação, criar captura. Nada de código."
+        "answer": "MCP é o protocolo que deixa um assistente de IA usar ferramentas. Você gera um token no painel, cola no Claude (ou em outro cliente) e pede em português: agendar post, criar automação, criar captura. Você não precisa escrever código."
       },
       "q2": {
         "question": "Funciona com quais assistentes de IA?",
@@ -526,11 +526,11 @@
       },
       "q3": {
         "question": "Posso fazer tudo sem MCP?",
-        "answer": "Pode. O painel tem todas as telas: publicações, automações, capturas, funis, páginas, agentes e CRM. O MCP é um atalho, não uma exigência."
+        "answer": "Pode. O painel tem todas as telas: publicações, automações, capturas, funis, páginas, agentes e CRM. O MCP só deixa tudo mais rápido."
       },
       "q4": {
         "question": "Serve pra quem só quer agendar posts?",
-        "answer": "Sim. Todos os planos têm agendamento ilimitado de reels, carrosséis, imagens e stories no Instagram. O resto do ecossistema fica disponível quando você precisar."
+        "answer": "Sim. Todos os planos têm agendamento ilimitado de reels, carrosséis, imagens e stories no Instagram. O resto fica ali pra quando você quiser usar."
       },
       "q5": {
         "question": "Ainda tem atendimento com agente de IA no WhatsApp?",
@@ -552,7 +552,7 @@
   },
   "cta": {
     "title": "Pronto pra parar de colar ferramenta com fita?",
-    "subtitle": "Agendamento, automações, funis, captura e atendimento em uma plataforma só — e um MCP pra operar tudo.",
+    "subtitle": "Agendamento, automações, funis, captura e atendimento numa plataforma só, com um MCP pra operar tudo.",
     "button": "Comece grátis por 7 dias",
     "features": [
       "Sem cartão de crédito",
@@ -561,7 +561,7 @@
     ]
   },
   "footer": {
-    "description": "Infraestrutura para criadores de conteúdo e infoprodutores: agendamento, automações, funis e atendimento com IA — tudo operável via MCP.",
+    "description": "Infraestrutura para criadores de conteúdo e infoprodutores: agendamento, automações, funis e atendimento com IA, tudo operável via MCP.",
     "social": "Redes Sociais",
     "product": {
       "title": "Produto",
@@ -583,8 +583,8 @@
     "copyright": "© {year} AutomateFlow. Todos os direitos reservados."
   },
   "metadata": {
-    "title": "AutomateFlow — Infraestrutura para criadores de conteúdo",
-    "description": "Agende posts, transforme comentários em leads, monte funis e venda no automático. Tudo operável via MCP pela sua IA ou pelo painel."
+    "title": "AutomateFlow | Infraestrutura para criadores de conteúdo",
+    "description": "Agende posts, transforme comentários em leads, monte funis e venda no automático. Opere tudo pelo painel ou pela sua IA via MCP."
   },
   "terms": {
     "title": "Termos de Uso",
