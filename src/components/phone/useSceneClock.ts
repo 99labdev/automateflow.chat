@@ -36,7 +36,14 @@ export function useSceneClock(duration: number, onEnd: () => void, resetKey: unk
 
   useEffect(() => {
     if (!visible || reduced) return;
-    const id = setInterval(() => setElapsed((e) => e + TICK), TICK);
+    // Advance by wall-clock time so throttled timers don't slow the scene down.
+    let last = performance.now();
+    const id = setInterval(() => {
+      const t = performance.now();
+      const dt = Math.min(t - last, 250);
+      last = t;
+      setElapsed((e) => e + dt);
+    }, TICK);
     return () => clearInterval(id);
   }, [visible, reduced]);
 
@@ -51,7 +58,10 @@ export function useSceneClock(duration: number, onEnd: () => void, resetKey: unk
     }
   }, [elapsed, duration, reduced]);
 
-  return { ref, now: reduced ? duration : elapsed };
+  // Jump to a point in the scene (e.g. a stage picked by the visitor).
+  const seek = (ms: number) => setElapsed(ms);
+
+  return { ref, now: reduced ? duration : elapsed, seek };
 }
 
 /** Portion of `text` typed out at `now`, starting at `start`. */

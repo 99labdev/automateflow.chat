@@ -238,23 +238,89 @@
       "commentReply": "@maria.silva check your DM!",
       "comment2": "GUIDE 🙏",
       "dmActive": "Active now",
-      "dmGreeting": "Saw you commented GUIDE. Following me yet?",
-      "dmText": "Done! Here's your material:",
       "dmPlaceholder": "Send message...",
       "postLabel": "Posts",
       "commentsTitle": "Comments",
       "commentPlaceholder": "Add a comment…",
       "now": "now",
-      "followButton": "I followed you ✅",
-      "linkButtons": [
-        "Get the material",
-        "WhatsApp community"
-      ],
-      "replyVariations": [
-        "@ana.lima check your DM!",
-        "@leo.art sent it to your DMs 😉",
-        "@bia.cria go check your inbox!"
-      ]
+      "flow": {
+        "caption": "Comment GUIDE and I'll send you the free material 👇",
+        "reply": "Reply",
+        "dmMessage": "Hi! Saw you commented GUIDE 👋 Follow me and tap the button below and I'll send you the material.",
+        "followButton": "I followed you ✅",
+        "notFollowing": "Your follow hasn't shown up here yet 👀 Tap Follow on my profile and come back to the button — it goes out instantly!",
+        "delivered": "Done! 🎉 Your material is right below:",
+        "buttons": [
+          "Get the material",
+          "WhatsApp group",
+          "See the course"
+        ],
+        "profile": {
+          "name": "AutomateFlow",
+          "bio": "Content, automations and funnels for creators 🚀",
+          "stats": [
+            {
+              "value": "248",
+              "label": "posts"
+            },
+            {
+              "value": "12.4K",
+              "label": "followers"
+            },
+            {
+              "value": "186",
+              "label": "following"
+            }
+          ],
+          "follow": "Follow",
+          "following": "Following",
+          "message": "Message"
+        },
+        "browserTitle": "Free material",
+        "capture": {
+          "title": "Free material",
+          "description": "Get the full guide now",
+          "message": "Please enter your information:",
+          "nameLabel": "Name",
+          "emailLabel": "Email",
+          "phoneLabel": "Phone",
+          "namePlaceholder": "Enter your name",
+          "emailPlaceholder": "Enter your email",
+          "phonePlaceholder": "11 96123-4567",
+          "submit": "Access Content"
+        },
+        "values": {
+          "name": "Maria Silva",
+          "email": "maria.silva@gmail.com",
+          "phone": "11 98765-4321"
+        },
+        "funnel": {
+          "videoTitle": "Watch this first",
+          "tutorialTitle": "Your step by step",
+          "tutorialItems": [
+            {
+              "title": "Save the material",
+              "body": "Keep the guide on your phone to check anytime."
+            },
+            {
+              "title": "Apply it in 7 days",
+              "body": "Follow the checklist and publish your first piece of content."
+            }
+          ],
+          "offerTitle": "Want to go further?",
+          "offerBody": "Join the full course and get support at every step.",
+          "primaryLabel": "Full course",
+          "secondaryLabel": "WhatsApp community",
+          "getAccess": "Get access now",
+          "joinCommunity": "Join the community",
+          "back": "Back",
+          "continue": "Continue"
+        },
+        "keyboard": {
+          "space": "space",
+          "return": "return"
+        }
+      }
     },
     "automations": {
       "commentToDm": {
@@ -265,9 +331,13 @@
         "title": "Require follow",
         "description": "Only delivers after the person follows you"
       },
-      "variations": {
-        "title": "Message variations",
-        "description": "Up to 10 texts drawn at random so it doesn't feel like a bot"
+      "leadCapture": {
+        "title": "Lead capture",
+        "description": "The button opens your capture page and the contact lands in your CRM"
+      },
+      "funnel": {
+        "title": "Funnel",
+        "description": "After signing up, the person moves through your funnel to the offer"
       }
     },
     "phone": {

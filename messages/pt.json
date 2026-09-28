@@ -238,23 +238,89 @@
       "commentReply": "@maria.silva verifica tua DM!",
       "comment2": "QUERO 🙏",
       "dmActive": "Ativo agora",
-      "dmGreeting": "Vi que você comentou QUERO. Já me segue?",
-      "dmText": "Prontinho! Seu material tá aqui:",
       "dmPlaceholder": "Enviar mensagem...",
       "postLabel": "Publicações",
       "commentsTitle": "Comentários",
       "commentPlaceholder": "Adicione um comentário…",
       "now": "agora",
-      "followButton": "Já te segui ✅",
-      "linkButtons": [
-        "Pegar o material",
-        "Comunidade no WhatsApp"
-      ],
-      "replyVariations": [
-        "@ana.lima verifica tua DM!",
-        "@leo.art te mandei no direct 😉",
-        "@bia.cria corre lá no direct!"
-      ]
+      "flow": {
+        "caption": "Comenta QUERO que eu te mando o material gratuito 👇",
+        "reply": "Responder",
+        "dmMessage": "Oi! Vi que você comentou QUERO 👋 Me segue e toca no botão abaixo que eu te mando o material.",
+        "followButton": "Já te segui ✅",
+        "notFollowing": "Seu follow ainda não apareceu por aqui 👀 Toca em Seguir no meu perfil e volta no botão — te mando na hora!",
+        "delivered": "Prontinho! 🎉 Seu material tá aqui embaixo:",
+        "buttons": [
+          "Quero o material",
+          "Grupo no WhatsApp",
+          "Conhecer o curso"
+        ],
+        "profile": {
+          "name": "AutomateFlow",
+          "bio": "Conteúdo, automações e funis pra criadores 🚀",
+          "stats": [
+            {
+              "value": "248",
+              "label": "publicações"
+            },
+            {
+              "value": "12,4 mil",
+              "label": "seguidores"
+            },
+            {
+              "value": "186",
+              "label": "seguindo"
+            }
+          ],
+          "follow": "Seguir",
+          "following": "Seguindo",
+          "message": "Mensagem"
+        },
+        "browserTitle": "Material gratuito",
+        "capture": {
+          "title": "Material gratuito",
+          "description": "Receba o guia completo agora",
+          "message": "Por favor, insira suas informações:",
+          "nameLabel": "Nome",
+          "emailLabel": "Email",
+          "phoneLabel": "Telefone",
+          "namePlaceholder": "Digite seu nome",
+          "emailPlaceholder": "Digite seu e-mail",
+          "phonePlaceholder": "11 96123-4567",
+          "submit": "Acessar Conteúdo"
+        },
+        "values": {
+          "name": "Maria Silva",
+          "email": "maria.silva@gmail.com",
+          "phone": "11 98765-4321"
+        },
+        "funnel": {
+          "videoTitle": "Assista antes de começar",
+          "tutorialTitle": "Seu passo a passo",
+          "tutorialItems": [
+            {
+              "title": "Salve o material",
+              "body": "Guarde o guia no celular pra consultar quando quiser."
+            },
+            {
+              "title": "Aplique em 7 dias",
+              "body": "Siga o checklist e publique seu primeiro conteúdo."
+            }
+          ],
+          "offerTitle": "Quer ir além?",
+          "offerBody": "Entre no curso completo e tenha acompanhamento em cada etapa.",
+          "primaryLabel": "Curso completo",
+          "secondaryLabel": "Comunidade no WhatsApp",
+          "getAccess": "Acessar agora",
+          "joinCommunity": "Entrar na comunidade",
+          "back": "Voltar",
+          "continue": "Continuar"
+        },
+        "keyboard": {
+          "space": "espaço",
+          "return": "retorno"
+        }
+      }
     },
     "automations": {
       "commentToDm": {
@@ -265,9 +331,13 @@
         "title": "Exigir follow",
         "description": "Só entrega depois que a pessoa segue você"
       },
-      "variations": {
-        "title": "Variações de mensagem",
-        "description": "Até 10 textos sorteados pra não parecer robô"
+      "leadCapture": {
+        "title": "Captura de lead",
+        "description": "O botão abre sua página de captura e o contato cai direto no CRM"
+      },
+      "funnel": {
+        "title": "Funil",
+        "description": "Depois do cadastro, a pessoa navega pelo seu funil até a oferta"
       }
     },
     "phone": {

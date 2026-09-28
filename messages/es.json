@@ -238,23 +238,89 @@
       "commentReply": "@maria.silva ¡revisa tu DM!",
       "comment2": "QUIERO 🙏",
       "dmActive": "Activo ahora",
-      "dmGreeting": "Vi que comentaste QUIERO. ¿Ya me sigues?",
-      "dmText": "¡Listo! Tu material está aquí:",
       "dmPlaceholder": "Enviar mensaje...",
       "postLabel": "Publicaciones",
       "commentsTitle": "Comentarios",
       "commentPlaceholder": "Añade un comentario…",
       "now": "ahora",
-      "followButton": "Ya te seguí ✅",
-      "linkButtons": [
-        "Obtener el material",
-        "Comunidad en WhatsApp"
-      ],
-      "replyVariations": [
-        "@ana.lima ¡revisa tu DM!",
-        "@leo.art te lo mandé por DM 😉",
-        "@bia.cria ¡corre al DM!"
-      ]
+      "flow": {
+        "caption": "Comenta QUIERO y te mando el material gratuito 👇",
+        "reply": "Responder",
+        "dmMessage": "¡Hola! Vi que comentaste QUIERO 👋 Sígueme y toca el botón de abajo que te mando el material.",
+        "followButton": "Ya te seguí ✅",
+        "notFollowing": "Tu follow todavía no aparece por aquí 👀 Toca Seguir en mi perfil y vuelve al botón — ¡te lo mando al instante!",
+        "delivered": "¡Listo! 🎉 Tu material está aquí abajo:",
+        "buttons": [
+          "Quiero el material",
+          "Grupo de WhatsApp",
+          "Conocer el curso"
+        ],
+        "profile": {
+          "name": "AutomateFlow",
+          "bio": "Contenido, automatizaciones y embudos para creadores 🚀",
+          "stats": [
+            {
+              "value": "248",
+              "label": "publicaciones"
+            },
+            {
+              "value": "12,4 mil",
+              "label": "seguidores"
+            },
+            {
+              "value": "186",
+              "label": "seguidos"
+            }
+          ],
+          "follow": "Seguir",
+          "following": "Siguiendo",
+          "message": "Mensaje"
+        },
+        "browserTitle": "Material gratuito",
+        "capture": {
+          "title": "Material gratuito",
+          "description": "Recibe la guía completa ahora",
+          "message": "Por favor, ingresa tu información:",
+          "nameLabel": "Nombre",
+          "emailLabel": "Email",
+          "phoneLabel": "Teléfono",
+          "namePlaceholder": "Ingrese su nombre",
+          "emailPlaceholder": "Ingrese su correo electrónico",
+          "phonePlaceholder": "11 96123-4567",
+          "submit": "Acceder al Contenido"
+        },
+        "values": {
+          "name": "Maria Silva",
+          "email": "maria.silva@gmail.com",
+          "phone": "11 98765-4321"
+        },
+        "funnel": {
+          "videoTitle": "Mira esto antes de empezar",
+          "tutorialTitle": "Tu paso a paso",
+          "tutorialItems": [
+            {
+              "title": "Guarda el material",
+              "body": "Ten la guía en tu celular para consultarla cuando quieras."
+            },
+            {
+              "title": "Aplícalo en 7 días",
+              "body": "Sigue el checklist y publica tu primer contenido."
+            }
+          ],
+          "offerTitle": "¿Quieres ir más allá?",
+          "offerBody": "Entra al curso completo y ten acompañamiento en cada etapa.",
+          "primaryLabel": "Curso completo",
+          "secondaryLabel": "Comunidad en WhatsApp",
+          "getAccess": "Acceder ahora",
+          "joinCommunity": "Únete a la comunidad",
+          "back": "Atrás",
+          "continue": "Continuar"
+        },
+        "keyboard": {
+          "space": "espacio",
+          "return": "intro"
+        }
+      }
     },
     "automations": {
       "commentToDm": {
@@ -265,9 +331,13 @@
         "title": "Exigir follow",
         "description": "Solo entrega después de que la persona te siga"
       },
-      "variations": {
-        "title": "Variaciones de mensaje",
-        "description": "Hasta 10 textos sorteados para no parecer un bot"
+      "leadCapture": {
+        "title": "Captura de lead",
+        "description": "El botón abre tu página de captura y el contacto llega directo al CRM"
+      },
+      "funnel": {
+        "title": "Embudo",
+        "description": "Después del registro, la persona recorre tu embudo hasta la oferta"
       }
     },
     "phone": {
