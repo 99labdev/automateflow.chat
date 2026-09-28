@@ -2,7 +2,6 @@
 
 import { useTranslations } from 'next-intl';
 import { Clapperboard, Images, Circle, CalendarClock, MessageSquareText } from 'lucide-react';
-import McpPrompt from '@/components/McpPrompt';
 
 // day index (0 = Mon) → post key; the rest of the week is empty on purpose
 const SLOTS: Record<number, { key: string; icon: typeof Clapperboard }> = {
@@ -22,7 +21,6 @@ export default function ScheduleShowcase() {
         <div className="step-badge-wrap"><span className="step-badge">{t('step')}</span></div>
         <h2 className="section-title">{t('title')}</h2>
         <p className="section-subtitle">{t('subtitle')}</p>
-        <div className="text-center"><McpPrompt text={t('prompt')} /></div>
 
         <div className="schedule-grid" aria-hidden="true">
           <div className="calendar">
@@ -39,7 +37,7 @@ export default function ScheduleShowcase() {
                     <span className="calendar-day-name">{d}</span>
                     {slot && Icon && (
                       <div className="calendar-post">
-                        <Icon size={14} />
+                        <Icon size={22} />
                         <span>{t(`calendar.posts.${slot.key}.kind`)}</span>
                         <em>{t(`calendar.posts.${slot.key}.time`)}</em>
                       </div>
@@ -68,9 +66,9 @@ export default function ScheduleShowcase() {
         .schedule-section { background: var(--secondary-color); scroll-margin-top: 100px; }
         .schedule-grid {
           display: grid;
-          grid-template-columns: 3fr 2fr;
+          grid-template-columns: 2fr 1fr;
           gap: 32px;
-          max-width: 1000px;
+          max-width: 1160px;
           margin: 48px auto 0;
           align-items: start;
         }
@@ -83,29 +81,32 @@ export default function ScheduleShowcase() {
         }
         .calendar-header {
           display: flex; justify-content: space-between; align-items: center;
-          padding: 16px 20px;
+          padding: 20px 28px;
           border-bottom: 1px solid var(--border-color);
+          font-size: 1.15rem;
           color: var(--text-primary);
         }
-        .calendar-header span { font-size: 0.85rem; color: var(--text-muted); }
+        .calendar-header span { font-size: 0.95rem; color: var(--text-muted); }
         .calendar-days { display: grid; grid-template-columns: repeat(7, 1fr); }
         .calendar-day {
-          min-height: 150px;
-          padding: 10px 6px;
+          min-height: 320px;
+          padding: 16px 10px;
           border-right: 1px solid var(--border-color);
-          display: flex; flex-direction: column; gap: 8px;
+          display: flex; flex-direction: column; gap: 12px;
         }
         .calendar-day:last-child { border-right: none; }
         .calendar-day.today { background: var(--secondary-color); }
-        .calendar-day-name { font-size: 0.75rem; font-weight: 600; color: var(--text-muted); text-align: center; }
+        .calendar-day-name { font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-align: center; }
         .calendar-post {
           display: flex; flex-direction: column; align-items: center; gap: 2px;
-          padding: 8px 4px;
-          border-radius: var(--radius-md);
+          padding: 16px 6px;
+          border-radius: var(--radius-lg);
           background: var(--gradient-primary);
           color: white;
-          font-size: 0.7rem;
+          font-size: 0.9rem;
           font-weight: 600;
+          gap: 4px;
+          box-shadow: var(--shadow-md);
         }
         .calendar-post em { font-style: normal; opacity: 0.85; font-weight: 400; }
         .post-card { display: flex; flex-direction: column; }
@@ -135,7 +136,7 @@ export default function ScheduleShowcase() {
         @media (max-width: 768px) {
           .schedule-grid { grid-template-columns: 1fr; }
           .calendar-days { grid-template-columns: repeat(4, 1fr); }
-          .calendar-day { min-height: 110px; border-bottom: 1px solid var(--border-color); }
+          .calendar-day { min-height: 150px; border-bottom: 1px solid var(--border-color); }
         }
       `}</style>
     </section>

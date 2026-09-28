@@ -2,7 +2,6 @@
 
 import { useTranslations } from 'next-intl';
 import { Instagram, UserCheck, Magnet, Filter } from 'lucide-react';
-import McpPrompt from '@/components/McpPrompt';
 import IPhone from '@/components/phone/IPhone';
 import { IgPostScreen, IgNotification, IgDmThread, IgProfile, IgBrowser } from '@/components/phone/Instagram';
 import { LeadCapturePage, FunnelPage, type CaptureCopy, type FunnelCopy } from '@/components/phone/AutomateFlowPages';
@@ -96,7 +95,6 @@ export default function AutomationShowcase() {
         <div className="step-badge-wrap"><span className="step-badge">{a('step')}</span></div>
         <h2 className="section-title">{a('title')}</h2>
         <p className="section-subtitle">{a('subtitle')}</p>
-        <div className="text-center"><McpPrompt text={a('prompt')} /></div>
 
         <div className="automation-grid">
           <div className="agent-demo" ref={ref} aria-hidden="true">

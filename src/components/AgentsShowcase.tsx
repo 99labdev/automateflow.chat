@@ -3,7 +3,6 @@
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Timer, Brain, Settings, BookOpen } from 'lucide-react';
-import McpPrompt from '@/components/McpPrompt';
 import IPhone from '@/components/phone/IPhone';
 import { IgDmThread } from '@/components/phone/Instagram';
 import { WaThread } from '@/components/phone/WhatsApp';
@@ -43,7 +42,6 @@ export default function AgentsShowcase() {
         <div className="step-badge-wrap"><span className="step-badge">{t('step')}</span></div>
         <h2 className="section-title">{t('title')}</h2>
         <p className="section-subtitle">{t('subtitle')}</p>
-        <div className="text-center"><McpPrompt text={t('prompt')} /></div>
 
         <div className="agents-grid">
           <div className="agents-tabs">

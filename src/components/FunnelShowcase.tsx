@@ -2,7 +2,6 @@
 
 import { useTranslations } from 'next-intl';
 import { ArrowRight, Play, Link2 } from 'lucide-react';
-import McpPrompt from '@/components/McpPrompt';
 
 export default function FunnelShowcase() {
   const t = useTranslations('funnel');
@@ -15,7 +14,6 @@ export default function FunnelShowcase() {
         <div className="step-badge-wrap"><span className="step-badge">{t('step')}</span></div>
         <h2 className="section-title">{t('title')}</h2>
         <p className="section-subtitle">{t('subtitle')}</p>
-        <div className="text-center"><McpPrompt text={t('prompt')} /></div>
 
         <div className="funnel-flow" aria-hidden="true">
           <div className="screen">

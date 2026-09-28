@@ -1,6 +1,5 @@
 {
   "mcp": {
-    "promptLabel": "ou peça pra sua IA:",
     "badge": "MCP",
     "title": "Configure tudo conversando",
     "subtitle": "Conecte sua IA — Claude, Codex, Cursor ou outra — via MCP e gerencie tudo conversando. Sem formulário, sem horas de configuração. Prefere fazer na mão? O painel continua lá.",
@@ -151,7 +150,6 @@
     "step": "Passo 1 · Conteúdo",
     "title": "Agende e esqueça",
     "subtitle": "Reels, carrosséis, imagens e stories no Instagram, com legenda, hashtags e primeiro comentário. Vincule uma automação ao post antes mesmo de publicar.",
-    "prompt": "Agenda um reel pra quinta às 18h com essa legenda e liga ele na automação QUERO",
     "calendar": {
       "title": "Publicações",
       "week": "Esta semana",
@@ -196,7 +194,6 @@
     "step": "Passo 4 · Atendimento",
     "title": "Ninguém fica sem resposta",
     "subtitle": "Follow-ups automáticos pra quem pegou o material e um agente de IA que responde, qualifica e transfere pra você quando precisa.",
-    "prompt": "Cria um follow-up 24h depois pra quem recebeu o material, oferecendo o curso",
     "agents": {
       "multichannel": {
         "title": "Follow-up automático",
@@ -231,7 +228,6 @@
       "step": "Passo 2 · Engajamento",
       "title": "Comentário vira conversa",
       "subtitle": "Quem comenta a palavra-chave recebe a DM na hora, com botões de link. Exija follow, varie a mensagem e responda o comentário automaticamente.",
-      "prompt": "Cria uma automação: quem comentar QUERO recebe o material por DM, só se me seguir",
       "postText": "Comenta \"QUERO\" que eu te mando o material!",
       "likes": "curtidas",
       "comment1": "quero",
@@ -353,7 +349,6 @@
     "step": "Passo 3 · Lead",
     "title": "Do clique ao lead",
     "subtitle": "Página de captura, funil com VSL e página de links, todos prontos em minutos. O lead entra no CRM na hora.",
-    "prompt": "Cria uma captura com nome, e-mail e telefone que manda pro meu funil, e põe o link do curso na minha página de bio",
     "capture": {
       "label": "Captura",
       "title": "Pega o guia grátis",
@@ -384,7 +379,6 @@
     "step": "Passo 5 · Venda",
     "title": "Feche a venda",
     "subtitle": "Cada lead da captura e cada conversa viram um card no CRM. Kanban, tarefas e histórico completo.",
-    "prompt": "Quantas pessoas a automação QUERO alcançou nos últimos 7 dias?",
     "features": {
       "pipeline": {
         "title": "Funil de Vendas",

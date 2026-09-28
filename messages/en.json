@@ -1,6 +1,5 @@
 {
   "mcp": {
-    "promptLabel": "or ask your AI:",
     "badge": "MCP",
     "title": "Set everything up by chatting",
     "subtitle": "Connect your AI — Claude, Codex, Cursor or another — through MCP and run everything by chatting. No forms, no hours of setup. Prefer doing it by hand? The dashboard is still there.",
@@ -151,7 +150,6 @@
     "step": "Step 1 · Content",
     "title": "Schedule and forget",
     "subtitle": "Reels, carousels, images and stories on Instagram, with caption, hashtags and first comment. Link an automation to the post before it even goes live.",
-    "prompt": "Schedule a reel for Thursday at 6pm with this caption and link it to the GUIDE automation",
     "calendar": {
       "title": "Publications",
       "week": "This week",
@@ -196,7 +194,6 @@
     "step": "Step 4 · Support",
     "title": "Nobody goes unanswered",
     "subtitle": "Automatic follow-ups for whoever grabbed the guide, and an AI agent that replies, qualifies and hands over to you when needed.",
-    "prompt": "Create a follow-up 24h later for whoever received the guide, offering the course",
     "agents": {
       "multichannel": {
         "title": "Automatic follow-up",
@@ -231,7 +228,6 @@
       "step": "Step 2 · Engagement",
       "title": "A comment becomes a conversation",
       "subtitle": "Whoever comments the keyword gets the DM right away, with link buttons. Require a follow, vary the message and auto-reply to the comment.",
-      "prompt": "Create an automation: whoever comments GUIDE gets the material by DM, only if they follow me",
       "postText": "Comment \"GUIDE\" and I'll send you the material!",
       "likes": "likes",
       "comment1": "guide",
@@ -353,7 +349,6 @@
     "step": "Step 3 · Lead",
     "title": "From click to lead",
     "subtitle": "Capture page, VSL funnel and link page, all ready in minutes. The lead lands in the CRM instantly.",
-    "prompt": "Create a capture with name, email and phone that sends to my funnel, and add the course link to my bio page",
     "capture": {
       "label": "Capture",
       "title": "Grab the free guide",
@@ -384,7 +379,6 @@
     "step": "Step 5 · Sale",
     "title": "Close the sale",
     "subtitle": "Every capture lead and every conversation becomes a card in the CRM. Kanban, tasks and full history.",
-    "prompt": "How many people did the GUIDE automation reach in the last 7 days?",
     "features": {
       "pipeline": {
         "title": "Sales Pipeline",
