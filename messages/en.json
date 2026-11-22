@@ -588,7 +588,7 @@
   },
   "terms": {
     "title": "Terms of Service",
-    "lastUpdated": "Last updated: January 2025",
+    "lastUpdated": "Last updated: November 2026",
     "intro": "Welcome to AutomateFlow. By accessing and using our artificial intelligence agents platform, you agree to the following terms and conditions. Please read them carefully before using our services.",
     "sections": {
       "acceptance": {
@@ -606,6 +606,10 @@
       "usage": {
         "title": "Acceptable Use",
         "content": "You agree to use our services only for lawful purposes and in accordance with these terms. It is prohibited to use the platform to send spam, illegal, defamatory or offensive content, attempt to access unauthorized systems, interfere with platform operations, violate third-party intellectual property rights, or collect user data without consent. We reserve the right to suspend or terminate accounts that violate these guidelines."
+      },
+      "youtube": {
+        "title": "YouTube",
+        "content": "AutomateFlow uses YouTube API Services to publish videos to the YouTube channels you connect. By connecting a YouTube channel you agree to be bound by the YouTube Terms of Service (https://www.youtube.com/t/terms). How we handle YouTube data is described in our Privacy Policy, and the Google Privacy Policy (https://policies.google.com/privacy) also applies."
       },
       "payment": {
         "title": "Payments and Billing",
@@ -635,7 +639,7 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: August 2026",
+    "lastUpdated": "Last updated: November 2026",
     "intro": "AutomateFlow is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our artificial intelligence agents platform.",
     "sections": {
       "collection": {
@@ -653,6 +657,10 @@
       "googleUserData": {
         "title": "Google user data (Google Calendar and Google Drive)",
         "content": "AutomateFlow's use and transfer to any other app of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. When you connect Google Calendar or Google Drive to an agent, we access only the data needed for the feature you enabled: the calendar events you choose to manage, and read-only access to the files inside the single Drive folder you select. Drive file content is read on demand to answer the conversations handled by your agent, is not stored beyond the context of that conversation, is never used to train AI models, and is never sold or shared with third parties other than the AI provider that processes the conversation. You can disconnect an integration at any time from the agent settings, which deletes the stored access tokens, and you can also revoke AutomateFlow's access from your Google Account permissions page."
+      },
+      "youtubeUserData": {
+        "title": "YouTube API Services",
+        "content": "AutomateFlow uses YouTube API Services to let you publish videos and Shorts to a YouTube channel you connect and to show that channel's performance. By connecting a YouTube channel you agree to be bound by the YouTube Terms of Service (https://www.youtube.com/t/terms), and the Google Privacy Policy (https://policies.google.com/privacy) applies to how Google handles your data. With your authorization we access only: your channel's identity and playlists (youtube.readonly), uploading the videos you schedule (youtube.upload), and your channel's analytics reports (yt-analytics.readonly). We store your channel ID, name and handle, encrypted access tokens, the publications you create, and the statistics and analytics of your channel's own videos, used only to run and display these features in your workspace. We never edit or delete your existing videos, playlists or comments, never use YouTube data to train AI models, and never sell or share it with third parties. When you remove the channel from AutomateFlow its stored YouTube data is deleted immediately, and if you revoke access it is deleted within 7 days. You can disconnect the channel at any time in Settings > Connected accounts and revoke AutomateFlow's access in your Google security settings (https://security.google.com/settings/security/permissions). To request deletion of any YouTube data we hold, email privacy@automateflow.chat."
       },
       "storage": {
         "title": "Storage and Retention",

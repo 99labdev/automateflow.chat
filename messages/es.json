@@ -588,7 +588,7 @@
   },
   "terms": {
     "title": "Términos de Servicio",
-    "lastUpdated": "Última actualización: Enero de 2025",
+    "lastUpdated": "Última actualización: Noviembre de 2026",
     "intro": "Bienvenido a AutomateFlow. Al acceder y utilizar nuestra plataforma de agentes de inteligencia artificial, usted acepta los siguientes términos y condiciones. Por favor, léalos atentamente antes de utilizar nuestros servicios.",
     "sections": {
       "acceptance": {
@@ -606,6 +606,10 @@
       "usage": {
         "title": "Uso Aceptable",
         "content": "Usted acepta usar nuestros servicios solo para fines legales y de acuerdo con estos términos. Está prohibido usar la plataforma para enviar spam, contenido ilegal, difamatorio u ofensivo, intentar acceder a sistemas no autorizados, interferir con el funcionamiento de la plataforma, violar derechos de propiedad intelectual de terceros, o recopilar datos de usuarios sin consentimiento. Nos reservamos el derecho de suspender o cancelar cuentas que violen estas directrices."
+      },
+      "youtube": {
+        "title": "YouTube",
+        "content": "AutomateFlow usa los Servicios de API de YouTube para publicar videos en los canales de YouTube que conectes. Al conectar un canal de YouTube aceptas los Términos de Servicio de YouTube (https://www.youtube.com/t/terms). La forma en que tratamos los datos de YouTube se describe en nuestra Política de Privacidad, y también se aplica la Política de Privacidad de Google (https://policies.google.com/privacy)."
       },
       "payment": {
         "title": "Pagos y Facturación",
@@ -635,7 +639,7 @@
   },
   "privacy": {
     "title": "Política de Privacidad",
-    "lastUpdated": "Última actualización: Agosto de 2026",
+    "lastUpdated": "Última actualización: Noviembre de 2026",
     "intro": "AutomateFlow está comprometida con proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, almacenamos y protegemos su información personal cuando utiliza nuestra plataforma de agentes de inteligencia artificial.",
     "sections": {
       "collection": {
@@ -653,6 +657,10 @@
       "googleUserData": {
         "title": "Datos de usuario de Google (Google Calendar y Google Drive)",
         "content": "El uso y la transferencia por parte de AutomateFlow de la información recibida de las API de Google a cualquier otra aplicación se ajustan a la Política de Datos de Usuario de los Servicios de API de Google, incluidos los requisitos de Uso Limitado. Cuando conectas Google Calendar o Google Drive a un agente, accedemos solo a los datos necesarios para la función activada: los eventos de calendario que eliges gestionar y acceso de solo lectura a los archivos dentro de la única carpeta de Drive que seleccionas. El contenido de los archivos de Drive se lee bajo demanda para responder las conversaciones atendidas por tu agente, no se almacena más allá del contexto de esa conversación, nunca se usa para entrenar modelos de IA y nunca se vende ni se comparte con terceros distintos del proveedor de IA que procesa la conversación. Puedes desconectar una integración en cualquier momento desde la configuración del agente, lo que elimina los tokens de acceso almacenados, y también puedes revocar el acceso de AutomateFlow desde la página de permisos de tu Cuenta de Google."
+      },
+      "youtubeUserData": {
+        "title": "Servicios de API de YouTube",
+        "content": "AutomateFlow usa los Servicios de API de YouTube (YouTube API Services) para que publiques videos y Shorts en un canal de YouTube que conectes y para mostrar el rendimiento de ese canal. Al conectar un canal de YouTube aceptas los Términos de Servicio de YouTube (https://www.youtube.com/t/terms), y la Política de Privacidad de Google (https://policies.google.com/privacy) se aplica a la forma en que Google trata tus datos. Con tu autorización accedemos solo a: la identidad y las listas de reproducción de tu canal (youtube.readonly), la subida de los videos que programes (youtube.upload) y los informes de análisis de tu canal (yt-analytics.readonly). Guardamos el ID, el nombre y el identificador del canal, tokens de acceso cifrados, las publicaciones que creas y las estadísticas y análisis de los videos del propio canal, usados solo para ejecutar y mostrar estas funciones en tu espacio de trabajo. Nunca editamos ni eliminamos tus videos, listas de reproducción o comentarios existentes, nunca usamos datos de YouTube para entrenar modelos de IA y nunca los vendemos ni compartimos con terceros. Cuando eliminas el canal de AutomateFlow, los datos de YouTube guardados se borran de inmediato; si revocas el acceso, se borran en un plazo de 7 días. Puedes desconectar el canal en cualquier momento en Configuración > Cuentas conectadas y revocar el acceso de AutomateFlow en la configuración de seguridad de Google (https://security.google.com/settings/security/permissions). Para solicitar la eliminación de cualquier dato de YouTube que tengamos, escribe a privacy@automateflow.chat."
       },
       "storage": {
         "title": "Almacenamiento y Retención",
