@@ -4,6 +4,20 @@ import { useTranslations } from 'next-intl';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+const URL_PATTERN = /(https?:\/\/[^\s)]+)/g;
+
+function linkify(text: string) {
+  return text.split(URL_PATTERN).map((part, index) =>
+    index % 2 === 1 ? (
+      <a key={index} href={part} target="_blank" rel="noopener noreferrer">
+        {part}
+      </a>
+    ) : (
+      part
+    ),
+  );
+}
+
 export default function TermsPage() {
   const t = useTranslations('terms');
 
@@ -12,6 +26,7 @@ export default function TermsPage() {
     'services',
     'accounts',
     'usage',
+    'youtube',
     'payment',
     'intellectual',
     'liability',
@@ -39,7 +54,7 @@ export default function TermsPage() {
                   <span className="section-number">{index + 1}.</span>
                   {t(`sections.${section}.title`)}
                 </h2>
-                <p>{t(`sections.${section}.content`)}</p>
+                <p>{linkify(t(`sections.${section}.content`))}</p>
               </div>
             ))}
           </div>
@@ -48,6 +63,12 @@ export default function TermsPage() {
       <Footer />
 
       <style jsx>{`
+        .legal-section :global(a) {
+          color: var(--primary-color, #8b5cf6);
+          text-decoration: underline;
+          word-break: break-all;
+        }
+
         .legal-page {
           padding: 140px 0 100px;
           background: var(--bg-primary);
